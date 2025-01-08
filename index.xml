@@ -17,8 +17,7 @@
 &lt;p&gt;本文章请搭配NJU-SICP Project04 EC (Adopted from CS61A from Berkeley) 食用&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;h1 id=&#34;1原问题&#34;&gt;1	原问题
-&lt;/h1&gt;&lt;h2 id=&#34;11why-current-interpreter-cannot-properly-process-tail-callhttpssicppascal-labnet2024projectsproj045htmlwhy-current-interpreter-cannot-properly-process-tail-call&#34;&gt;1.1	&lt;a class=&#34;link&#34; href=&#34;https://sicp.pascal-lab.net/2024/projects/proj04/5.html#why-current-interpreter-cannot-properly-process-tail-call&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
-    &gt;Why current interpreter cannot properly process tail call?&lt;/a&gt;
+&lt;/h1&gt;&lt;h2 id=&#34;11why-current-interpreter-cannot-properly-process-tail-call&#34;&gt;1.1	Why current interpreter cannot properly process tail call?
 &lt;/h2&gt;&lt;p&gt;Consider such scheme code:&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
 &lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
@@ -66,8 +65,7 @@
 &lt;li&gt;transform the source scheme code, e.g. &lt;em&gt;Continuation-Passing Style&lt;/em&gt; transformation.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;The &lt;em&gt;trampoline&lt;/em&gt; technique is the simplest one. So we use this approach.&lt;/p&gt;
-&lt;h2 id=&#34;12trampolinehttpssicppascal-labnet2024projectsproj045htmltrampoline&#34;&gt;1.2	&lt;a class=&#34;link&#34; href=&#34;https://sicp.pascal-lab.net/2024/projects/proj04/5.html#trampoline&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
-    &gt;Trampoline&lt;/a&gt;
+&lt;h2 id=&#34;12trampoline&#34;&gt;1.2	Trampoline
 &lt;/h2&gt;&lt;p&gt;The trampoline technique is a simple technique to perform proper tail call in a &amp;ldquo;bad&amp;rdquo; language (e.g. Python, C, C++, Java, &amp;hellip;).&lt;/p&gt;
 &lt;p&gt;For example, we can define a &lt;code&gt;sum&lt;/code&gt; recursive function in python:&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
@@ -129,8 +127,7 @@
 &lt;/div&gt;
 &lt;/div&gt;&lt;p&gt;Now &lt;code&gt;sum(10000, 0)&lt;/code&gt; will properly works. This can be generalized to transform all recursive functions to loops, see &lt;a class=&#34;link&#34; href=&#34;https://stackoverflow.com/questions/189725/what-is-a-trampoline-function&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;here&lt;/a&gt;. But the above form is enough for our problem.&lt;/p&gt;
-&lt;h2 id=&#34;13the-taskshttpssicppascal-labnet2024projectsproj045htmlthe-tasks&#34;&gt;1.3	&lt;a class=&#34;link&#34; href=&#34;https://sicp.pascal-lab.net/2024/projects/proj04/5.html#the-tasks&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
-    &gt;The Tasks&lt;/a&gt;
+&lt;h2 id=&#34;13the-tasks&#34;&gt;1.3	The Tasks
 &lt;/h2&gt;&lt;p&gt;Complete the function &lt;code&gt;optimize_tail_calls&lt;/code&gt; in &lt;code&gt;scheme_eval_apply.py&lt;/code&gt;. It returns an alternative to &lt;code&gt;scheme_eval&lt;/code&gt; that is properly tail recursive. That is, the interpreter will allow an unbounded number of active tail calls in constant space. It has a third argument &lt;code&gt;tail&lt;/code&gt; that indicates whether the expression to be evaluated is in a tail context.&lt;/p&gt;
 &lt;p&gt;The &lt;code&gt;Unevaluated&lt;/code&gt; class represents an expression that needs to be evaluated in an environment. When &lt;code&gt;optimized_eval&lt;/code&gt; receives a non-atomic expression in a tail context, it returns an &lt;code&gt;Unevaluated&lt;/code&gt; instance. Otherwise, it should repeatedly call &lt;code&gt;original_scheme_eval&lt;/code&gt; until the result is a value, rather than an &lt;code&gt;Unevaluated&lt;/code&gt;.&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;A successful implementation will require changes to several other functions, including some functions that we provided for you.&lt;/strong&gt; All expressions throughout your interpreter that are in a tail context should be evaluated by calling &lt;code&gt;scheme_eval&lt;/code&gt; with &lt;code&gt;True&lt;/code&gt; as the third argument (now called &lt;code&gt;tail&lt;/code&gt;). Your goal is to determine which expressions are in a tail context throughout your code and change calls to &lt;code&gt;scheme_eval&lt;/code&gt; as needed.&lt;/p&gt;
