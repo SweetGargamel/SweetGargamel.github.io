@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
     <channel>
-        <title>Posts on SweetGargamel</title>
-        <link>https://SweetGargamel.github.io/post/</link>
-        <description>Recent content in Posts on SweetGargamel</description>
+        <title>SICP on SweetGargamel</title>
+        <link>https://SweetGargamel.github.io/categories/sicp/</link>
+        <description>Recent content in SICP on SweetGargamel</description>
         <generator>Hugo -- gohugo.io</generator>
         <language>zh-cn</language>
         <copyright>SweetGargamel</copyright>
-        <lastBuildDate>Wed, 08 Jan 2025 11:02:54 +0800</lastBuildDate><atom:link href="https://SweetGargamel.github.io/post/index.xml" rel="self" type="application/rss+xml" /><item>
+        <lastBuildDate>Wed, 08 Jan 2025 11:02:54 +0800</lastBuildDate><atom:link href="https://SweetGargamel.github.io/categories/sicp/index.xml" rel="self" type="application/rss+xml" /><item>
         <title>解析SICP-Proj4 EC</title>
         <link>https://SweetGargamel.github.io/p/%E8%A7%A3%E6%9E%90sicp-proj4-ec/</link>
         <pubDate>Wed, 08 Jan 2025 11:02:54 +0800</pubDate>
