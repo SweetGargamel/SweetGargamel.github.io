@@ -30,6 +30,7 @@
 &gt;&lt;/p&gt;
 &lt;blockquote&gt;
 &lt;p&gt;本文章请搭配NJU-SICP Project04 EC (Adopted from CS61A from Berkeley) 食用&lt;/p&gt;
+&lt;p&gt;Written By SweetGargamel&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;h2 id=&#34;原问题&#34;&gt;原问题
 &lt;/h2&gt;&lt;h3 id=&#34;why-current-interpreter-cannot-properly-process-tail-call&#34;&gt;Why current interpreter cannot properly process tail call?
