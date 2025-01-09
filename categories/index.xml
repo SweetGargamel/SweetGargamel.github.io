@@ -7,12 +7,20 @@
         <generator>Hugo -- gohugo.io</generator>
         <language>zh-cn</language>
         <copyright>SweetGargamel</copyright>
-        <lastBuildDate>Wed, 08 Jan 2025 11:02:54 +0800</lastBuildDate><atom:link href="https://SweetGargamel.github.io/categories/index.xml" rel="self" type="application/rss+xml" /><item>
+        <lastBuildDate>Wed, 08 Jan 2025 00:00:00 +0000</lastBuildDate><atom:link href="https://SweetGargamel.github.io/categories/index.xml" rel="self" type="application/rss+xml" /><item>
         <title>SICP</title>
         <link>https://SweetGargamel.github.io/categories/sicp/</link>
-        <pubDate>Wed, 08 Jan 2025 11:02:54 +0800</pubDate>
+        <pubDate>Wed, 08 Jan 2025 00:00:00 +0000</pubDate>
         
         <guid>https://SweetGargamel.github.io/categories/sicp/</guid>
+        <description></description>
+        </item>
+        <item>
+        <title>TipsForStack</title>
+        <link>https://SweetGargamel.github.io/categories/tipsforstack/</link>
+        <pubDate>Mon, 11 Mar 2019 00:00:00 +0000</pubDate>
+        
+        <guid>https://SweetGargamel.github.io/categories/tipsforstack/</guid>
         <description></description>
         </item>
         

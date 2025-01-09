@@ -1,18 +1,18 @@
 <!DOCTYPE html>
 <html lang="zh-cn" dir="ltr">
     <head><meta charset='utf-8'>
-<meta name='viewport' content='width=device-width, initial-scale=1'><meta name='description' content="对于NJUSICP课程Project04EC问题的一点思考">
+<meta name='viewport' content='width=device-width, initial-scale=1'><meta name='description' content="对SICP课程Project04EC问题的一点思考">
 <title>解析SICP-Proj4 EC</title>
 
 <link rel='canonical' href='https://SweetGargamel.github.io/p/%E8%A7%A3%E6%9E%90sicp-proj4-ec/'>
 
 <link rel="stylesheet" href="/scss/style.min.663803bebe609202d5b39d848f2d7c2dc8b598a2d879efa079fa88893d29c49c.css"><meta property='og:title' content="解析SICP-Proj4 EC">
-<meta property='og:description' content="对于NJUSICP课程Project04EC问题的一点思考">
+<meta property='og:description' content="对SICP课程Project04EC问题的一点思考">
 <meta property='og:url' content='https://SweetGargamel.github.io/p/%E8%A7%A3%E6%9E%90sicp-proj4-ec/'>
 <meta property='og:site_name' content='SweetGargamel'>
-<meta property='og:type' content='article'><meta property='article:section' content='Post' /><meta property='article:published_time' content='2025-01-08T11:02:54&#43;08:00'/><meta property='article:modified_time' content='2025-01-08T11:02:54&#43;08:00'/><meta property='og:image' content='https://SweetGargamel.github.io/p/%E8%A7%A3%E6%9E%90sicp-proj4-ec/CoverImg.png' />
+<meta property='og:type' content='article'><meta property='article:section' content='Post' /><meta property='article:published_time' content='2025-01-08T00:00:00&#43;00:00'/><meta property='article:modified_time' content='2025-01-08T00:00:00&#43;00:00'/><meta property='og:image' content='https://SweetGargamel.github.io/p/%E8%A7%A3%E6%9E%90sicp-proj4-ec/CoverImg.png' />
 <meta name="twitter:title" content="解析SICP-Proj4 EC">
-<meta name="twitter:description" content="对于NJUSICP课程Project04EC问题的一点思考"><meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:description" content="对SICP课程Project04EC问题的一点思考"><meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:image" content='https://SweetGargamel.github.io/p/%E8%A7%A3%E6%9E%90sicp-proj4-ec/CoverImg.png' />
     <link rel="shortcut icon" href="/favicon.ico" />
 
@@ -248,24 +248,31 @@
         <div class="widget--toc">
             <nav id="TableOfContents">
   <ol>
-    <li><a href="#11why-current-interpreter-cannot-properly-process-tail-call">1.1	Why current interpreter cannot properly process tail call?</a></li>
-    <li><a href="#12trampoline">1.2	Trampoline</a></li>
-    <li><a href="#13the-tasks">1.3	The Tasks</a></li>
-  </ol>
-
-  <ol>
-    <li><a href="#21问题">2.1	问题</a></li>
-    <li><a href="#22答案">2.2	答案</a></li>
-  </ol>
-
-  <ol>
-    <li><a href="#31怎么使用debug">3.1	怎么使用Debug</a></li>
-    <li><a href="#32debug启动">3.2	Debug，启动！</a></li>
-    <li><a href="#33现在解释器在干啥">3.3	现在解释器在干啥？</a></li>
-    <li><a href="#34怎么让解释器往下走">3.4	怎么让解释器往下走？</a></li>
-    <li><a href="#35做完define-form之后">3.5	做完<code>define form</code>之后</a></li>
-    <li><a href="#36进入apply过程">3.6	进入apply过程！</a></li>
-    <li><a href="#37思路理顺">3.7	思路理顺</a></li>
+    <li><a href="#原问题">原问题</a>
+      <ol>
+        <li><a href="#why-current-interpreter-cannot-properly-process-tail-call">Why current interpreter cannot properly process tail call?</a></li>
+        <li><a href="#trampoline">Trampoline</a></li>
+        <li><a href="#the-tasks">The Tasks</a></li>
+      </ol>
+    </li>
+    <li><a href="#疑惑引出">疑惑引出</a>
+      <ol>
+        <li><a href="#问题">问题</a></li>
+        <li><a href="#答案">答案</a></li>
+      </ol>
+    </li>
+    <li><a href="#使用vscode的debug功能解析">使用Vscode的Debug功能解析</a>
+      <ol>
+        <li><a href="#怎么使用debug">怎么使用Debug</a></li>
+        <li><a href="#debug启动">Debug，启动！</a></li>
+        <li><a href="#现在解释器在干啥">现在解释器在干啥？</a></li>
+        <li><a href="#怎么让解释器往下走">怎么让解释器往下走？</a></li>
+        <li><a href="#做完define-form之后">做完<code>define form</code>之后</a></li>
+        <li><a href="#进入apply过程">进入apply过程！</a></li>
+        <li><a href="#思路理顺">思路理顺</a></li>
+      </ol>
+    </li>
+    <li><a href="#反思总结">反思总结</a></li>
   </ol>
 </nav>
         </div>
@@ -310,7 +317,7 @@
     
         
         <h3 class="article-subtitle">
-            对于NJUSICP课程Project04EC问题的一点思考
+            对SICP课程Project04EC问题的一点思考
         </h3>
         
     </div>
@@ -361,12 +368,27 @@
     <section class="article-content">
     
     
-    <blockquote>
+    <h1 id="解析sicp-proj4-ec">解析SICP-Proj4 EC
+</h1><p><img src="/p/%E8%A7%A3%E6%9E%90sicp-proj4-ec/attachments/florian-klauer-nptLmg6jqDo-unsplash.png"
+	width="667"
+	height="1000"
+	srcset="/p/%E8%A7%A3%E6%9E%90sicp-proj4-ec/attachments/florian-klauer-nptLmg6jqDo-unsplash_hu6667631399733388006.png 480w, /p/%E8%A7%A3%E6%9E%90sicp-proj4-ec/attachments/florian-klauer-nptLmg6jqDo-unsplash_hu4871573408862804551.png 1024w"
+	loading="lazy"
+	
+		alt="Photo by Florian Klauer on Unsplash|600"
+	
+	
+		class="gallery-image" 
+		data-flex-grow="66"
+		data-flex-basis="160px"
+	
+></p>
+<blockquote>
 <p>本文章请搭配NJU-SICP Project04 EC (Adopted from CS61A from Berkeley) 食用</p>
 </blockquote>
-<h1 id="1原问题">1	原问题
-</h1><h2 id="11why-current-interpreter-cannot-properly-process-tail-call">1.1	Why current interpreter cannot properly process tail call?
-</h2><p>Consider such scheme code:</p>
+<h2 id="原问题">原问题
+</h2><h3 id="why-current-interpreter-cannot-properly-process-tail-call">Why current interpreter cannot properly process tail call?
+</h3><p>Consider such scheme code:</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
@@ -413,8 +435,8 @@
 <li>transform the source scheme code, e.g. <em>Continuation-Passing Style</em> transformation.</li>
 </ul>
 <p>The <em>trampoline</em> technique is the simplest one. So we use this approach.</p>
-<h2 id="12trampoline">1.2	Trampoline
-</h2><p>The trampoline technique is a simple technique to perform proper tail call in a &ldquo;bad&rdquo; language (e.g. Python, C, C++, Java, &hellip;).</p>
+<h3 id="trampoline">Trampoline
+</h3><p>The trampoline technique is a simple technique to perform proper tail call in a &ldquo;bad&rdquo; language (e.g. Python, C, C++, Java, &hellip;).</p>
 <p>For example, we can define a <code>sum</code> recursive function in python:</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
@@ -475,15 +497,15 @@
 </div>
 </div><p>Now <code>sum(10000, 0)</code> will properly works. This can be generalized to transform all recursive functions to loops, see <a class="link" href="https://stackoverflow.com/questions/189725/what-is-a-trampoline-function"  target="_blank" rel="noopener"
     >here</a>. But the above form is enough for our problem.</p>
-<h2 id="13the-tasks">1.3	The Tasks
-</h2><p>Complete the function <code>optimize_tail_calls</code> in <code>scheme_eval_apply.py</code>. It returns an alternative to <code>scheme_eval</code> that is properly tail recursive. That is, the interpreter will allow an unbounded number of active tail calls in constant space. It has a third argument <code>tail</code> that indicates whether the expression to be evaluated is in a tail context.</p>
+<h3 id="the-tasks">The Tasks
+</h3><p>Complete the function <code>optimize_tail_calls</code> in <code>scheme_eval_apply.py</code>. It returns an alternative to <code>scheme_eval</code> that is properly tail recursive. That is, the interpreter will allow an unbounded number of active tail calls in constant space. It has a third argument <code>tail</code> that indicates whether the expression to be evaluated is in a tail context.</p>
 <p>The <code>Unevaluated</code> class represents an expression that needs to be evaluated in an environment. When <code>optimized_eval</code> receives a non-atomic expression in a tail context, it returns an <code>Unevaluated</code> instance. Otherwise, it should repeatedly call <code>original_scheme_eval</code> until the result is a value, rather than an <code>Unevaluated</code>.</p>
 <p><strong>A successful implementation will require changes to several other functions, including some functions that we provided for you.</strong> All expressions throughout your interpreter that are in a tail context should be evaluated by calling <code>scheme_eval</code> with <code>True</code> as the third argument (now called <code>tail</code>). Your goal is to determine which expressions are in a tail context throughout your code and change calls to <code>scheme_eval</code> as needed.</p>
 <p>Once you finish, uncomment the following line in <code>scheme_eval_apply.py</code> to use your implementation:</p>
 <p><code>scheme_eval = optimize_tail_calls(scheme_eval)</code></p>
-<h1 id="2疑惑引出">2	疑惑引出
-</h1><h2 id="21问题">2.1	问题
-</h2><div class="highlight"><div class="chroma">
+<h2 id="疑惑引出">疑惑引出
+</h2><h3 id="问题">问题
+</h3><div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span><span class="lnt">2
@@ -508,8 +530,8 @@
 </div><ul>
 <li>是的，很显然你会不会觉得，开始在运行第一行代码的时候，如果是尾递归的话就会直接返回一个<code>Unevaluated</code>的玩意，这程序不就该崩了吗？</li>
 </ul>
-<h2 id="22答案">2.2	答案
-</h2><div class="highlight"><div class="chroma">
+<h3 id="答案">答案
+</h3><div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt"> 1
 </span><span class="lnt"> 2
@@ -541,18 +563,26 @@
 <li>是的你看了答案会不会更觉得下面的代码根本就运行不到？</li>
 <li>（当然除了该这些代码还应该按照助教的建议，把凡是尾递归的部分都给加一个<code>tail=True</code>的参数）</li>
 </ul>
-<h1 id="3使用vscode的debug功能解析">3	使用Vscode的Debug功能解析
-</h1><h2 id="31怎么使用debug">3.1	怎么使用Debug
-</h2><ul>
-<li>直接按照助教的提示修改<code>.vscode/launch.json</code>文件即可
-<img src="/Pasted%20image%2020250108233851.png"
-	
-	
-	
+<h2 id="使用vscode的debug功能解析">使用Vscode的Debug功能解析
+</h2><h3 id="怎么使用debug">怎么使用Debug
+</h3><ul>
+<li>
+<p>直接按照助教的提示修改<code>.vscode/launch.json</code>文件即可</p>
+</li>
+<li>
+<p><img src="/p/%E8%A7%A3%E6%9E%90sicp-proj4-ec/attachments/JsonLaunch.png"
+	width="2080"
+	height="1396"
+	srcset="/p/%E8%A7%A3%E6%9E%90sicp-proj4-ec/attachments/JsonLaunch_hu2580564258582800440.png 480w, /p/%E8%A7%A3%E6%9E%90sicp-proj4-ec/attachments/JsonLaunch_hu13979383748499769587.png 1024w"
 	loading="lazy"
 	
 	
-></li>
+		class="gallery-image" 
+		data-flex-grow="148"
+		data-flex-basis="357px"
+	
+></p>
+</li>
 </ul>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
@@ -597,13 +627,17 @@
 </span></span></code></pre></td></tr></table>
 </div>
 </div><ul>
-<li>你可以修改<code>tests.scm</code>里面的测试用例来测试，下面是我的例子
-<img src="/Pasted%20image%2020250108233939.png"
-	
-	
-	
+<li>你可以修改<code>tests.scm</code>里面的测试用例来测试，下面是我的例子</li>
+<li><img src="/p/%E8%A7%A3%E6%9E%90sicp-proj4-ec/attachments/SchemeTests.png"
+	width="2019"
+	height="1365"
+	srcset="/p/%E8%A7%A3%E6%9E%90sicp-proj4-ec/attachments/SchemeTests_hu17495703246206269142.png 480w, /p/%E8%A7%A3%E6%9E%90sicp-proj4-ec/attachments/SchemeTests_hu4410456283713112881.png 1024w"
 	loading="lazy"
 	
+	
+		class="gallery-image" 
+		data-flex-grow="147"
+		data-flex-basis="354px"
 	
 ></li>
 </ul>
@@ -626,58 +660,83 @@
 </span></span></code></pre></td></tr></table>
 </div>
 </div><ul>
-<li>当然别忘打断点了
-<img src="/Pasted%20image%2020250108234145.png"
-	
-	
-	
+<li>
+<p>当然别忘打断点了</p>
+</li>
+<li>
+<p><img src="/p/%E8%A7%A3%E6%9E%90sicp-proj4-ec/attachments/BreakPoint.png"
+	width="1391"
+	height="649"
+	srcset="/p/%E8%A7%A3%E6%9E%90sicp-proj4-ec/attachments/BreakPoint_hu12575403378196093503.png 480w, /p/%E8%A7%A3%E6%9E%90sicp-proj4-ec/attachments/BreakPoint_hu14265866457065017723.png 1024w"
 	loading="lazy"
 	
 	
-></li>
+		class="gallery-image" 
+		data-flex-grow="214"
+		data-flex-basis="514px"
+	
+></p>
+</li>
 </ul>
-<h2 id="32debug启动">3.2	Debug，启动！
-</h2><ul>
-<li>点击<code>Start Debugging</code>
-<img src="/Pasted%20image%2020250108234239.png"
-	
-	
-	
+<h3 id="debug启动">Debug，启动！
+</h3><ul>
+<li>
+<p>点击<code>Start Debugging</code></p>
+</li>
+<li>
+<p><img src="/p/%E8%A7%A3%E6%9E%90sicp-proj4-ec/attachments/StartDebugging.png"
+	width="971"
+	height="931"
+	srcset="/p/%E8%A7%A3%E6%9E%90sicp-proj4-ec/attachments/StartDebugging_hu15743356934197193651.png 480w, /p/%E8%A7%A3%E6%9E%90sicp-proj4-ec/attachments/StartDebugging_hu8889689769104420253.png 1024w"
 	loading="lazy"
 	
 		alt="|300"
 	
 	
-></li>
-<li>然后你会发现左边出来这些东西，分别是你的<code>VARIABLES</code>、<code>WATCH</code>、<code>CALL_STACK</code>
+		class="gallery-image" 
+		data-flex-grow="104"
+		data-flex-basis="250px"
+	
+></p>
+</li>
+<li>
+<p>然后你会发现左边出来这些东西，分别是你的<code>VARIABLES</code>、<code>WATCH</code>、<code>CALL_STACK</code></p>
 <ul>
 <li><code>VARIABLES</code>是当前的变量</li>
 <li><code>WATCH</code>可以添加自己想看的表达式或者变量的值</li>
-<li><code>CALL_STACK</code>看调用的堆栈
-<img src="/Pasted%20image%2020250108234638.png"
-	
-	
-	
+<li><code>CALL_STACK</code>看调用的堆栈</li>
+</ul>
+<p><img src="/p/%E8%A7%A3%E6%9E%90sicp-proj4-ec/attachments/index.zh-cn.png"
+	width="1971"
+	height="1183"
+	srcset="/p/%E8%A7%A3%E6%9E%90sicp-proj4-ec/attachments/index.zh-cn_hu7544596778869155940.png 480w, /p/%E8%A7%A3%E6%9E%90sicp-proj4-ec/attachments/index.zh-cn_hu3387255601528985250.png 1024w"
 	loading="lazy"
 	
 	
-></li>
-</ul>
+		class="gallery-image" 
+		data-flex-grow="166"
+		data-flex-basis="399px"
+	
+></p>
 </li>
 </ul>
 <p>我们发现他停到了if这个语句停下来了</p>
-<h2 id="33现在解释器在干啥">3.3	现在解释器在干啥？
-</h2><ul>
+<h3 id="现在解释器在干啥">现在解释器在干啥？
+</h3><ul>
 <li>我们发现左上角的<code>expr</code>的第一个<code>sym</code>是<code>define</code>，说明他正在进行<code>do_define_form</code></li>
 </ul>
-<h2 id="34怎么让解释器往下走">3.4	怎么让解释器往下走？
-</h2><p>在最上面有几个按钮，分别是下面几个</p>
-<p><img src="/Pasted%20image%2020250108235703.png"
-	
-	
-	
+<h3 id="怎么让解释器往下走">怎么让解释器往下走？
+</h3><p>在最上面有几个按钮，分别是下面几个
+<img src="/p/%E8%A7%A3%E6%9E%90sicp-proj4-ec/attachments/index.zh-cn-3.png"
+	width="1990"
+	height="975"
+	srcset="/p/%E8%A7%A3%E6%9E%90sicp-proj4-ec/attachments/index.zh-cn-3_hu231849458475074620.png 480w, /p/%E8%A7%A3%E6%9E%90sicp-proj4-ec/attachments/index.zh-cn-3_hu18068181103708292817.png 1024w"
 	loading="lazy"
 	
+	
+		class="gallery-image" 
+		data-flex-grow="204"
+		data-flex-basis="489px"
 	
 ></p>
 <ul>
@@ -685,95 +744,111 @@
 <li><code>Step Over</code>：不管是否是<code>call expression</code>直接当一条普通语句运行过去。</li>
 <li><code>Step Out</code>：跳出当前<code>Frame</code>（比如<code>A</code>里面调用了<code>B</code>函数，我现在通过<code>Step Into</code>进入了<code>B</code>所在的<code>Frame</code>,<code>Step Out</code>就直接回到<code>A</code>里面）</li>
 </ul>
-<p>所以我们按<code>Step Into</code>，你会发现他跳过了上面的<code>if</code>语句；这是因为我们现在是在<code>do_define_form</code>，并不是尾递归操作，所以就调用原始的<code>eval_call</code>.</p>
-<p><img src="/Pasted%20image%2020250109000127.png"
-	
-	
-	
+<p>所以我们按<code>Step Into</code>，你会发现他跳过了上面的<code>if</code>语句；这是因为我们现在是在<code>do_define_form</code>，并不是尾递归操作，所以就调用原始的<code>eval_call</code>.
+<img src="/p/%E8%A7%A3%E6%9E%90sicp-proj4-ec/attachments/index.zh-cn-1.png"
+	width="2029"
+	height="1298"
+	srcset="/p/%E8%A7%A3%E6%9E%90sicp-proj4-ec/attachments/index.zh-cn-1_hu3837952144131993911.png 480w, /p/%E8%A7%A3%E6%9E%90sicp-proj4-ec/attachments/index.zh-cn-1_hu13173152981342092708.png 1024w"
 	loading="lazy"
 	
+	
+		class="gallery-image" 
+		data-flex-grow="156"
+		data-flex-basis="375px"
 	
 ></p>
 <ul>
-<li>我们再次选择<code>Step Into</code>，发现：</li>
+<li>我们再次选择<code>Step Into</code>，发现：
+<img src="/p/%E8%A7%A3%E6%9E%90sicp-proj4-ec/attachments/index.zh-cn-2.png"
+	width="2048"
+	height="1187"
+	srcset="/p/%E8%A7%A3%E6%9E%90sicp-proj4-ec/attachments/index.zh-cn-2_hu9428289948585311111.png 480w, /p/%E8%A7%A3%E6%9E%90sicp-proj4-ec/attachments/index.zh-cn-2_hu8129218887003648614.png 1024w"
+	loading="lazy"
+	
+	
+		class="gallery-image" 
+		data-flex-grow="172"
+		data-flex-basis="414px"
+	
+></li>
 </ul>
-<p><img src="/Pasted%20image%2020250109000402.png"
-	
-	
-	
-	loading="lazy"
-	
-	
-></p>
 <p>这个部分就比较好理解了，他就是在做<code>define</code>的内容，我就不解释了。</p>
-<h2 id="35做完define-form之后">3.5	做完<code>define form</code>之后
-</h2><ul>
+<h3 id="做完define-form之后">做完<code>define form</code>之后
+</h3><ul>
 <li>按照解释器解释的规则，我们把<code>factor</code>绑定到对应的<code>lambda</code>函数之后，就会执行<code>(factor 10 1)</code>
-<img src="/Pasted%20image%2020250109000733.png"
-	
-	
-	
+<img src="/p/%E8%A7%A3%E6%9E%90sicp-proj4-ec/attachments/index.zh-cn-4.png"
+	width="2030"
+	height="1157"
+	srcset="/p/%E8%A7%A3%E6%9E%90sicp-proj4-ec/attachments/index.zh-cn-4_hu4292176206685668265.png 480w, /p/%E8%A7%A3%E6%9E%90sicp-proj4-ec/attachments/index.zh-cn-4_hu15033154386476999669.png 1024w"
 	loading="lazy"
 	
+	
+		class="gallery-image" 
+		data-flex-grow="175"
+		data-flex-basis="421px"
 	
 ></li>
 </ul>
 <p>那么他的的执行顺序就是（请你注意看左下角的<code>CALL_STACK</code>）</p>
 <ol>
 <li><code>eval factor</code>
-<ul>
-<li><img src="/Pasted%20image%2020250109000951.png"
-	
-	
-	
+<img src="/p/%E8%A7%A3%E6%9E%90sicp-proj4-ec/attachments/index.zh-cn-5.png"
+	width="1913"
+	height="1072"
+	srcset="/p/%E8%A7%A3%E6%9E%90sicp-proj4-ec/attachments/index.zh-cn-5_hu13126241673259327250.png 480w, /p/%E8%A7%A3%E6%9E%90sicp-proj4-ec/attachments/index.zh-cn-5_hu6647315570446414764.png 1024w"
 	loading="lazy"
 	
 	
+		class="gallery-image" 
+		data-flex-grow="178"
+		data-flex-basis="428px"
+	
 ></li>
-</ul>
-</li>
 <li><code>eval 10</code>
-<ul>
-<li><img src="/Pasted%20image%2020250109000903.png"
-	
-	
-	
+<img src="/p/%E8%A7%A3%E6%9E%90sicp-proj4-ec/attachments/index.zh-cn-6.png"
+	width="1826"
+	height="932"
+	srcset="/p/%E8%A7%A3%E6%9E%90sicp-proj4-ec/attachments/index.zh-cn-6_hu16699596103637985169.png 480w, /p/%E8%A7%A3%E6%9E%90sicp-proj4-ec/attachments/index.zh-cn-6_hu13227070349625961534.png 1024w"
 	loading="lazy"
 	
 	
+		class="gallery-image" 
+		data-flex-grow="195"
+		data-flex-basis="470px"
+	
 ></li>
-</ul>
-</li>
 <li><code>eval 1</code>
-<ul>
-<li>图略，类似上面</li>
-</ul>
-</li>
+图略，类似上面</li>
 <li><code>apply lambda 10 1</code>
-<ul>
-<li><img src="/Pasted%20image%2020250109001210.png"
-	
-	
-	
+<img src="/p/%E8%A7%A3%E6%9E%90sicp-proj4-ec/attachments/index.zh-cn-7.png"
+	width="1917"
+	height="1078"
+	srcset="/p/%E8%A7%A3%E6%9E%90sicp-proj4-ec/attachments/index.zh-cn-7_hu18206622378544010819.png 480w, /p/%E8%A7%A3%E6%9E%90sicp-proj4-ec/attachments/index.zh-cn-7_hu5419672449265747267.png 1024w"
 	loading="lazy"
 	
 	
+		class="gallery-image" 
+		data-flex-grow="177"
+		data-flex-basis="426px"
+	
 ></li>
-<li>在这一步之后选择<code>Step Into</code>
-这些都不是尾递归</li>
-</ul>
-</li>
 </ol>
-<h2 id="36进入apply过程">3.6	进入apply过程！
-</h2><ul>
+<p>我们发现这些都不是尾递归；</p>
+<p>在这一步之后选择<code>Step Into</code></p>
+<h3 id="进入apply过程">进入apply过程！
+</h3><ul>
 <li>
 <p>你会发现apply后，他就在<code>do_if_form</code>。注意，在调用<code>do_if_form</code>的时候参数<code>tail=True</code>
-<img src="/Pasted%20image%2020250109001329.png"
-	
-	
-	
+<img src="/p/%E8%A7%A3%E6%9E%90sicp-proj4-ec/attachments/index.zh-cn-8.png"
+	width="1925"
+	height="1170"
+	srcset="/p/%E8%A7%A3%E6%9E%90sicp-proj4-ec/attachments/index.zh-cn-8_hu6011112999647935144.png 480w, /p/%E8%A7%A3%E6%9E%90sicp-proj4-ec/attachments/index.zh-cn-8_hu16607006429425001809.png 1024w"
 	loading="lazy"
 	
+	
+		class="gallery-image" 
+		data-flex-grow="164"
+		data-flex-basis="394px"
 	
 ></p>
 </li>
@@ -782,12 +857,16 @@
 </li>
 <li>
 <p>然后就到了最核心的部分，这里终于会有<code>Unevaluated</code>类产生了（下面都简写为<code>un</code>类）
-<img src="/Pasted%20image%2020250109001751.png"
-	
-	
-	
+<img src="/p/%E8%A7%A3%E6%9E%90sicp-proj4-ec/attachments/index.zh-cn-9.png"
+	width="1916"
+	height="1036"
+	srcset="/p/%E8%A7%A3%E6%9E%90sicp-proj4-ec/attachments/index.zh-cn-9_hu15601138825896802494.png 480w, /p/%E8%A7%A3%E6%9E%90sicp-proj4-ec/attachments/index.zh-cn-9_hu17670722054505345158.png 1024w"
 	loading="lazy"
 	
+	
+		class="gallery-image" 
+		data-flex-grow="184"
+		data-flex-basis="443px"
 	
 ></p>
 </li>
@@ -795,51 +874,67 @@
 <p>这里你要思考，我的<code>un</code>类返回到哪里了？你点一下<code>Step Into</code>，发现这个东西是返回到了<code>scheme_eval</code>里面。</p>
 </li>
 <li>
-<p>那么他是在<code>eval</code>谁？你看左边的<code>Variables</code>，这会正在做<code>do_define_form</code>。</p>
+<p>那么他是在<code>eval</code>谁？你看左边的<code>Variables</code>，这会正在做<code>do_define_form</code>。
+<img src="/p/%E8%A7%A3%E6%9E%90sicp-proj4-ec/attachments/index.zh-cn-10.png"
+	width="2032"
+	height="1145"
+	srcset="/p/%E8%A7%A3%E6%9E%90sicp-proj4-ec/attachments/index.zh-cn-10_hu5876047504936179423.png 480w, /p/%E8%A7%A3%E6%9E%90sicp-proj4-ec/attachments/index.zh-cn-10_hu1607318757762230130.png 1024w"
+	loading="lazy"
+	
+	
+		class="gallery-image" 
+		data-flex-grow="177"
+		data-flex-basis="425px"
+	
+></p>
+</li>
+<li>
+<p>然后你就会发现他回到了最外层的<code>apply</code>的过程
+<img src="/p/%E8%A7%A3%E6%9E%90sicp-proj4-ec/attachments/index.zh-cn-11.png"
+	width="2039"
+	height="1211"
+	srcset="/p/%E8%A7%A3%E6%9E%90sicp-proj4-ec/attachments/index.zh-cn-11_hu17799046854653075368.png 480w, /p/%E8%A7%A3%E6%9E%90sicp-proj4-ec/attachments/index.zh-cn-11_hu8849645446403112920.png 1024w"
+	loading="lazy"
+	
+	
+		class="gallery-image" 
+		data-flex-grow="168"
+		data-flex-basis="404px"
+	
+>
+<img src="/p/%E8%A7%A3%E6%9E%90sicp-proj4-ec/attachments/index.zh-cn-12.png"
+	width="2031"
+	height="1204"
+	srcset="/p/%E8%A7%A3%E6%9E%90sicp-proj4-ec/attachments/index.zh-cn-12_hu6734429097534415315.png 480w, /p/%E8%A7%A3%E6%9E%90sicp-proj4-ec/attachments/index.zh-cn-12_hu7609410148800266953.png 1024w"
+	loading="lazy"
+	
+	
+		class="gallery-image" 
+		data-flex-grow="168"
+		data-flex-basis="404px"
+	
+>
+<img src="/p/%E8%A7%A3%E6%9E%90sicp-proj4-ec/attachments/index.zh-cn-13.png"
+	width="2035"
+	height="1212"
+	srcset="/p/%E8%A7%A3%E6%9E%90sicp-proj4-ec/attachments/index.zh-cn-13_hu2326634561143675017.png 480w, /p/%E8%A7%A3%E6%9E%90sicp-proj4-ec/attachments/index.zh-cn-13_hu17989202292980621727.png 1024w"
+	loading="lazy"
+	
+	
+		class="gallery-image" 
+		data-flex-grow="167"
+		data-flex-basis="402px"
+	
+></p>
+</li>
+<li>
+<p>诶你是不是发现，这里上面虽然最左边的<code>tail</code>是<code>false</code>,但是这里返回了<code>un</code>类。</p>
 </li>
 </ul>
-<p><img src="/Pasted%20image%2020250109001855.png"
-	
-	
-	
-	loading="lazy"
-	
-	
-></p>
-<ul>
-<li>然后你就会发现他回到了最外层的<code>apply</code>的过程</li>
-</ul>
-<p><img src="/Pasted%20image%2020250109002209.png"
-	
-	
-	
-	loading="lazy"
-	
-	
-></p>
-<p><img src="/Pasted%20image%2020250109002304.png"
-	
-	
-	
-	loading="lazy"
-	
-	
-></p>
-<p><img src="/Pasted%20image%2020250109002318.png"
-	
-	
-	
-	loading="lazy"
-	
-	
-></p>
-<ul>
-<li>诶你是不是发现，这里上面虽然最左边的<code>tail</code>是<code>false</code>,但是这里返回了<code>un</code>类。</li>
-</ul>
-<h2 id="37思路理顺">3.7	思路理顺
-</h2><p>通过上面的分析，我们发现，实际上<code>un</code>类并不会”漏出去“，实际上他是通过好层的递归调用，在最外层的<code>eval_call</code>（<code>eval</code>的是函数的<code>call-expression</code>)拿到了最里层<code>eval_call</code>（这里是<code>do_if_form</code>）返回的<code>un</code>类，然后再循环往复的<code>eval</code>。</p>
-<h1 id="4反思总结">4	反思总结
-</h1><ul>
+<h3 id="思路理顺">思路理顺
+</h3><p>通过上面的分析，我们发现，实际上<code>un</code>类并不会”漏出去“，实际上他是通过好层的递归调用，在最外层的<code>eval_call</code>（<code>eval</code>的是函数的<code>call-expression</code>)拿到了最里层<code>eval_call</code>（这里是<code>do_if_form</code>）返回的<code>un</code>类，然后再循环往复的<code>eval</code>。</p>
+<h2 id="反思总结">反思总结
+</h2><ul>
 <li>我和xsh和fhy同学都交流过，他们似乎都感觉最后这个<code>un</code>类会被返回到最外层，从而你最后的<code>eval</code>结果都是一个<code>un</code>类。说明这应该是许多同学的共同的问题</li>
 <li>然而通过<code>Debug</code>的逐句调用，我们发现靠空想是不行的，需要深入的一行行把自己当编译器理解。<code>Debug</code>应该是我们要掌握的一门技术。</li>
 </ul>
