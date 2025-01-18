@@ -1,0 +1,1762 @@
+<!DOCTYPE html>
+<html lang="zh-cn" dir="ltr">
+    <head><meta charset='utf-8'>
+<meta name='viewport' content='width=device-width, initial-scale=1'><meta name='description' content="Nova2025WVGamejam">
+<title>2P2E（PDF&amp;PIC to Excel）</title>
+
+<link rel='canonical' href='https://SweetGargamel.github.io/p/2p2epdfpic-to-excel/'>
+
+<link rel="stylesheet" href="/scss/style.min.663803bebe609202d5b39d848f2d7c2dc8b598a2d879efa079fa88893d29c49c.css"><meta property='og:title' content="2P2E（PDF&PIC to Excel）">
+<meta property='og:description' content="Nova2025WVGamejam">
+<meta property='og:url' content='https://SweetGargamel.github.io/p/2p2epdfpic-to-excel/'>
+<meta property='og:site_name' content='SweetGargamel'>
+<meta property='og:type' content='article'><meta property='article:section' content='Post' /><meta property='article:published_time' content='2025-01-13T00:00:00&#43;00:00'/><meta property='article:modified_time' content='2025-01-13T00:00:00&#43;00:00'/>
+<meta name="twitter:title" content="2P2E（PDF&PIC to Excel）">
+<meta name="twitter:description" content="Nova2025WVGamejam">
+    <link rel="shortcut icon" href="/favicon.ico" />
+
+    </head>
+    <body class="
+    article-page
+    ">
+    <script>
+        (function() {
+            const colorSchemeKey = 'StackColorScheme';
+            if(!localStorage.getItem(colorSchemeKey)){
+                localStorage.setItem(colorSchemeKey, "auto");
+            }
+        })();
+    </script><script>
+    (function() {
+        const colorSchemeKey = 'StackColorScheme';
+        const colorSchemeItem = localStorage.getItem(colorSchemeKey);
+        const supportDarkMode = window.matchMedia('(prefers-color-scheme: dark)').matches === true;
+
+        if (colorSchemeItem == 'dark' || colorSchemeItem === 'auto' && supportDarkMode) {
+            
+
+            document.documentElement.dataset.scheme = 'dark';
+        } else {
+            document.documentElement.dataset.scheme = 'light';
+        }
+    })();
+</script>
+<div class="container main-container flex on-phone--column extended"><aside class="sidebar left-sidebar sticky ">
+    <button class="hamburger hamburger--spin" type="button" id="toggle-menu" aria-label="切换菜单">
+        <span class="hamburger-box">
+            <span class="hamburger-inner"></span>
+        </span>
+    </button>
+
+    <header>
+        
+            
+            <figure class="site-avatar">
+                <a href="/">
+                
+                    
+                    
+                    
+                        
+                        <img src="/img/avatar_hu18049384258917751448.jpg" width="300"
+                            height="300" class="site-logo" loading="lazy" alt="Avatar">
+                    
+                
+                </a>
+                
+                    <span class="emoji">😊</span>
+                
+            </figure>
+            
+        
+        
+        <div class="site-meta">
+            <h1 class="site-name"><a href="/">SweetGargamel</a></h1>
+            <h2 class="site-description">Welcome to my blog!</h2>
+        </div>
+    </header><ol class="menu-social">
+            
+                <li>
+                    <a 
+                        href='https://github.com/SweetGargamel'
+                        target="_blank"
+                        title="GitHub"
+                        rel="me"
+                    >
+                        
+                        
+                            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-github" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+  <path d="M9 19c-4.3 1.4 -4.3 -2.5 -6 -3m12 5v-3.5c0 -1 .1 -1.4 -.5 -2c2.8 -.3 5.5 -1.4 5.5 -6a4.6 4.6 0 0 0 -1.3 -3.2a4.2 4.2 0 0 0 -.1 -3.2s-1.1 -.3 -3.5 1.3a12.3 12.3 0 0 0 -6.2 0c-2.4 -1.6 -3.5 -1.3 -3.5 -1.3a4.2 4.2 0 0 0 -.1 3.2a4.6 4.6 0 0 0 -1.3 3.2c0 4.6 2.7 5.7 5.5 6c-.6 .6 -.6 1.2 -.5 2v3.5" />
+</svg>
+
+
+
+                        
+                    </a>
+                </li>
+            
+        </ol><ol class="menu" id="main-menu">
+        
+        
+        
+        <li >
+            <a href='/' >
+                
+                
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-home" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <polyline points="5 12 3 12 12 3 21 12 19 12" />
+  <path d="M5 12v7a2 2 0 0 0 2 2h10a2 2 0 0 0 2 -2v-7" />
+  <path d="M9 21v-6a2 2 0 0 1 2 -2h2a2 2 0 0 1 2 2v6" />
+</svg>
+
+
+
+                
+                <span>主页</span>
+            </a>
+        </li>
+        
+        
+        <li >
+            <a href='/%E5%85%B3%E4%BA%8E/' >
+                
+                
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-user" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="12" cy="7" r="4" />
+  <path d="M6 21v-2a4 4 0 0 1 4 -4h4a4 4 0 0 1 4 4v2" />
+</svg>
+
+
+
+                
+                <span>关于</span>
+            </a>
+        </li>
+        
+        
+        <li >
+            <a href='/archives/' >
+                
+                
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-archive" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <rect x="3" y="4" width="18" height="4" rx="2" />
+  <path d="M5 8v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2 -2v-10" />
+  <line x1="10" y1="12" x2="14" y2="12" />
+</svg>
+
+
+
+                
+                <span>归档</span>
+            </a>
+        </li>
+        
+        
+        <li >
+            <a href='/search/' >
+                
+                
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-search" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="10" cy="10" r="7" />
+  <line x1="21" y1="21" x2="15" y2="15" />
+</svg>
+
+
+
+                
+                <span>搜索</span>
+            </a>
+        </li>
+        
+        
+        <li >
+            <a href='/%E7%9B%B8%E5%85%B3%E9%93%BE%E6%8E%A5/' >
+                
+                
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-link" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <path d="M10 14a3.5 3.5 0 0 0 5 0l4 -4a3.5 3.5 0 0 0 -5 -5l-.5 .5" />
+  <path d="M14 10a3.5 3.5 0 0 0 -5 0l-4 4a3.5 3.5 0 0 0 5 5l.5 -.5" />
+</svg>
+
+
+
+                
+                <span>相关链接</span>
+            </a>
+        </li>
+        
+        <li class="menu-bottom-section">
+            <ol class="menu">
+
+                
+                    <li id="dark-mode-toggle">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-toggle-left" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="8" cy="12" r="2" />
+  <rect x="2" y="6" width="20" height="12" rx="6" />
+</svg>
+
+
+
+                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-toggle-right" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="16" cy="12" r="2" />
+  <rect x="2" y="6" width="20" height="12" rx="6" />
+</svg>
+
+
+
+                        <span>暗色模式</span>
+                    </li>
+                
+            </ol>
+        </li>
+    </ol>
+</aside>
+
+    <aside class="sidebar right-sidebar sticky">
+        
+            
+                
+    <section class="widget archives">
+        <div class="widget-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-hash" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <line x1="5" y1="9" x2="19" y2="9" />
+  <line x1="5" y1="15" x2="19" y2="15" />
+  <line x1="11" y1="4" x2="7" y2="20" />
+  <line x1="17" y1="4" x2="13" y2="20" />
+</svg>
+
+
+
+        </div>
+        <h2 class="widget-title section-title">目录</h2>
+        
+        <div class="widget--toc">
+            <nav id="TableOfContents">
+  <ol>
+    <li><a href="#项目目标-2p2epdfpic-to-excel">项目目标 2P2E（PDF&amp;PIC to Excel）</a></li>
+    <li><a href="#详细需求">详细需求</a>
+      <ol>
+        <li><a href="#1-实现前后端分离">1. 实现前后端分离</a></li>
+        <li><a href="#2-对图片进行进一步预处理">2. 对图片进行进一步预处理</a></li>
+        <li><a href="#3-支持批量处理">3. 支持批量处理</a></li>
+        <li><a href="#4-支持各种格式">4. 支持各种格式</a></li>
+        <li><a href="#5-允许多模态的输出">5. 允许多模态的输出</a></li>
+        <li><a href="#6-支持缓存">6. 支持缓存</a></li>
+        <li><a href="#7-收集数据训练自己的-ocr-模型">7. 收集数据、训练自己的 OCR 模型</a></li>
+        <li><a href="#8-验证所有中间结果并修复">8. 验证所有中间结果并修复</a></li>
+        <li><a href="#9-微调自己的-csv-生成--数据库生成模型">9. 微调自己的 csv 生成 / 数据库生成模型</a></li>
+      </ol>
+    </li>
+    <li><a href="#目前实现的工作">目前实现的工作</a>
+      <ol>
+        <li><a href="#调用豆包大模型的能力">调用豆包大模型的能力</a></li>
+        <li><a href="#使用cursor编程">使用Cursor编程</a></li>
+        <li><a href="#测试数据和效果">测试数据和效果</a></li>
+        <li><a href="#代码部分">代码部分</a></li>
+      </ol>
+    </li>
+  </ol>
+</nav>
+        </div>
+    </section>
+
+            
+        
+    </aside>
+
+
+            <main class="main full-width">
+    <article class="main-article">
+    <header class="article-header">
+
+    <div class="article-details">
+    
+    <header class="article-category">
+        
+            <a href="/categories/nova/" >
+                Nova
+            </a>
+        
+    </header>
+    
+
+    <div class="article-title-wrapper">
+        <h2 class="article-title">
+            <a href="/p/2p2epdfpic-to-excel/">2P2E（PDF&amp;PIC to Excel）</a>
+        </h2>
+    
+        
+        <h3 class="article-subtitle">
+            Nova2025WVGamejam
+        </h3>
+        
+    </div>
+
+    
+    
+    
+    
+    <footer class="article-time">
+        
+            <div>
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-calendar-time" width="56" height="56" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <path d="M11.795 21h-6.795a2 2 0 0 1 -2 -2v-12a2 2 0 0 1 2 -2h12a2 2 0 0 1 2 2v4" />
+  <circle cx="18" cy="18" r="4" />
+  <path d="M15 3v4" />
+  <path d="M7 3v4" />
+  <path d="M3 11h16" />
+  <path d="M18 16.496v1.504l1 1" />
+</svg>
+                <time class="article-time--published">Jan 13, 2025</time>
+            </div>
+        
+
+        
+            <div>
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-clock" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="12" cy="12" r="9" />
+  <polyline points="12 7 12 12 15 15" />
+</svg>
+
+
+
+                <time class="article-time--reading">
+                    阅读时长: 15 分钟
+                </time>
+            </div>
+        
+    </footer>
+    
+
+    
+</div>
+
+</header>
+
+    <section class="article-content">
+    
+    
+    <h1 id="2p2e-初步实现图片转excel功能">2P2E 初步实现图片转Excel功能
+</h1><h2 id="项目目标-2p2epdfpic-to-excel">项目目标 2P2E（PDF&amp;PIC to Excel）
+</h2><p>项目背景<br>
+<img src="/attachments/Pasted%20image%2020250118133728.png"
+	
+	
+	
+	loading="lazy"
+	
+	
+></p>
+<p>有一种需求，不痛，能忍，频度也不一定高，但是恶心起来也很恶心<br>
+那就是把上面的pdf和pic变成可编辑的excel表格的需求 ，思考AI时代，这件事可以不可以变成一个产品</p>
+<p>核心技术</p>
+<p>包括但不限于：</p>
+<ul>
+<li>图片自动改善（二值化、矩形矫正、散焦模糊处理等）</li>
+<li>OCR</li>
+<li>PDF去水印、解密、文字解析</li>
+<li>模式识别（如表格区域识别、手写体识别等）</li>
+<li>批量处理</li>
+</ul>
+<p>工程需求</p>
+<p>做成产品，卖出去</p>
+<h2 id="详细需求">详细需求
+</h2><h3 id="1-实现前后端分离">1. 实现前后端分离
+</h3><p>目前的程序有两大缺点：1. 使用命令行交互，对用户并不友好 2. python 稳定性较差，对环境要求高。鉴于此，我们应该让程序前后端分离：将目前的所有内容都归档至 <code>server</code>，将其包装成 <code>API</code> 接口在云端服务器运行，之后用其他稳定的语言（如 <code>Rust</code>、<code>Qt</code> 等）写一个 <code>client</code>，所有计算和请求都通过 API 完成而非本地计算，只对用户开放 <code>client</code>。同时这样也可以有更多丰富的交互功能，可以让用户方便地在中途手动或借助大模型调整数据集或中间结果。</p>
+<h3 id="2-对图片进行进一步预处理">2. 对图片进行进一步预处理
+</h3><p>预处理在 <code>preprocess_pic.py</code> 中完成，目前只有用户手动选定区域的功能。事实上遇到的图片可能有各种情况：拍屏、滤镜、模糊等，一方面可以让用户手动调整图片参数，另一方面希望在这里使用大模型自动调整图片参数，人工可以只做微调。</p>
+<p>还有一种特殊的预处理：手写文字。有时候用户会拍手写的表格，其中最难处理的就是手写文字了，大部分图片转表格的 API 都不能很好地处理它们。我的想法是在预处理阶段就把它们解决掉：用大模型找到所有手写文字，使用适用于手写文字的 OCR 模型识别成印刷体后替换回图片里，这样就能保证提供给程序主体的图片里永远只有印刷体。</p>
+<h3 id="3-支持批量处理">3. 支持批量处理
+</h3><p>单张图片每个人都可以轻松提取出内容，批量的场景才是真正需要程序辅助的地方。我们需要支持批量读取数据并存储到<strong>一个</strong>数据库里进行问答。比如给出全班所有人的体检单图片，可以直接问出这个班有哪些人视力在 4.5 以上。给出一车库的发票的图片，可以直接算出总额等等。但这个过程有些困难，需要思考的点是：1. 数据量够大时肯定只调用一次大模型就处理好。对输入数据切片后进行分别处理，如何让大模型生成前后格式完全统一的表格，如何完成拼接？ 2. 有时候本身图片中的数据格式前后就不完全统一，（比如 90 分和优秀），这时候如何统一格式以方便统计？我觉得可能需要用户补充交换一些关于内容的描述以纠正并存储。</p>
+<p>要想完成这个任务，可能要修改的地方不止一处，请务必确保模块化且每个模块都在正确的文件里。</p>
+<h3 id="4-支持各种格式">4. 支持各种格式
+</h3><p>我们还想支持一些其他格式，比如 <code>.pdf</code> 文件。实现 3 后这里的实现就简单多了，可以批量转成图片后再处理。同时，批量的数据集也应当允许出现图片、表格、pdf、数据库混杂的情况，必须要能正常处理。同时也要支持一个工作簿的多张工作表。</p>
+<h3 id="5-允许多模态的输出">5. 允许多模态的输出
+</h3><p>有的时候我们想要处理整张表格（整理格式，提取部分列）而非得到一个统计结果，这时候我们应当能够正确地生成用户需要的数据库、表格等。</p>
+<h3 id="6-支持缓存">6. 支持缓存
+</h3><p>目前的预处理时间过长，处理过的图片再次运行程序进行对话需要再次处理实在不太友善，我们可以通过 <code>MD5</code>、<code>SHA1</code> 等哈希值判断该图片是否有处理过，如果有直接利用之前的缓存即可。</p>
+<h3 id="7-收集数据训练自己的-ocr-模型">7. 收集数据、训练自己的 OCR 模型
+</h3><p>图片处理这块我可不想一直指望用 API 呀，明明有很多优秀的开源深度学习网络训练一下就能用了。选择合适的网络，前期先用 API 过渡并收集数据，后期训练我们自己的模型！</p>
+<h3 id="8-验证所有中间结果并修复">8. 验证所有中间结果并修复
+</h3><p>大模型是肯定会犯错的，更何况是自然语言大模型，而我们基本所有的交互都是通过 prompt 工程实现的，更不稳定了，一但链式调用的任何一个环节出错都会有严重后果。因此我们需要：</p>
+<ol>
+<li>实现一个 <code>validate</code> 的方法验证所有结果是否符合格式，目前我写好的太简单了，只能判断行数和列数，事实上合法性判断远不止这些。</li>
+<li>实现一个 <code>fix</code> 方法，目前我的实现大家看源码就知道，只能处理简单的格式错误。事实上，这里是可以通过（和用户交互获得更多提示词）再次生成修复的。</li>
+</ol>
+<h3 id="9-微调自己的-csv-生成--数据库生成模型">9. 微调自己的 csv 生成 / 数据库生成模型
+</h3><p>弃用提示词工程，这个好难 qwq</p>
+<h2 id="目前实现的工作">目前实现的工作
+</h2><h3 id="调用豆包大模型的能力">调用豆包大模型的能力
+</h3><ul>
+<li>这里使用了豆包的模型，来帮助我识别。考虑到使用大模型可以帮助我处理很多corner case ，比如它可以一定程度上进行推断，然后也可以做数据的清洗和筛选，但是美中不足的是对于海量的数据的时候他的运行速度真的太低下了（即使我充钱了也是这样的）</li>
+<li>同时我是把图片提取和数据清戏分到两次不同的调用里面了，这样可能会效果更好一些（说白了就是拆解开了），但是就是这样会导致效率降低</li>
+<li>注意后面你要本地跑要自己设置<code>API-KEY</code>和模型名字（这个模型的调用有点不一样，不是你简单创建一个<code>API-KEY</code>就行了的，还需要按照下面的文档一步步设置，比deepseek和kimi都要麻烦点）</li>
+<li>但是这里用的SDK并不是OpenAi的，所以兼容性有点差</li>
+<li>后面可以考虑给客户加一个自己需要输入的prompt的地方，这样可以客户按照自己的要求来输入prompt一并加到程序的prompt后面</li>
+<li>但是因为我不知道刘舒然同学是怎么抓来的wps的东西的，所以不太清楚wps的效果</li>
+</ul>
+<p>相关参考资料：</p>
+<blockquote>
+<p><a class="link" href="https://www.volcengine.com/docs/82379/1399008"  target="_blank" rel="noopener"
+    >快速入门-调用模型服务&ndash;火山方舟大模型服务平台-火山引擎</a></p>
+</blockquote>
+<blockquote>
+<p><a class="link" href="https://www.volcengine.com/docs/82379/1362931"  target="_blank" rel="noopener"
+    >视觉理解&ndash;火山方舟大模型服务平台-火山引擎</a></p>
+</blockquote>
+<h3 id="使用cursor编程">使用Cursor编程
+</h3><ul>
+<li>
+<p>我发现使用AI的力量真的很强大，你只需要撰写合适的需求文档，然后对细节适当进行修改，你就可以快速写出来一个可以run的程序。从开始写到目前项目的我只用了3个小时时间（事实上里面很多代码我是看不懂的）</p>
+</li>
+<li>
+<p>我个人多少觉得前面详细需求的2并没有过多的必要？因为目前来看豆包对于手写的识别已经很好了（我试了试超过了deepseek）。只要不是手写的很难看的都可以识别/或者涂抹过多的地方都基本可以识别</p>
+</li>
+<li>
+<p>使用Cursor帮助我撰写了很详细的prompt了（可能这里真的是因为我用的豆包模型有一点点蠢吧，对于下面的图总是提取不出来<code>CAC</code>的字段，但是我用客户端界面的就可以</p>
+<p><img src="/p/2p2epdfpic-to-excel/attachments/index.zh-cn.png"
+	width="1279"
+	height="1706"
+	srcset="/p/2p2epdfpic-to-excel/attachments/index.zh-cn_hu2152733738520166351.png 480w, /p/2p2epdfpic-to-excel/attachments/index.zh-cn_hu6594291609950053923.png 1024w"
+	loading="lazy"
+	
+	
+		class="gallery-image" 
+		data-flex-grow="74"
+		data-flex-basis="179px"
+	
+></p>
+<p><img src="/p/2p2epdfpic-to-excel/attachments/index.zh-cn-1.png"
+	width="1291"
+	height="1065"
+	srcset="/p/2p2epdfpic-to-excel/attachments/index.zh-cn-1_hu2015467895643033278.png 480w, /p/2p2epdfpic-to-excel/attachments/index.zh-cn-1_hu9550973764474495037.png 1024w"
+	loading="lazy"
+	
+	
+		class="gallery-image" 
+		data-flex-grow="121"
+		data-flex-basis="290px"
+	
+></p>
+<p><img src="/p/2p2epdfpic-to-excel/attachments/index.zh-cn-2.png"
+	width="1789"
+	height="1266"
+	srcset="/p/2p2epdfpic-to-excel/attachments/index.zh-cn-2_hu4680796146980076563.png 480w, /p/2p2epdfpic-to-excel/attachments/index.zh-cn-2_hu16200089615079760039.png 1024w"
+	loading="lazy"
+	
+	
+		class="gallery-image" 
+		data-flex-grow="141"
+		data-flex-basis="339px"
+	
+></p>
+</li>
+</ul>
+<h3 id="测试数据和效果">测试数据和效果
+</h3><ul>
+<li>
+<p>图片部分
+<img src="/p/2p2epdfpic-to-excel/attachments/index.zh-cn-3.png"
+	width="4608"
+	height="3456"
+	srcset="/p/2p2epdfpic-to-excel/attachments/index.zh-cn-3_hu12817682691232433278.png 480w, /p/2p2epdfpic-to-excel/attachments/index.zh-cn-3_hu14742132027302288388.png 1024w"
+	loading="lazy"
+	
+	
+		class="gallery-image" 
+		data-flex-grow="133"
+		data-flex-basis="320px"
+	
+></p>
+<p><img src="/p/2p2epdfpic-to-excel/attachments/index.zh-cn-4.png"
+	width="848"
+	height="321"
+	srcset="/p/2p2epdfpic-to-excel/attachments/index.zh-cn-4_hu4632880693875856695.png 480w, /p/2p2epdfpic-to-excel/attachments/index.zh-cn-4_hu2088176218748298409.png 1024w"
+	loading="lazy"
+	
+	
+		class="gallery-image" 
+		data-flex-grow="264"
+		data-flex-basis="634px"
+	
+></p>
+<p><img src="/p/2p2epdfpic-to-excel/attachments/index.zh-cn-5.png"
+	width="872"
+	height="226"
+	srcset="/p/2p2epdfpic-to-excel/attachments/index.zh-cn-5_hu1938526485185690385.png 480w, /p/2p2epdfpic-to-excel/attachments/index.zh-cn-5_hu6279940185200739466.png 1024w"
+	loading="lazy"
+	
+	
+		class="gallery-image" 
+		data-flex-grow="385"
+		data-flex-basis="926px"
+	
+></p>
+<p><img src="/p/2p2epdfpic-to-excel/attachments/index.zh-cn-6.png"
+	width="1279"
+	height="1706"
+	srcset="/p/2p2epdfpic-to-excel/attachments/index.zh-cn-6_hu14193142358443030905.png 480w, /p/2p2epdfpic-to-excel/attachments/index.zh-cn-6_hu5736069588945836598.png 1024w"
+	loading="lazy"
+	
+	
+		class="gallery-image" 
+		data-flex-grow="74"
+		data-flex-basis="179px"
+	
+></p>
+<p><img src="/p/2p2epdfpic-to-excel/attachments/index.zh-cn-7.png"
+	width="1279"
+	height="1706"
+	srcset="/p/2p2epdfpic-to-excel/attachments/index.zh-cn-7_hu1281098826548822971.png 480w, /p/2p2epdfpic-to-excel/attachments/index.zh-cn-7_hu13573504473940625626.png 1024w"
+	loading="lazy"
+	
+	
+		class="gallery-image" 
+		data-flex-grow="74"
+		data-flex-basis="179px"
+	
+></p>
+</li>
+<li>
+<p>除了上面我说的第四个图名字<code>CAC</code>因为被涂抹了之外看不清楚，其他的都还比较准确（手写的字很丑，勿喷</p>
+</li>
+<li>
+<p>甚至对于我字段名字和我表格信息为同义词的时候他依然能够比较准确的返回出来</p>
+</li>
+<li>
+<p>效果如下</p>
+<p><img src="/p/2p2epdfpic-to-excel/attachments/index.zh-cn-8.png"
+	width="965"
+	height="1123"
+	srcset="/p/2p2epdfpic-to-excel/attachments/index.zh-cn-8_hu10297470493529667520.png 480w, /p/2p2epdfpic-to-excel/attachments/index.zh-cn-8_hu15758226060287740885.png 1024w"
+	loading="lazy"
+	
+	
+		class="gallery-image" 
+		data-flex-grow="85"
+		data-flex-basis="206px"
+	
+></p>
+<p><img src="/p/2p2epdfpic-to-excel/attachments/index.zh-cn-9.png"
+	width="1202"
+	height="948"
+	srcset="/p/2p2epdfpic-to-excel/attachments/index.zh-cn-9_hu9471883665728941282.png 480w, /p/2p2epdfpic-to-excel/attachments/index.zh-cn-9_hu12409257962727318288.png 1024w"
+	loading="lazy"
+	
+	
+		class="gallery-image" 
+		data-flex-grow="126"
+		data-flex-basis="304px"
+	
+></p>
+</li>
+</ul>
+<blockquote>
+<p>我是clone刘舒然同学的仓库后，直接在他那个项目里面去新写的代码，所以Cursor里面实现的UI界面和裁切功能应该都是参考了刘舒然同学的代码</p>
+</blockquote>
+<h3 id="代码部分">代码部分
+</h3><div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">  1
+</span><span class="lnt">  2
+</span><span class="lnt">  3
+</span><span class="lnt">  4
+</span><span class="lnt">  5
+</span><span class="lnt">  6
+</span><span class="lnt">  7
+</span><span class="lnt">  8
+</span><span class="lnt">  9
+</span><span class="lnt"> 10
+</span><span class="lnt"> 11
+</span><span class="lnt"> 12
+</span><span class="lnt"> 13
+</span><span class="lnt"> 14
+</span><span class="lnt"> 15
+</span><span class="lnt"> 16
+</span><span class="lnt"> 17
+</span><span class="lnt"> 18
+</span><span class="lnt"> 19
+</span><span class="lnt"> 20
+</span><span class="lnt"> 21
+</span><span class="lnt"> 22
+</span><span class="lnt"> 23
+</span><span class="lnt"> 24
+</span><span class="lnt"> 25
+</span><span class="lnt"> 26
+</span><span class="lnt"> 27
+</span><span class="lnt"> 28
+</span><span class="lnt"> 29
+</span><span class="lnt"> 30
+</span><span class="lnt"> 31
+</span><span class="lnt"> 32
+</span><span class="lnt"> 33
+</span><span class="lnt"> 34
+</span><span class="lnt"> 35
+</span><span class="lnt"> 36
+</span><span class="lnt"> 37
+</span><span class="lnt"> 38
+</span><span class="lnt"> 39
+</span><span class="lnt"> 40
+</span><span class="lnt"> 41
+</span><span class="lnt"> 42
+</span><span class="lnt"> 43
+</span><span class="lnt"> 44
+</span><span class="lnt"> 45
+</span><span class="lnt"> 46
+</span><span class="lnt"> 47
+</span><span class="lnt"> 48
+</span><span class="lnt"> 49
+</span><span class="lnt"> 50
+</span><span class="lnt"> 51
+</span><span class="lnt"> 52
+</span><span class="lnt"> 53
+</span><span class="lnt"> 54
+</span><span class="lnt"> 55
+</span><span class="lnt"> 56
+</span><span class="lnt"> 57
+</span><span class="lnt"> 58
+</span><span class="lnt"> 59
+</span><span class="lnt"> 60
+</span><span class="lnt"> 61
+</span><span class="lnt"> 62
+</span><span class="lnt"> 63
+</span><span class="lnt"> 64
+</span><span class="lnt"> 65
+</span><span class="lnt"> 66
+</span><span class="lnt"> 67
+</span><span class="lnt"> 68
+</span><span class="lnt"> 69
+</span><span class="lnt"> 70
+</span><span class="lnt"> 71
+</span><span class="lnt"> 72
+</span><span class="lnt"> 73
+</span><span class="lnt"> 74
+</span><span class="lnt"> 75
+</span><span class="lnt"> 76
+</span><span class="lnt"> 77
+</span><span class="lnt"> 78
+</span><span class="lnt"> 79
+</span><span class="lnt"> 80
+</span><span class="lnt"> 81
+</span><span class="lnt"> 82
+</span><span class="lnt"> 83
+</span><span class="lnt"> 84
+</span><span class="lnt"> 85
+</span><span class="lnt"> 86
+</span><span class="lnt"> 87
+</span><span class="lnt"> 88
+</span><span class="lnt"> 89
+</span><span class="lnt"> 90
+</span><span class="lnt"> 91
+</span><span class="lnt"> 92
+</span><span class="lnt"> 93
+</span><span class="lnt"> 94
+</span><span class="lnt"> 95
+</span><span class="lnt"> 96
+</span><span class="lnt"> 97
+</span><span class="lnt"> 98
+</span><span class="lnt"> 99
+</span><span class="lnt">100
+</span><span class="lnt">101
+</span><span class="lnt">102
+</span><span class="lnt">103
+</span><span class="lnt">104
+</span><span class="lnt">105
+</span><span class="lnt">106
+</span><span class="lnt">107
+</span><span class="lnt">108
+</span><span class="lnt">109
+</span><span class="lnt">110
+</span><span class="lnt">111
+</span><span class="lnt">112
+</span><span class="lnt">113
+</span><span class="lnt">114
+</span><span class="lnt">115
+</span><span class="lnt">116
+</span><span class="lnt">117
+</span><span class="lnt">118
+</span><span class="lnt">119
+</span><span class="lnt">120
+</span><span class="lnt">121
+</span><span class="lnt">122
+</span><span class="lnt">123
+</span><span class="lnt">124
+</span><span class="lnt">125
+</span><span class="lnt">126
+</span><span class="lnt">127
+</span><span class="lnt">128
+</span><span class="lnt">129
+</span><span class="lnt">130
+</span><span class="lnt">131
+</span><span class="lnt">132
+</span><span class="lnt">133
+</span><span class="lnt">134
+</span><span class="lnt">135
+</span><span class="lnt">136
+</span><span class="lnt">137
+</span><span class="lnt">138
+</span><span class="lnt">139
+</span><span class="lnt">140
+</span><span class="lnt">141
+</span><span class="lnt">142
+</span><span class="lnt">143
+</span><span class="lnt">144
+</span><span class="lnt">145
+</span><span class="lnt">146
+</span><span class="lnt">147
+</span><span class="lnt">148
+</span><span class="lnt">149
+</span><span class="lnt">150
+</span><span class="lnt">151
+</span><span class="lnt">152
+</span><span class="lnt">153
+</span><span class="lnt">154
+</span><span class="lnt">155
+</span><span class="lnt">156
+</span><span class="lnt">157
+</span><span class="lnt">158
+</span><span class="lnt">159
+</span><span class="lnt">160
+</span><span class="lnt">161
+</span><span class="lnt">162
+</span><span class="lnt">163
+</span><span class="lnt">164
+</span><span class="lnt">165
+</span><span class="lnt">166
+</span><span class="lnt">167
+</span><span class="lnt">168
+</span><span class="lnt">169
+</span><span class="lnt">170
+</span><span class="lnt">171
+</span><span class="lnt">172
+</span><span class="lnt">173
+</span><span class="lnt">174
+</span><span class="lnt">175
+</span><span class="lnt">176
+</span><span class="lnt">177
+</span><span class="lnt">178
+</span><span class="lnt">179
+</span><span class="lnt">180
+</span><span class="lnt">181
+</span><span class="lnt">182
+</span><span class="lnt">183
+</span><span class="lnt">184
+</span><span class="lnt">185
+</span><span class="lnt">186
+</span><span class="lnt">187
+</span><span class="lnt">188
+</span><span class="lnt">189
+</span><span class="lnt">190
+</span><span class="lnt">191
+</span><span class="lnt">192
+</span><span class="lnt">193
+</span><span class="lnt">194
+</span><span class="lnt">195
+</span><span class="lnt">196
+</span><span class="lnt">197
+</span><span class="lnt">198
+</span><span class="lnt">199
+</span><span class="lnt">200
+</span><span class="lnt">201
+</span><span class="lnt">202
+</span><span class="lnt">203
+</span><span class="lnt">204
+</span><span class="lnt">205
+</span><span class="lnt">206
+</span><span class="lnt">207
+</span><span class="lnt">208
+</span><span class="lnt">209
+</span><span class="lnt">210
+</span><span class="lnt">211
+</span><span class="lnt">212
+</span><span class="lnt">213
+</span><span class="lnt">214
+</span><span class="lnt">215
+</span><span class="lnt">216
+</span><span class="lnt">217
+</span><span class="lnt">218
+</span><span class="lnt">219
+</span><span class="lnt">220
+</span><span class="lnt">221
+</span><span class="lnt">222
+</span><span class="lnt">223
+</span><span class="lnt">224
+</span><span class="lnt">225
+</span><span class="lnt">226
+</span><span class="lnt">227
+</span><span class="lnt">228
+</span><span class="lnt">229
+</span><span class="lnt">230
+</span><span class="lnt">231
+</span><span class="lnt">232
+</span><span class="lnt">233
+</span><span class="lnt">234
+</span><span class="lnt">235
+</span><span class="lnt">236
+</span><span class="lnt">237
+</span><span class="lnt">238
+</span><span class="lnt">239
+</span><span class="lnt">240
+</span><span class="lnt">241
+</span><span class="lnt">242
+</span><span class="lnt">243
+</span><span class="lnt">244
+</span><span class="lnt">245
+</span><span class="lnt">246
+</span><span class="lnt">247
+</span><span class="lnt">248
+</span><span class="lnt">249
+</span><span class="lnt">250
+</span><span class="lnt">251
+</span><span class="lnt">252
+</span><span class="lnt">253
+</span><span class="lnt">254
+</span><span class="lnt">255
+</span><span class="lnt">256
+</span><span class="lnt">257
+</span><span class="lnt">258
+</span><span class="lnt">259
+</span><span class="lnt">260
+</span><span class="lnt">261
+</span><span class="lnt">262
+</span><span class="lnt">263
+</span><span class="lnt">264
+</span><span class="lnt">265
+</span><span class="lnt">266
+</span><span class="lnt">267
+</span><span class="lnt">268
+</span><span class="lnt">269
+</span><span class="lnt">270
+</span><span class="lnt">271
+</span><span class="lnt">272
+</span><span class="lnt">273
+</span><span class="lnt">274
+</span><span class="lnt">275
+</span><span class="lnt">276
+</span><span class="lnt">277
+</span><span class="lnt">278
+</span><span class="lnt">279
+</span><span class="lnt">280
+</span><span class="lnt">281
+</span><span class="lnt">282
+</span><span class="lnt">283
+</span><span class="lnt">284
+</span><span class="lnt">285
+</span><span class="lnt">286
+</span><span class="lnt">287
+</span><span class="lnt">288
+</span><span class="lnt">289
+</span><span class="lnt">290
+</span><span class="lnt">291
+</span><span class="lnt">292
+</span><span class="lnt">293
+</span><span class="lnt">294
+</span><span class="lnt">295
+</span><span class="lnt">296
+</span><span class="lnt">297
+</span><span class="lnt">298
+</span><span class="lnt">299
+</span><span class="lnt">300
+</span><span class="lnt">301
+</span><span class="lnt">302
+</span><span class="lnt">303
+</span><span class="lnt">304
+</span><span class="lnt">305
+</span><span class="lnt">306
+</span><span class="lnt">307
+</span><span class="lnt">308
+</span><span class="lnt">309
+</span><span class="lnt">310
+</span><span class="lnt">311
+</span><span class="lnt">312
+</span><span class="lnt">313
+</span><span class="lnt">314
+</span><span class="lnt">315
+</span><span class="lnt">316
+</span><span class="lnt">317
+</span><span class="lnt">318
+</span><span class="lnt">319
+</span><span class="lnt">320
+</span><span class="lnt">321
+</span><span class="lnt">322
+</span><span class="lnt">323
+</span><span class="lnt">324
+</span><span class="lnt">325
+</span><span class="lnt">326
+</span><span class="lnt">327
+</span><span class="lnt">328
+</span><span class="lnt">329
+</span><span class="lnt">330
+</span><span class="lnt">331
+</span><span class="lnt">332
+</span><span class="lnt">333
+</span><span class="lnt">334
+</span><span class="lnt">335
+</span><span class="lnt">336
+</span><span class="lnt">337
+</span><span class="lnt">338
+</span><span class="lnt">339
+</span><span class="lnt">340
+</span><span class="lnt">341
+</span><span class="lnt">342
+</span><span class="lnt">343
+</span><span class="lnt">344
+</span><span class="lnt">345
+</span><span class="lnt">346
+</span><span class="lnt">347
+</span><span class="lnt">348
+</span><span class="lnt">349
+</span><span class="lnt">350
+</span><span class="lnt">351
+</span><span class="lnt">352
+</span><span class="lnt">353
+</span><span class="lnt">354
+</span><span class="lnt">355
+</span><span class="lnt">356
+</span><span class="lnt">357
+</span><span class="lnt">358
+</span><span class="lnt">359
+</span><span class="lnt">360
+</span><span class="lnt">361
+</span><span class="lnt">362
+</span><span class="lnt">363
+</span><span class="lnt">364
+</span><span class="lnt">365
+</span><span class="lnt">366
+</span><span class="lnt">367
+</span><span class="lnt">368
+</span><span class="lnt">369
+</span><span class="lnt">370
+</span><span class="lnt">371
+</span><span class="lnt">372
+</span><span class="lnt">373
+</span><span class="lnt">374
+</span><span class="lnt">375
+</span><span class="lnt">376
+</span><span class="lnt">377
+</span><span class="lnt">378
+</span><span class="lnt">379
+</span><span class="lnt">380
+</span><span class="lnt">381
+</span><span class="lnt">382
+</span><span class="lnt">383
+</span><span class="lnt">384
+</span><span class="lnt">385
+</span><span class="lnt">386
+</span><span class="lnt">387
+</span><span class="lnt">388
+</span><span class="lnt">389
+</span><span class="lnt">390
+</span><span class="lnt">391
+</span><span class="lnt">392
+</span><span class="lnt">393
+</span><span class="lnt">394
+</span><span class="lnt">395
+</span><span class="lnt">396
+</span><span class="lnt">397
+</span><span class="lnt">398
+</span><span class="lnt">399
+</span><span class="lnt">400
+</span><span class="lnt">401
+</span><span class="lnt">402
+</span><span class="lnt">403
+</span><span class="lnt">404
+</span><span class="lnt">405
+</span><span class="lnt">406
+</span><span class="lnt">407
+</span><span class="lnt">408
+</span><span class="lnt">409
+</span><span class="lnt">410
+</span><span class="lnt">411
+</span><span class="lnt">412
+</span><span class="lnt">413
+</span><span class="lnt">414
+</span><span class="lnt">415
+</span><span class="lnt">416
+</span><span class="lnt">417
+</span><span class="lnt">418
+</span><span class="lnt">419
+</span><span class="lnt">420
+</span><span class="lnt">421
+</span><span class="lnt">422
+</span><span class="lnt">423
+</span><span class="lnt">424
+</span><span class="lnt">425
+</span><span class="lnt">426
+</span><span class="lnt">427
+</span><span class="lnt">428
+</span><span class="lnt">429
+</span><span class="lnt">430
+</span><span class="lnt">431
+</span><span class="lnt">432
+</span><span class="lnt">433
+</span><span class="lnt">434
+</span><span class="lnt">435
+</span><span class="lnt">436
+</span><span class="lnt">437
+</span><span class="lnt">438
+</span><span class="lnt">439
+</span><span class="lnt">440
+</span><span class="lnt">441
+</span><span class="lnt">442
+</span><span class="lnt">443
+</span><span class="lnt">444
+</span><span class="lnt">445
+</span><span class="lnt">446
+</span><span class="lnt">447
+</span><span class="lnt">448
+</span><span class="lnt">449
+</span><span class="lnt">450
+</span><span class="lnt">451
+</span><span class="lnt">452
+</span><span class="lnt">453
+</span><span class="lnt">454
+</span><span class="lnt">455
+</span><span class="lnt">456
+</span><span class="lnt">457
+</span><span class="lnt">458
+</span><span class="lnt">459
+</span><span class="lnt">460
+</span><span class="lnt">461
+</span><span class="lnt">462
+</span><span class="lnt">463
+</span><span class="lnt">464
+</span><span class="lnt">465
+</span><span class="lnt">466
+</span><span class="lnt">467
+</span><span class="lnt">468
+</span><span class="lnt">469
+</span><span class="lnt">470
+</span><span class="lnt">471
+</span><span class="lnt">472
+</span><span class="lnt">473
+</span><span class="lnt">474
+</span><span class="lnt">475
+</span><span class="lnt">476
+</span><span class="lnt">477
+</span><span class="lnt">478
+</span><span class="lnt">479
+</span><span class="lnt">480
+</span><span class="lnt">481
+</span><span class="lnt">482
+</span><span class="lnt">483
+</span><span class="lnt">484
+</span><span class="lnt">485
+</span><span class="lnt">486
+</span><span class="lnt">487
+</span><span class="lnt">488
+</span><span class="lnt">489
+</span><span class="lnt">490
+</span><span class="lnt">491
+</span><span class="lnt">492
+</span><span class="lnt">493
+</span><span class="lnt">494
+</span><span class="lnt">495
+</span><span class="lnt">496
+</span><span class="lnt">497
+</span><span class="lnt">498
+</span><span class="lnt">499
+</span><span class="lnt">500
+</span><span class="lnt">501
+</span><span class="lnt">502
+</span><span class="lnt">503
+</span><span class="lnt">504
+</span><span class="lnt">505
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="kn">import</span> <span class="nn">tkinter</span> <span class="k">as</span> <span class="nn">tk</span>  
+</span></span><span class="line"><span class="cl"><span class="kn">from</span> <span class="nn">tkinter</span> <span class="kn">import</span> <span class="n">filedialog</span><span class="p">,</span> <span class="n">ttk</span>  
+</span></span><span class="line"><span class="cl"><span class="kn">from</span> <span class="nn">PIL</span> <span class="kn">import</span> <span class="n">Image</span><span class="p">,</span> <span class="n">ImageTk</span>  
+</span></span><span class="line"><span class="cl"><span class="kn">import</span> <span class="nn">json</span>  
+</span></span><span class="line"><span class="cl"><span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>  
+</span></span><span class="line"><span class="cl"><span class="kn">from</span> <span class="nn">typing</span> <span class="kn">import</span> <span class="n">List</span><span class="p">,</span> <span class="n">Dict</span>  
+</span></span><span class="line"><span class="cl"><span class="kn">import</span> <span class="nn">base64</span>  
+</span></span><span class="line"><span class="cl"><span class="kn">import</span> <span class="nn">io</span>  
+</span></span><span class="line"><span class="cl"><span class="kn">from</span> <span class="nn">volcenginesdkarkruntime</span> <span class="kn">import</span> <span class="n">Ark</span>  
+</span></span><span class="line"><span class="cl"><span class="kn">import</span> <span class="nn">os</span>  
+</span></span><span class="line"><span class="cl"><span class="kn">import</span> <span class="nn">datetime</span>  
+</span></span><span class="line"><span class="cl">  
+</span></span><span class="line"><span class="cl">  
+</span></span><span class="line"><span class="cl"><span class="k">class</span> <span class="nc">CropWindow</span><span class="p">:</span>  
+</span></span><span class="line"><span class="cl">    <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">parent</span><span class="p">,</span> <span class="n">image_path</span><span class="p">,</span> <span class="n">callback</span><span class="p">):</span>  
+</span></span><span class="line"><span class="cl">        <span class="bp">self</span><span class="o">.</span><span class="n">top</span> <span class="o">=</span> <span class="n">tk</span><span class="o">.</span><span class="n">Toplevel</span><span class="p">(</span><span class="n">parent</span><span class="p">)</span>  
+</span></span><span class="line"><span class="cl">        <span class="bp">self</span><span class="o">.</span><span class="n">top</span><span class="o">.</span><span class="n">title</span><span class="p">(</span><span class="s2">&#34;裁切图片&#34;</span><span class="p">)</span>  
+</span></span><span class="line"><span class="cl">        <span class="bp">self</span><span class="o">.</span><span class="n">callback</span> <span class="o">=</span> <span class="n">callback</span>  
+</span></span><span class="line"><span class="cl">  
+</span></span><span class="line"><span class="cl">        <span class="c1"># 加载原始图片  </span>
+</span></span><span class="line"><span class="cl">        <span class="bp">self</span><span class="o">.</span><span class="n">original_image</span> <span class="o">=</span> <span class="n">Image</span><span class="o">.</span><span class="n">open</span><span class="p">(</span><span class="n">image_path</span><span class="p">)</span>  
+</span></span><span class="line"><span class="cl">        <span class="c1"># 计算显示尺寸  </span>
+</span></span><span class="line"><span class="cl">        <span class="n">display_size</span> <span class="o">=</span> <span class="p">(</span><span class="mi">800</span><span class="p">,</span> <span class="mi">600</span><span class="p">)</span>  
+</span></span><span class="line"><span class="cl">        <span class="bp">self</span><span class="o">.</span><span class="n">display_image</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">original_image</span><span class="o">.</span><span class="n">copy</span><span class="p">()</span>  
+</span></span><span class="line"><span class="cl">        <span class="bp">self</span><span class="o">.</span><span class="n">display_image</span><span class="o">.</span><span class="n">thumbnail</span><span class="p">(</span><span class="n">display_size</span><span class="p">)</span>  
+</span></span><span class="line"><span class="cl">  
+</span></span><span class="line"><span class="cl">        <span class="c1"># 计算缩放比例  </span>
+</span></span><span class="line"><span class="cl">        <span class="bp">self</span><span class="o">.</span><span class="n">scale_x</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">original_image</span><span class="o">.</span><span class="n">width</span> <span class="o">/</span> <span class="bp">self</span><span class="o">.</span><span class="n">display_image</span><span class="o">.</span><span class="n">width</span>  
+</span></span><span class="line"><span class="cl">        <span class="bp">self</span><span class="o">.</span><span class="n">scale_y</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">original_image</span><span class="o">.</span><span class="n">height</span> <span class="o">/</span> <span class="bp">self</span><span class="o">.</span><span class="n">display_image</span><span class="o">.</span><span class="n">height</span>  
+</span></span><span class="line"><span class="cl">  
+</span></span><span class="line"><span class="cl">        <span class="c1"># 创建画布  </span>
+</span></span><span class="line"><span class="cl">        <span class="bp">self</span><span class="o">.</span><span class="n">canvas</span> <span class="o">=</span> <span class="n">tk</span><span class="o">.</span><span class="n">Canvas</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">top</span><span class="p">,</span> <span class="n">width</span><span class="o">=</span><span class="bp">self</span><span class="o">.</span><span class="n">display_image</span><span class="o">.</span><span class="n">width</span><span class="p">,</span> <span class="n">height</span><span class="o">=</span><span class="bp">self</span><span class="o">.</span><span class="n">display_image</span><span class="o">.</span><span class="n">height</span><span class="p">)</span>  
+</span></span><span class="line"><span class="cl">        <span class="bp">self</span><span class="o">.</span><span class="n">canvas</span><span class="o">.</span><span class="n">pack</span><span class="p">(</span><span class="n">expand</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>  
+</span></span><span class="line"><span class="cl">  
+</span></span><span class="line"><span class="cl">        <span class="c1"># 显示图片  </span>
+</span></span><span class="line"><span class="cl">        <span class="bp">self</span><span class="o">.</span><span class="n">photo</span> <span class="o">=</span> <span class="n">ImageTk</span><span class="o">.</span><span class="n">PhotoImage</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">display_image</span><span class="p">)</span>  
+</span></span><span class="line"><span class="cl">        <span class="bp">self</span><span class="o">.</span><span class="n">canvas</span><span class="o">.</span><span class="n">create_image</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="n">image</span><span class="o">=</span><span class="bp">self</span><span class="o">.</span><span class="n">photo</span><span class="p">,</span> <span class="n">anchor</span><span class="o">=</span><span class="n">tk</span><span class="o">.</span><span class="n">NW</span><span class="p">)</span>  
+</span></span><span class="line"><span class="cl">  
+</span></span><span class="line"><span class="cl">        <span class="c1"># 裁切区域变量  </span>
+</span></span><span class="line"><span class="cl">        <span class="bp">self</span><span class="o">.</span><span class="n">start_x</span> <span class="o">=</span> <span class="kc">None</span>  
+</span></span><span class="line"><span class="cl">        <span class="bp">self</span><span class="o">.</span><span class="n">start_y</span> <span class="o">=</span> <span class="kc">None</span>  
+</span></span><span class="line"><span class="cl">        <span class="bp">self</span><span class="o">.</span><span class="n">rect</span> <span class="o">=</span> <span class="kc">None</span>  
+</span></span><span class="line"><span class="cl">        <span class="bp">self</span><span class="o">.</span><span class="n">crop_coords</span> <span class="o">=</span> <span class="kc">None</span>  
+</span></span><span class="line"><span class="cl">  
+</span></span><span class="line"><span class="cl">        <span class="c1"># 绑定鼠标事件  </span>
+</span></span><span class="line"><span class="cl">        <span class="bp">self</span><span class="o">.</span><span class="n">canvas</span><span class="o">.</span><span class="n">bind</span><span class="p">(</span><span class="s2">&#34;&lt;ButtonPress-1&gt;&#34;</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">on_press</span><span class="p">)</span>  
+</span></span><span class="line"><span class="cl">        <span class="bp">self</span><span class="o">.</span><span class="n">canvas</span><span class="o">.</span><span class="n">bind</span><span class="p">(</span><span class="s2">&#34;&lt;B1-Motion&gt;&#34;</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">on_drag</span><span class="p">)</span>  
+</span></span><span class="line"><span class="cl">        <span class="bp">self</span><span class="o">.</span><span class="n">canvas</span><span class="o">.</span><span class="n">bind</span><span class="p">(</span><span class="s2">&#34;&lt;ButtonRelease-1&gt;&#34;</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">on_release</span><span class="p">)</span>  
+</span></span><span class="line"><span class="cl">  
+</span></span><span class="line"><span class="cl">        <span class="c1"># 添加按钮  </span>
+</span></span><span class="line"><span class="cl">        <span class="n">button_frame</span> <span class="o">=</span> <span class="n">ttk</span><span class="o">.</span><span class="n">Frame</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">top</span><span class="p">)</span>  
+</span></span><span class="line"><span class="cl">        <span class="n">button_frame</span><span class="o">.</span><span class="n">pack</span><span class="p">(</span><span class="n">pady</span><span class="o">=</span><span class="mi">5</span><span class="p">)</span>  
+</span></span><span class="line"><span class="cl">        <span class="n">ttk</span><span class="o">.</span><span class="n">Button</span><span class="p">(</span><span class="n">button_frame</span><span class="p">,</span> <span class="n">text</span><span class="o">=</span><span class="s2">&#34;确认裁切&#34;</span><span class="p">,</span> <span class="n">command</span><span class="o">=</span><span class="bp">self</span><span class="o">.</span><span class="n">crop_and_close</span><span class="p">)</span><span class="o">.</span><span class="n">pack</span><span class="p">(</span><span class="n">side</span><span class="o">=</span><span class="n">tk</span><span class="o">.</span><span class="n">LEFT</span><span class="p">,</span> <span class="n">padx</span><span class="o">=</span><span class="mi">5</span><span class="p">)</span>  
+</span></span><span class="line"><span class="cl">        <span class="n">ttk</span><span class="o">.</span><span class="n">Button</span><span class="p">(</span><span class="n">button_frame</span><span class="p">,</span> <span class="n">text</span><span class="o">=</span><span class="s2">&#34;跳过裁切&#34;</span><span class="p">,</span> <span class="n">command</span><span class="o">=</span><span class="bp">self</span><span class="o">.</span><span class="n">skip_crop</span><span class="p">)</span><span class="o">.</span><span class="n">pack</span><span class="p">(</span><span class="n">side</span><span class="o">=</span><span class="n">tk</span><span class="o">.</span><span class="n">LEFT</span><span class="p">,</span> <span class="n">padx</span><span class="o">=</span><span class="mi">5</span><span class="p">)</span>  
+</span></span><span class="line"><span class="cl">  
+</span></span><span class="line"><span class="cl">    <span class="k">def</span> <span class="nf">on_press</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">event</span><span class="p">):</span>  
+</span></span><span class="line"><span class="cl">        <span class="s2">&#34;&#34;&#34;鼠标按下时的处理&#34;&#34;&#34;</span>  
+</span></span><span class="line"><span class="cl">        <span class="bp">self</span><span class="o">.</span><span class="n">start_x</span> <span class="o">=</span> <span class="n">event</span><span class="o">.</span><span class="n">x</span>  
+</span></span><span class="line"><span class="cl">        <span class="bp">self</span><span class="o">.</span><span class="n">start_y</span> <span class="o">=</span> <span class="n">event</span><span class="o">.</span><span class="n">y</span>  
+</span></span><span class="line"><span class="cl">  
+</span></span><span class="line"><span class="cl">        <span class="c1"># 如果已经有矩形，删除它  </span>
+</span></span><span class="line"><span class="cl">        <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">rect</span><span class="p">:</span>  
+</span></span><span class="line"><span class="cl">            <span class="bp">self</span><span class="o">.</span><span class="n">canvas</span><span class="o">.</span><span class="n">delete</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">rect</span><span class="p">)</span>  
+</span></span><span class="line"><span class="cl">            <span class="bp">self</span><span class="o">.</span><span class="n">rect</span> <span class="o">=</span> <span class="kc">None</span>  
+</span></span><span class="line"><span class="cl">  
+</span></span><span class="line"><span class="cl">    <span class="k">def</span> <span class="nf">on_drag</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">event</span><span class="p">):</span>  
+</span></span><span class="line"><span class="cl">        <span class="s2">&#34;&#34;&#34;鼠标拖动时的处理&#34;&#34;&#34;</span>  
+</span></span><span class="line"><span class="cl">        <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">start_x</span> <span class="ow">is</span> <span class="kc">None</span><span class="p">:</span>  
+</span></span><span class="line"><span class="cl">            <span class="k">return</span>  
+</span></span><span class="line"><span class="cl">  
+</span></span><span class="line"><span class="cl">        <span class="c1"># 如果已经有矩形，删除它  </span>
+</span></span><span class="line"><span class="cl">        <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">rect</span><span class="p">:</span>  
+</span></span><span class="line"><span class="cl">            <span class="bp">self</span><span class="o">.</span><span class="n">canvas</span><span class="o">.</span><span class="n">delete</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">rect</span><span class="p">)</span>  
+</span></span><span class="line"><span class="cl">  
+</span></span><span class="line"><span class="cl">        <span class="c1"># 创建新矩形  </span>
+</span></span><span class="line"><span class="cl">        <span class="bp">self</span><span class="o">.</span><span class="n">rect</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">canvas</span><span class="o">.</span><span class="n">create_rectangle</span><span class="p">(</span>  
+</span></span><span class="line"><span class="cl">            <span class="bp">self</span><span class="o">.</span><span class="n">start_x</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">start_y</span><span class="p">,</span>  
+</span></span><span class="line"><span class="cl">            <span class="n">event</span><span class="o">.</span><span class="n">x</span><span class="p">,</span> <span class="n">event</span><span class="o">.</span><span class="n">y</span><span class="p">,</span>  
+</span></span><span class="line"><span class="cl">            <span class="n">outline</span><span class="o">=</span><span class="s1">&#39;red&#39;</span>  
+</span></span><span class="line"><span class="cl">        <span class="p">)</span>  
+</span></span><span class="line"><span class="cl">  
+</span></span><span class="line"><span class="cl">    <span class="k">def</span> <span class="nf">on_release</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">event</span><span class="p">):</span>  
+</span></span><span class="line"><span class="cl">        <span class="s2">&#34;&#34;&#34;鼠标释放时的处理&#34;&#34;&#34;</span>  
+</span></span><span class="line"><span class="cl">        <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">start_x</span> <span class="ow">is</span> <span class="kc">None</span><span class="p">:</span>  
+</span></span><span class="line"><span class="cl">            <span class="k">return</span>  
+</span></span><span class="line"><span class="cl">  
+</span></span><span class="line"><span class="cl">        <span class="c1"># 确保有一个有效的选择区域  </span>
+</span></span><span class="line"><span class="cl">        <span class="n">x1</span> <span class="o">=</span> <span class="nb">min</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">start_x</span><span class="p">,</span> <span class="n">event</span><span class="o">.</span><span class="n">x</span><span class="p">)</span>  
+</span></span><span class="line"><span class="cl">        <span class="n">y1</span> <span class="o">=</span> <span class="nb">min</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">start_y</span><span class="p">,</span> <span class="n">event</span><span class="o">.</span><span class="n">y</span><span class="p">)</span>  
+</span></span><span class="line"><span class="cl">        <span class="n">x2</span> <span class="o">=</span> <span class="nb">max</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">start_x</span><span class="p">,</span> <span class="n">event</span><span class="o">.</span><span class="n">x</span><span class="p">)</span>  
+</span></span><span class="line"><span class="cl">        <span class="n">y2</span> <span class="o">=</span> <span class="nb">max</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">start_y</span><span class="p">,</span> <span class="n">event</span><span class="o">.</span><span class="n">y</span><span class="p">)</span>  
+</span></span><span class="line"><span class="cl">  
+</span></span><span class="line"><span class="cl">        <span class="c1"># 保存裁切坐标（考虑缩放比例）  </span>
+</span></span><span class="line"><span class="cl">        <span class="bp">self</span><span class="o">.</span><span class="n">crop_coords</span> <span class="o">=</span> <span class="p">(</span>  
+</span></span><span class="line"><span class="cl">            <span class="nb">int</span><span class="p">(</span><span class="n">x1</span> <span class="o">*</span> <span class="bp">self</span><span class="o">.</span><span class="n">scale_x</span><span class="p">),</span>  
+</span></span><span class="line"><span class="cl">            <span class="nb">int</span><span class="p">(</span><span class="n">y1</span> <span class="o">*</span> <span class="bp">self</span><span class="o">.</span><span class="n">scale_y</span><span class="p">),</span>  
+</span></span><span class="line"><span class="cl">            <span class="nb">int</span><span class="p">(</span><span class="n">x2</span> <span class="o">*</span> <span class="bp">self</span><span class="o">.</span><span class="n">scale_x</span><span class="p">),</span>  
+</span></span><span class="line"><span class="cl">            <span class="nb">int</span><span class="p">(</span><span class="n">y2</span> <span class="o">*</span> <span class="bp">self</span><span class="o">.</span><span class="n">scale_y</span><span class="p">)</span>  
+</span></span><span class="line"><span class="cl">        <span class="p">)</span>  
+</span></span><span class="line"><span class="cl">  
+</span></span><span class="line"><span class="cl">    <span class="k">def</span> <span class="nf">crop_and_close</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>  
+</span></span><span class="line"><span class="cl">        <span class="s2">&#34;&#34;&#34;裁切图片并关闭窗口&#34;&#34;&#34;</span>  
+</span></span><span class="line"><span class="cl">        <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">crop_coords</span><span class="p">:</span>  
+</span></span><span class="line"><span class="cl">            <span class="c1"># 裁切图片  </span>
+</span></span><span class="line"><span class="cl">            <span class="n">cropped_image</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">original_image</span><span class="o">.</span><span class="n">crop</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">crop_coords</span><span class="p">)</span>  
+</span></span><span class="line"><span class="cl">            <span class="c1"># 调用回调函数  </span>
+</span></span><span class="line"><span class="cl">            <span class="bp">self</span><span class="o">.</span><span class="n">callback</span><span class="p">(</span><span class="n">cropped_image</span><span class="p">)</span>  
+</span></span><span class="line"><span class="cl">        <span class="bp">self</span><span class="o">.</span><span class="n">top</span><span class="o">.</span><span class="n">destroy</span><span class="p">()</span>  
+</span></span><span class="line"><span class="cl">  
+</span></span><span class="line"><span class="cl">    <span class="k">def</span> <span class="nf">skip_crop</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>  
+</span></span><span class="line"><span class="cl">        <span class="s2">&#34;&#34;&#34;跳过裁切&#34;&#34;&#34;</span>  
+</span></span><span class="line"><span class="cl">        <span class="bp">self</span><span class="o">.</span><span class="n">callback</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">original_image</span><span class="p">)</span>  
+</span></span><span class="line"><span class="cl">        <span class="bp">self</span><span class="o">.</span><span class="n">top</span><span class="o">.</span><span class="n">destroy</span><span class="p">()</span>  
+</span></span><span class="line"><span class="cl">  
+</span></span><span class="line"><span class="cl">  
+</span></span><span class="line"><span class="cl"><span class="k">class</span> <span class="nc">ImageProcessorApp</span><span class="p">:</span>  
+</span></span><span class="line"><span class="cl">    <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">root</span><span class="p">):</span>  
+</span></span><span class="line"><span class="cl">        <span class="bp">self</span><span class="o">.</span><span class="n">root</span> <span class="o">=</span> <span class="n">root</span>  
+</span></span><span class="line"><span class="cl">        <span class="bp">self</span><span class="o">.</span><span class="n">root</span><span class="o">.</span><span class="n">title</span><span class="p">(</span><span class="s2">&#34;图片表格提取器&#34;</span><span class="p">)</span>  
+</span></span><span class="line"><span class="cl">        <span class="bp">self</span><span class="o">.</span><span class="n">root</span><span class="o">.</span><span class="n">geometry</span><span class="p">(</span><span class="s2">&#34;800x600&#34;</span><span class="p">)</span>  
+</span></span><span class="line"><span class="cl">  
+</span></span><span class="line"><span class="cl">        <span class="c1"># 初始化API客户端  </span>
+</span></span><span class="line"><span class="cl">        <span class="bp">self</span><span class="o">.</span><span class="n">client</span> <span class="o">=</span> <span class="n">Ark</span><span class="p">(</span><span class="n">api_key</span><span class="o">=</span><span class="s1">&#39;&#39;</span><span class="p">)</span>   <span class="c1">#修改APIkey</span>
+</span></span><span class="line"><span class="cl">        <span class="bp">self</span><span class="o">.</span><span class="n">client</span><span class="o">.</span><span class="n">api_key</span> <span class="o">=</span> <span class="s2">&#34;1c477866-b675-423e-b205-3c285fb15925&#34;</span>  
+</span></span><span class="line"><span class="cl">  
+</span></span><span class="line"><span class="cl">        <span class="c1"># 存储选中的图片  </span>
+</span></span><span class="line"><span class="cl">        <span class="bp">self</span><span class="o">.</span><span class="n">images</span><span class="p">:</span> <span class="n">List</span><span class="p">[</span><span class="n">Dict</span><span class="p">]</span> <span class="o">=</span> <span class="p">[]</span>  
+</span></span><span class="line"><span class="cl">        <span class="bp">self</span><span class="o">.</span><span class="n">current_crop_index</span> <span class="o">=</span> <span class="mi">0</span>  
+</span></span><span class="line"><span class="cl">        <span class="bp">self</span><span class="o">.</span><span class="n">pending_images</span> <span class="o">=</span> <span class="p">[]</span>  
+</span></span><span class="line"><span class="cl">  
+</span></span><span class="line"><span class="cl">        <span class="c1"># 存储提取字段和Excel导出路径  </span>
+</span></span><span class="line"><span class="cl">        <span class="bp">self</span><span class="o">.</span><span class="n">fields</span> <span class="o">=</span> <span class="p">[</span><span class="s2">&#34;姓名&#34;</span><span class="p">,</span> <span class="s2">&#34;车次&#34;</span><span class="p">,</span> <span class="s2">&#34;出发地&#34;</span><span class="p">,</span> <span class="s2">&#34;目的地&#34;</span><span class="p">,</span> <span class="s2">&#34;车票价格&#34;</span><span class="p">]</span>  <span class="c1"># 默认字段  </span>
+</span></span><span class="line"><span class="cl">        <span class="bp">self</span><span class="o">.</span><span class="n">excel_output_path</span> <span class="o">=</span> <span class="s2">&#34;&#34;</span>  
+</span></span><span class="line"><span class="cl">  
+</span></span><span class="line"><span class="cl">        <span class="c1"># 添加当前显示图片的索引  </span>
+</span></span><span class="line"><span class="cl">        <span class="bp">self</span><span class="o">.</span><span class="n">current_display_index</span> <span class="o">=</span> <span class="mi">0</span>  
+</span></span><span class="line"><span class="cl">  
+</span></span><span class="line"><span class="cl">        <span class="bp">self</span><span class="o">.</span><span class="n">setup_ui</span><span class="p">()</span>  
+</span></span><span class="line"><span class="cl">  
+</span></span><span class="line"><span class="cl">    <span class="k">def</span> <span class="nf">setup_ui</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>  
+</span></span><span class="line"><span class="cl">        <span class="c1"># 创建主框架  </span>
+</span></span><span class="line"><span class="cl">        <span class="bp">self</span><span class="o">.</span><span class="n">main_frame</span> <span class="o">=</span> <span class="n">ttk</span><span class="o">.</span><span class="n">Frame</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">root</span><span class="p">)</span>  
+</span></span><span class="line"><span class="cl">        <span class="bp">self</span><span class="o">.</span><span class="n">main_frame</span><span class="o">.</span><span class="n">pack</span><span class="p">(</span><span class="n">fill</span><span class="o">=</span><span class="n">tk</span><span class="o">.</span><span class="n">BOTH</span><span class="p">,</span> <span class="n">expand</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">padx</span><span class="o">=</span><span class="mi">10</span><span class="p">,</span> <span class="n">pady</span><span class="o">=</span><span class="mi">10</span><span class="p">)</span>  
+</span></span><span class="line"><span class="cl">  
+</span></span><span class="line"><span class="cl">        <span class="c1"># 创建水平方向的主面板分隔器  </span>
+</span></span><span class="line"><span class="cl">        <span class="bp">self</span><span class="o">.</span><span class="n">main_panel</span> <span class="o">=</span> <span class="n">ttk</span><span class="o">.</span><span class="n">PanedWindow</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">main_frame</span><span class="p">,</span> <span class="n">orient</span><span class="o">=</span><span class="n">tk</span><span class="o">.</span><span class="n">HORIZONTAL</span><span class="p">)</span>  
+</span></span><span class="line"><span class="cl">        <span class="bp">self</span><span class="o">.</span><span class="n">main_panel</span><span class="o">.</span><span class="n">pack</span><span class="p">(</span><span class="n">fill</span><span class="o">=</span><span class="n">tk</span><span class="o">.</span><span class="n">BOTH</span><span class="p">,</span> <span class="n">expand</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>  
+</span></span><span class="line"><span class="cl">  
+</span></span><span class="line"><span class="cl">        <span class="c1"># 创建左侧面板（可伸缩）  </span>
+</span></span><span class="line"><span class="cl">        <span class="bp">self</span><span class="o">.</span><span class="n">left_panel</span> <span class="o">=</span> <span class="n">ttk</span><span class="o">.</span><span class="n">PanedWindow</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">main_panel</span><span class="p">,</span> <span class="n">orient</span><span class="o">=</span><span class="n">tk</span><span class="o">.</span><span class="n">HORIZONTAL</span><span class="p">)</span>  
+</span></span><span class="line"><span class="cl">        <span class="bp">self</span><span class="o">.</span><span class="n">main_panel</span><span class="o">.</span><span class="n">add</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">left_panel</span><span class="p">,</span> <span class="n">weight</span><span class="o">=</span><span class="mi">4</span><span class="p">)</span>  <span class="c1"># 左侧占比更大  </span>
+</span></span><span class="line"><span class="cl">  
+</span></span><span class="line"><span class="cl">        <span class="c1"># 创建左侧缩略图区域  </span>
+</span></span><span class="line"><span class="cl">        <span class="bp">self</span><span class="o">.</span><span class="n">thumbnail_frame</span> <span class="o">=</span> <span class="n">ttk</span><span class="o">.</span><span class="n">LabelFrame</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">left_panel</span><span class="p">,</span> <span class="n">text</span><span class="o">=</span><span class="s2">&#34;已上传图片&#34;</span><span class="p">)</span>  
+</span></span><span class="line"><span class="cl">        <span class="bp">self</span><span class="o">.</span><span class="n">left_panel</span><span class="o">.</span><span class="n">add</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">thumbnail_frame</span><span class="p">,</span> <span class="n">weight</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span>  
+</span></span><span class="line"><span class="cl">  
+</span></span><span class="line"><span class="cl">        <span class="c1"># 创建缩略图滚动区域  </span>
+</span></span><span class="line"><span class="cl">        <span class="bp">self</span><span class="o">.</span><span class="n">thumb_canvas</span> <span class="o">=</span> <span class="n">tk</span><span class="o">.</span><span class="n">Canvas</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">thumbnail_frame</span><span class="p">,</span> <span class="n">width</span><span class="o">=</span><span class="mi">150</span><span class="p">)</span>  
+</span></span><span class="line"><span class="cl">        <span class="bp">self</span><span class="o">.</span><span class="n">thumb_scrollbar</span> <span class="o">=</span> <span class="n">ttk</span><span class="o">.</span><span class="n">Scrollbar</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">thumbnail_frame</span><span class="p">,</span> <span class="n">orient</span><span class="o">=</span><span class="n">tk</span><span class="o">.</span><span class="n">VERTICAL</span><span class="p">,</span> <span class="n">command</span><span class="o">=</span><span class="bp">self</span><span class="o">.</span><span class="n">thumb_canvas</span><span class="o">.</span><span class="n">yview</span><span class="p">)</span>  
+</span></span><span class="line"><span class="cl">        <span class="bp">self</span><span class="o">.</span><span class="n">thumb_canvas</span><span class="o">.</span><span class="n">configure</span><span class="p">(</span><span class="n">yscrollcommand</span><span class="o">=</span><span class="bp">self</span><span class="o">.</span><span class="n">thumb_scrollbar</span><span class="o">.</span><span class="n">set</span><span class="p">)</span>  
+</span></span><span class="line"><span class="cl">  
+</span></span><span class="line"><span class="cl">        <span class="bp">self</span><span class="o">.</span><span class="n">thumb_scrollbar</span><span class="o">.</span><span class="n">pack</span><span class="p">(</span><span class="n">side</span><span class="o">=</span><span class="n">tk</span><span class="o">.</span><span class="n">RIGHT</span><span class="p">,</span> <span class="n">fill</span><span class="o">=</span><span class="n">tk</span><span class="o">.</span><span class="n">Y</span><span class="p">)</span>  
+</span></span><span class="line"><span class="cl">        <span class="bp">self</span><span class="o">.</span><span class="n">thumb_canvas</span><span class="o">.</span><span class="n">pack</span><span class="p">(</span><span class="n">side</span><span class="o">=</span><span class="n">tk</span><span class="o">.</span><span class="n">LEFT</span><span class="p">,</span> <span class="n">fill</span><span class="o">=</span><span class="n">tk</span><span class="o">.</span><span class="n">BOTH</span><span class="p">,</span> <span class="n">expand</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>  
+</span></span><span class="line"><span class="cl">  
+</span></span><span class="line"><span class="cl">        <span class="bp">self</span><span class="o">.</span><span class="n">thumbnail_container</span> <span class="o">=</span> <span class="n">ttk</span><span class="o">.</span><span class="n">Frame</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">thumb_canvas</span><span class="p">)</span>  
+</span></span><span class="line"><span class="cl">        <span class="bp">self</span><span class="o">.</span><span class="n">thumb_canvas</span><span class="o">.</span><span class="n">create_window</span><span class="p">((</span><span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">),</span> <span class="n">window</span><span class="o">=</span><span class="bp">self</span><span class="o">.</span><span class="n">thumbnail_container</span><span class="p">,</span> <span class="n">anchor</span><span class="o">=</span><span class="n">tk</span><span class="o">.</span><span class="n">NW</span><span class="p">)</span>  
+</span></span><span class="line"><span class="cl">  
+</span></span><span class="line"><span class="cl">        <span class="c1"># 创建中央图片显示区域  </span>
+</span></span><span class="line"><span class="cl">        <span class="bp">self</span><span class="o">.</span><span class="n">display_frame</span> <span class="o">=</span> <span class="n">ttk</span><span class="o">.</span><span class="n">Frame</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">left_panel</span><span class="p">)</span>  
+</span></span><span class="line"><span class="cl">        <span class="bp">self</span><span class="o">.</span><span class="n">left_panel</span><span class="o">.</span><span class="n">add</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">display_frame</span><span class="p">,</span> <span class="n">weight</span><span class="o">=</span><span class="mi">3</span><span class="p">)</span>  
+</span></span><span class="line"><span class="cl">  
+</span></span><span class="line"><span class="cl">        <span class="c1"># 添加图片导航按钮  </span>
+</span></span><span class="line"><span class="cl">        <span class="n">nav_frame</span> <span class="o">=</span> <span class="n">ttk</span><span class="o">.</span><span class="n">Frame</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">display_frame</span><span class="p">)</span>  
+</span></span><span class="line"><span class="cl">        <span class="n">nav_frame</span><span class="o">.</span><span class="n">pack</span><span class="p">(</span><span class="n">fill</span><span class="o">=</span><span class="n">tk</span><span class="o">.</span><span class="n">X</span><span class="p">,</span> <span class="n">pady</span><span class="o">=</span><span class="mi">5</span><span class="p">)</span>  
+</span></span><span class="line"><span class="cl">  
+</span></span><span class="line"><span class="cl">        <span class="n">ttk</span><span class="o">.</span><span class="n">Button</span><span class="p">(</span><span class="n">nav_frame</span><span class="p">,</span> <span class="n">text</span><span class="o">=</span><span class="s2">&#34;上一张&#34;</span><span class="p">,</span> <span class="n">command</span><span class="o">=</span><span class="bp">self</span><span class="o">.</span><span class="n">prev_image</span><span class="p">)</span><span class="o">.</span><span class="n">pack</span><span class="p">(</span><span class="n">side</span><span class="o">=</span><span class="n">tk</span><span class="o">.</span><span class="n">LEFT</span><span class="p">,</span> <span class="n">padx</span><span class="o">=</span><span class="mi">5</span><span class="p">)</span>  
+</span></span><span class="line"><span class="cl">        <span class="n">ttk</span><span class="o">.</span><span class="n">Button</span><span class="p">(</span><span class="n">nav_frame</span><span class="p">,</span> <span class="n">text</span><span class="o">=</span><span class="s2">&#34;下一张&#34;</span><span class="p">,</span> <span class="n">command</span><span class="o">=</span><span class="bp">self</span><span class="o">.</span><span class="n">next_image</span><span class="p">)</span><span class="o">.</span><span class="n">pack</span><span class="p">(</span><span class="n">side</span><span class="o">=</span><span class="n">tk</span><span class="o">.</span><span class="n">LEFT</span><span class="p">,</span> <span class="n">padx</span><span class="o">=</span><span class="mi">5</span><span class="p">)</span>  
+</span></span><span class="line"><span class="cl">        <span class="n">ttk</span><span class="o">.</span><span class="n">Button</span><span class="p">(</span><span class="n">nav_frame</span><span class="p">,</span> <span class="n">text</span><span class="o">=</span><span class="s2">&#34;选择图片&#34;</span><span class="p">,</span> <span class="n">command</span><span class="o">=</span><span class="bp">self</span><span class="o">.</span><span class="n">select_images</span><span class="p">)</span><span class="o">.</span><span class="n">pack</span><span class="p">(</span><span class="n">side</span><span class="o">=</span><span class="n">tk</span><span class="o">.</span><span class="n">LEFT</span><span class="p">,</span> <span class="n">padx</span><span class="o">=</span><span class="mi">5</span><span class="p">)</span>  
+</span></span><span class="line"><span class="cl">        <span class="n">ttk</span><span class="o">.</span><span class="n">Button</span><span class="p">(</span><span class="n">nav_frame</span><span class="p">,</span> <span class="n">text</span><span class="o">=</span><span class="s2">&#34;裁剪图片&#34;</span><span class="p">,</span> <span class="n">command</span><span class="o">=</span><span class="bp">self</span><span class="o">.</span><span class="n">crop_current_image</span><span class="p">)</span><span class="o">.</span><span class="n">pack</span><span class="p">(</span><span class="n">side</span><span class="o">=</span><span class="n">tk</span><span class="o">.</span><span class="n">LEFT</span><span class="p">,</span> <span class="n">padx</span><span class="o">=</span><span class="mi">5</span><span class="p">)</span>  
+</span></span><span class="line"><span class="cl">        <span class="n">ttk</span><span class="o">.</span><span class="n">Button</span><span class="p">(</span><span class="n">nav_frame</span><span class="p">,</span> <span class="n">text</span><span class="o">=</span><span class="s2">&#34;处理图片&#34;</span><span class="p">,</span> <span class="n">command</span><span class="o">=</span><span class="bp">self</span><span class="o">.</span><span class="n">process_images</span><span class="p">)</span><span class="o">.</span><span class="n">pack</span><span class="p">(</span><span class="n">side</span><span class="o">=</span><span class="n">tk</span><span class="o">.</span><span class="n">LEFT</span><span class="p">,</span> <span class="n">padx</span><span class="o">=</span><span class="mi">5</span><span class="p">)</span>  
+</span></span><span class="line"><span class="cl">        <span class="n">ttk</span><span class="o">.</span><span class="n">Button</span><span class="p">(</span><span class="n">nav_frame</span><span class="p">,</span> <span class="n">text</span><span class="o">=</span><span class="s2">&#34;清空图片&#34;</span><span class="p">,</span> <span class="n">command</span><span class="o">=</span><span class="bp">self</span><span class="o">.</span><span class="n">clear_images</span><span class="p">)</span><span class="o">.</span><span class="n">pack</span><span class="p">(</span><span class="n">side</span><span class="o">=</span><span class="n">tk</span><span class="o">.</span><span class="n">LEFT</span><span class="p">,</span> <span class="n">padx</span><span class="o">=</span><span class="mi">5</span><span class="p">)</span>  
+</span></span><span class="line"><span class="cl">  
+</span></span><span class="line"><span class="cl">        <span class="c1"># 创建主图片显示区域  </span>
+</span></span><span class="line"><span class="cl">        <span class="bp">self</span><span class="o">.</span><span class="n">main_image_label</span> <span class="o">=</span> <span class="n">ttk</span><span class="o">.</span><span class="n">Label</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">display_frame</span><span class="p">)</span>  
+</span></span><span class="line"><span class="cl">        <span class="bp">self</span><span class="o">.</span><span class="n">main_image_label</span><span class="o">.</span><span class="n">pack</span><span class="p">(</span><span class="n">fill</span><span class="o">=</span><span class="n">tk</span><span class="o">.</span><span class="n">BOTH</span><span class="p">,</span> <span class="n">expand</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>  
+</span></span><span class="line"><span class="cl">  
+</span></span><span class="line"><span class="cl">        <span class="c1"># 添加图片序号显示  </span>
+</span></span><span class="line"><span class="cl">        <span class="bp">self</span><span class="o">.</span><span class="n">image_counter_label</span> <span class="o">=</span> <span class="n">ttk</span><span class="o">.</span><span class="n">Label</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">display_frame</span><span class="p">,</span> <span class="n">text</span><span class="o">=</span><span class="s2">&#34;&#34;</span><span class="p">)</span>  
+</span></span><span class="line"><span class="cl">        <span class="bp">self</span><span class="o">.</span><span class="n">image_counter_label</span><span class="o">.</span><span class="n">pack</span><span class="p">(</span><span class="n">pady</span><span class="o">=</span><span class="mi">5</span><span class="p">)</span>  
+</span></span><span class="line"><span class="cl">  
+</span></span><span class="line"><span class="cl">        <span class="c1"># 创建右侧设置区域  </span>
+</span></span><span class="line"><span class="cl">        <span class="bp">self</span><span class="o">.</span><span class="n">settings_frame</span> <span class="o">=</span> <span class="n">ttk</span><span class="o">.</span><span class="n">Frame</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">main_panel</span><span class="p">)</span>  
+</span></span><span class="line"><span class="cl">        <span class="bp">self</span><span class="o">.</span><span class="n">main_panel</span><span class="o">.</span><span class="n">add</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">settings_frame</span><span class="p">,</span> <span class="n">weight</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span>  <span class="c1"># 右侧占比较小  </span>
+</span></span><span class="line"><span class="cl">  
+</span></span><span class="line"><span class="cl">        <span class="c1"># 字段设置区域  </span>
+</span></span><span class="line"><span class="cl">        <span class="n">field_settings</span> <span class="o">=</span> <span class="n">ttk</span><span class="o">.</span><span class="n">LabelFrame</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">settings_frame</span><span class="p">,</span> <span class="n">text</span><span class="o">=</span><span class="s2">&#34;字段设置&#34;</span><span class="p">)</span>  
+</span></span><span class="line"><span class="cl">        <span class="n">field_settings</span><span class="o">.</span><span class="n">pack</span><span class="p">(</span><span class="n">fill</span><span class="o">=</span><span class="n">tk</span><span class="o">.</span><span class="n">X</span><span class="p">,</span> <span class="n">pady</span><span class="o">=</span><span class="mi">5</span><span class="p">,</span> <span class="n">padx</span><span class="o">=</span><span class="mi">5</span><span class="p">)</span>  
+</span></span><span class="line"><span class="cl">  
+</span></span><span class="line"><span class="cl">        <span class="n">ttk</span><span class="o">.</span><span class="n">Label</span><span class="p">(</span><span class="n">field_settings</span><span class="p">,</span> <span class="n">text</span><span class="o">=</span><span class="s2">&#34;提取字段（一行一个）：&#34;</span><span class="p">)</span><span class="o">.</span><span class="n">pack</span><span class="p">(</span><span class="n">padx</span><span class="o">=</span><span class="mi">5</span><span class="p">,</span> <span class="n">pady</span><span class="o">=</span><span class="mi">2</span><span class="p">)</span>  
+</span></span><span class="line"><span class="cl">        <span class="bp">self</span><span class="o">.</span><span class="n">fields_text</span> <span class="o">=</span> <span class="n">tk</span><span class="o">.</span><span class="n">Text</span><span class="p">(</span><span class="n">field_settings</span><span class="p">,</span> <span class="n">height</span><span class="o">=</span><span class="mi">5</span><span class="p">,</span> <span class="n">width</span><span class="o">=</span><span class="mi">30</span><span class="p">)</span>  
+</span></span><span class="line"><span class="cl">        <span class="bp">self</span><span class="o">.</span><span class="n">fields_text</span><span class="o">.</span><span class="n">pack</span><span class="p">(</span><span class="n">padx</span><span class="o">=</span><span class="mi">5</span><span class="p">,</span> <span class="n">pady</span><span class="o">=</span><span class="mi">2</span><span class="p">)</span>  
+</span></span><span class="line"><span class="cl">        <span class="bp">self</span><span class="o">.</span><span class="n">fields_text</span><span class="o">.</span><span class="n">insert</span><span class="p">(</span><span class="s1">&#39;1.0&#39;</span><span class="p">,</span> <span class="s2">&#34;</span><span class="se">\n</span><span class="s2">&#34;</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">fields</span><span class="p">))</span>  
+</span></span><span class="line"><span class="cl">  
+</span></span><span class="line"><span class="cl">        <span class="n">ttk</span><span class="o">.</span><span class="n">Button</span><span class="p">(</span><span class="n">field_settings</span><span class="p">,</span> <span class="n">text</span><span class="o">=</span><span class="s2">&#34;更新字段&#34;</span><span class="p">,</span> <span class="n">command</span><span class="o">=</span><span class="bp">self</span><span class="o">.</span><span class="n">update_fields</span><span class="p">)</span><span class="o">.</span><span class="n">pack</span><span class="p">(</span><span class="n">padx</span><span class="o">=</span><span class="mi">5</span><span class="p">,</span> <span class="n">pady</span><span class="o">=</span><span class="mi">5</span><span class="p">)</span>  
+</span></span><span class="line"><span class="cl">  
+</span></span><span class="line"><span class="cl">        <span class="c1"># Excel输出路径设置  </span>
+</span></span><span class="line"><span class="cl">        <span class="n">path_settings</span> <span class="o">=</span> <span class="n">ttk</span><span class="o">.</span><span class="n">LabelFrame</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">settings_frame</span><span class="p">,</span> <span class="n">text</span><span class="o">=</span><span class="s2">&#34;导出设置&#34;</span><span class="p">)</span>  
+</span></span><span class="line"><span class="cl">        <span class="n">path_settings</span><span class="o">.</span><span class="n">pack</span><span class="p">(</span><span class="n">fill</span><span class="o">=</span><span class="n">tk</span><span class="o">.</span><span class="n">X</span><span class="p">,</span> <span class="n">pady</span><span class="o">=</span><span class="mi">5</span><span class="p">,</span> <span class="n">padx</span><span class="o">=</span><span class="mi">5</span><span class="p">)</span>  
+</span></span><span class="line"><span class="cl">  
+</span></span><span class="line"><span class="cl">        <span class="n">ttk</span><span class="o">.</span><span class="n">Label</span><span class="p">(</span><span class="n">path_settings</span><span class="p">,</span> <span class="n">text</span><span class="o">=</span><span class="s2">&#34;Excel导出路径：&#34;</span><span class="p">)</span><span class="o">.</span><span class="n">pack</span><span class="p">(</span><span class="n">padx</span><span class="o">=</span><span class="mi">5</span><span class="p">,</span> <span class="n">pady</span><span class="o">=</span><span class="mi">2</span><span class="p">)</span>  
+</span></span><span class="line"><span class="cl">        <span class="bp">self</span><span class="o">.</span><span class="n">path_var</span> <span class="o">=</span> <span class="n">tk</span><span class="o">.</span><span class="n">StringVar</span><span class="p">()</span>  
+</span></span><span class="line"><span class="cl">        <span class="n">ttk</span><span class="o">.</span><span class="n">Entry</span><span class="p">(</span><span class="n">path_settings</span><span class="p">,</span> <span class="n">textvariable</span><span class="o">=</span><span class="bp">self</span><span class="o">.</span><span class="n">path_var</span><span class="p">,</span> <span class="n">width</span><span class="o">=</span><span class="mi">30</span><span class="p">)</span><span class="o">.</span><span class="n">pack</span><span class="p">(</span><span class="n">padx</span><span class="o">=</span><span class="mi">5</span><span class="p">,</span> <span class="n">pady</span><span class="o">=</span><span class="mi">2</span><span class="p">)</span>  
+</span></span><span class="line"><span class="cl">        <span class="n">ttk</span><span class="o">.</span><span class="n">Button</span><span class="p">(</span><span class="n">path_settings</span><span class="p">,</span> <span class="n">text</span><span class="o">=</span><span class="s2">&#34;选择路径&#34;</span><span class="p">,</span> <span class="n">command</span><span class="o">=</span><span class="bp">self</span><span class="o">.</span><span class="n">select_output_path</span><span class="p">)</span><span class="o">.</span><span class="n">pack</span><span class="p">(</span><span class="n">padx</span><span class="o">=</span><span class="mi">5</span><span class="p">,</span> <span class="n">pady</span><span class="o">=</span><span class="mi">5</span><span class="p">)</span>  
+</span></span><span class="line"><span class="cl">  
+</span></span><span class="line"><span class="cl">    <span class="k">def</span> <span class="nf">clear_images</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>  
+</span></span><span class="line"><span class="cl">        <span class="s2">&#34;&#34;&#34;清空所有已加载的图片&#34;&#34;&#34;</span>  
+</span></span><span class="line"><span class="cl">        <span class="bp">self</span><span class="o">.</span><span class="n">images</span><span class="o">.</span><span class="n">clear</span><span class="p">()</span>  
+</span></span><span class="line"><span class="cl">        <span class="bp">self</span><span class="o">.</span><span class="n">current_display_index</span> <span class="o">=</span> <span class="mi">0</span>  
+</span></span><span class="line"><span class="cl">        <span class="bp">self</span><span class="o">.</span><span class="n">refresh_thumbnail_view</span><span class="p">()</span>  
+</span></span><span class="line"><span class="cl">        <span class="bp">self</span><span class="o">.</span><span class="n">update_main_display</span><span class="p">()</span>  
+</span></span><span class="line"><span class="cl">  
+</span></span><span class="line"><span class="cl">    <span class="k">def</span> <span class="nf">refresh_thumbnail_view</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>  
+</span></span><span class="line"><span class="cl">        <span class="s2">&#34;&#34;&#34;刷新左侧缩略图显示&#34;&#34;&#34;</span>  
+</span></span><span class="line"><span class="cl">        <span class="c1"># 清除现有缩略图  </span>
+</span></span><span class="line"><span class="cl">        <span class="k">for</span> <span class="n">widget</span> <span class="ow">in</span> <span class="bp">self</span><span class="o">.</span><span class="n">thumbnail_container</span><span class="o">.</span><span class="n">winfo_children</span><span class="p">():</span>  
+</span></span><span class="line"><span class="cl">            <span class="n">widget</span><span class="o">.</span><span class="n">destroy</span><span class="p">()</span>  
+</span></span><span class="line"><span class="cl">  
+</span></span><span class="line"><span class="cl">        <span class="c1"># 重新添加缩略图  </span>
+</span></span><span class="line"><span class="cl">        <span class="k">for</span> <span class="n">i</span><span class="p">,</span> <span class="n">img_info</span> <span class="ow">in</span> <span class="nb">enumerate</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">images</span><span class="p">):</span>  
+</span></span><span class="line"><span class="cl">            <span class="n">frame</span> <span class="o">=</span> <span class="n">ttk</span><span class="o">.</span><span class="n">Frame</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">thumbnail_container</span><span class="p">)</span>  
+</span></span><span class="line"><span class="cl">            <span class="n">frame</span><span class="o">.</span><span class="n">pack</span><span class="p">(</span><span class="n">pady</span><span class="o">=</span><span class="mi">5</span><span class="p">,</span> <span class="n">padx</span><span class="o">=</span><span class="mi">5</span><span class="p">)</span>  
+</span></span><span class="line"><span class="cl">  
+</span></span><span class="line"><span class="cl">            <span class="c1"># 创建缩略图  </span>
+</span></span><span class="line"><span class="cl">            <span class="n">thumb</span> <span class="o">=</span> <span class="n">img_info</span><span class="p">[</span><span class="s2">&#34;image&#34;</span><span class="p">]</span><span class="o">.</span><span class="n">copy</span><span class="p">()</span>  
+</span></span><span class="line"><span class="cl">            <span class="n">thumb</span><span class="o">.</span><span class="n">thumbnail</span><span class="p">((</span><span class="mi">100</span><span class="p">,</span> <span class="mi">100</span><span class="p">))</span>  
+</span></span><span class="line"><span class="cl">            <span class="n">photo</span> <span class="o">=</span> <span class="n">ImageTk</span><span class="o">.</span><span class="n">PhotoImage</span><span class="p">(</span><span class="n">thumb</span><span class="p">)</span>  
+</span></span><span class="line"><span class="cl">  
+</span></span><span class="line"><span class="cl">            <span class="c1"># 创建图片标签和删除按钮的容器  </span>
+</span></span><span class="line"><span class="cl">            <span class="n">thumb_frame</span> <span class="o">=</span> <span class="n">ttk</span><span class="o">.</span><span class="n">Frame</span><span class="p">(</span><span class="n">frame</span><span class="p">)</span>  
+</span></span><span class="line"><span class="cl">            <span class="n">thumb_frame</span><span class="o">.</span><span class="n">pack</span><span class="p">()</span>  
+</span></span><span class="line"><span class="cl">  
+</span></span><span class="line"><span class="cl">            <span class="c1"># 添加序号标签  </span>
+</span></span><span class="line"><span class="cl">            <span class="n">ttk</span><span class="o">.</span><span class="n">Label</span><span class="p">(</span><span class="n">thumb_frame</span><span class="p">,</span> <span class="n">text</span><span class="o">=</span><span class="sa">f</span><span class="s2">&#34;</span><span class="si">{</span><span class="n">i</span> <span class="o">+</span> <span class="mi">1</span><span class="si">}</span><span class="s2">/</span><span class="si">{</span><span class="nb">len</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">images</span><span class="p">)</span><span class="si">}</span><span class="s2">&#34;</span><span class="p">)</span><span class="o">.</span><span class="n">pack</span><span class="p">()</span>  
+</span></span><span class="line"><span class="cl">  
+</span></span><span class="line"><span class="cl">            <span class="n">label</span> <span class="o">=</span> <span class="n">ttk</span><span class="o">.</span><span class="n">Label</span><span class="p">(</span><span class="n">thumb_frame</span><span class="p">,</span> <span class="n">image</span><span class="o">=</span><span class="n">photo</span><span class="p">)</span>  
+</span></span><span class="line"><span class="cl">            <span class="n">label</span><span class="o">.</span><span class="n">image</span> <span class="o">=</span> <span class="n">photo</span>  
+</span></span><span class="line"><span class="cl">            <span class="n">label</span><span class="o">.</span><span class="n">pack</span><span class="p">()</span>  
+</span></span><span class="line"><span class="cl">  
+</span></span><span class="line"><span class="cl">            <span class="c1"># 添加删除按钮  </span>
+</span></span><span class="line"><span class="cl">            <span class="n">ttk</span><span class="o">.</span><span class="n">Button</span><span class="p">(</span><span class="n">thumb_frame</span><span class="p">,</span> <span class="n">text</span><span class="o">=</span><span class="s2">&#34;×&#34;</span><span class="p">,</span> <span class="n">width</span><span class="o">=</span><span class="mi">2</span><span class="p">,</span>  
+</span></span><span class="line"><span class="cl">                       <span class="n">command</span><span class="o">=</span><span class="k">lambda</span> <span class="n">idx</span><span class="o">=</span><span class="n">i</span><span class="p">:</span> <span class="bp">self</span><span class="o">.</span><span class="n">remove_image</span><span class="p">(</span><span class="n">idx</span><span class="p">))</span><span class="o">.</span><span class="n">pack</span><span class="p">()</span>  
+</span></span><span class="line"><span class="cl">  
+</span></span><span class="line"><span class="cl">            <span class="c1"># 绑定点击事件  </span>
+</span></span><span class="line"><span class="cl">            <span class="n">label</span><span class="o">.</span><span class="n">bind</span><span class="p">(</span><span class="s1">&#39;&lt;Button-1&gt;&#39;</span><span class="p">,</span> <span class="k">lambda</span> <span class="n">e</span><span class="p">,</span> <span class="n">idx</span><span class="o">=</span><span class="n">i</span><span class="p">:</span> <span class="bp">self</span><span class="o">.</span><span class="n">show_image</span><span class="p">(</span><span class="n">idx</span><span class="p">))</span>  
+</span></span><span class="line"><span class="cl">  
+</span></span><span class="line"><span class="cl">        <span class="c1"># 更新滚动区域  </span>
+</span></span><span class="line"><span class="cl">        <span class="bp">self</span><span class="o">.</span><span class="n">thumbnail_container</span><span class="o">.</span><span class="n">update_idletasks</span><span class="p">()</span>  
+</span></span><span class="line"><span class="cl">        <span class="bp">self</span><span class="o">.</span><span class="n">thumb_canvas</span><span class="o">.</span><span class="n">configure</span><span class="p">(</span><span class="n">scrollregion</span><span class="o">=</span><span class="bp">self</span><span class="o">.</span><span class="n">thumb_canvas</span><span class="o">.</span><span class="n">bbox</span><span class="p">(</span><span class="s2">&#34;all&#34;</span><span class="p">))</span>  
+</span></span><span class="line"><span class="cl">  
+</span></span><span class="line"><span class="cl">    <span class="k">def</span> <span class="nf">remove_image</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">index</span><span class="p">):</span>  
+</span></span><span class="line"><span class="cl">        <span class="s2">&#34;&#34;&#34;删除指定索引的图片&#34;&#34;&#34;</span>  
+</span></span><span class="line"><span class="cl">        <span class="k">if</span> <span class="mi">0</span> <span class="o">&lt;=</span> <span class="n">index</span> <span class="o">&lt;</span> <span class="nb">len</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">images</span><span class="p">):</span>  
+</span></span><span class="line"><span class="cl">            <span class="bp">self</span><span class="o">.</span><span class="n">images</span><span class="o">.</span><span class="n">pop</span><span class="p">(</span><span class="n">index</span><span class="p">)</span>  
+</span></span><span class="line"><span class="cl">            <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">current_display_index</span> <span class="o">&gt;=</span> <span class="nb">len</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">images</span><span class="p">):</span>  
+</span></span><span class="line"><span class="cl">                <span class="bp">self</span><span class="o">.</span><span class="n">current_display_index</span> <span class="o">=</span> <span class="nb">max</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="nb">len</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">images</span><span class="p">)</span> <span class="o">-</span> <span class="mi">1</span><span class="p">)</span>  
+</span></span><span class="line"><span class="cl">            <span class="bp">self</span><span class="o">.</span><span class="n">refresh_thumbnail_view</span><span class="p">()</span>  
+</span></span><span class="line"><span class="cl">            <span class="bp">self</span><span class="o">.</span><span class="n">update_main_display</span><span class="p">()</span>  
+</span></span><span class="line"><span class="cl">  
+</span></span><span class="line"><span class="cl">    <span class="k">def</span> <span class="nf">show_image</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">index</span><span class="p">):</span>  
+</span></span><span class="line"><span class="cl">        <span class="s2">&#34;&#34;&#34;显示指定索引的图片&#34;&#34;&#34;</span>  
+</span></span><span class="line"><span class="cl">        <span class="k">if</span> <span class="mi">0</span> <span class="o">&lt;=</span> <span class="n">index</span> <span class="o">&lt;</span> <span class="nb">len</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">images</span><span class="p">):</span>  
+</span></span><span class="line"><span class="cl">            <span class="bp">self</span><span class="o">.</span><span class="n">current_display_index</span> <span class="o">=</span> <span class="n">index</span>  
+</span></span><span class="line"><span class="cl">            <span class="bp">self</span><span class="o">.</span><span class="n">update_main_display</span><span class="p">()</span>  
+</span></span><span class="line"><span class="cl">  
+</span></span><span class="line"><span class="cl">    <span class="k">def</span> <span class="nf">update_main_display</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>  
+</span></span><span class="line"><span class="cl">        <span class="s2">&#34;&#34;&#34;更新主显示区域的图片&#34;&#34;&#34;</span>  
+</span></span><span class="line"><span class="cl">        <span class="k">if</span> <span class="ow">not</span> <span class="bp">self</span><span class="o">.</span><span class="n">images</span><span class="p">:</span>  
+</span></span><span class="line"><span class="cl">            <span class="bp">self</span><span class="o">.</span><span class="n">main_image_label</span><span class="o">.</span><span class="n">configure</span><span class="p">(</span><span class="n">image</span><span class="o">=</span><span class="s1">&#39;&#39;</span><span class="p">)</span>  
+</span></span><span class="line"><span class="cl">            <span class="bp">self</span><span class="o">.</span><span class="n">image_counter_label</span><span class="o">.</span><span class="n">configure</span><span class="p">(</span><span class="n">text</span><span class="o">=</span><span class="s2">&#34;&#34;</span><span class="p">)</span>  
+</span></span><span class="line"><span class="cl">            <span class="k">return</span>  
+</span></span><span class="line"><span class="cl">  
+</span></span><span class="line"><span class="cl">        <span class="n">img</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">images</span><span class="p">[</span><span class="bp">self</span><span class="o">.</span><span class="n">current_display_index</span><span class="p">][</span><span class="s2">&#34;image&#34;</span><span class="p">]</span><span class="o">.</span><span class="n">copy</span><span class="p">()</span>  
+</span></span><span class="line"><span class="cl">        <span class="c1"># 调整图片大小以适应显示区域  </span>
+</span></span><span class="line"><span class="cl">        <span class="n">display_size</span> <span class="o">=</span> <span class="p">(</span><span class="mi">600</span><span class="p">,</span> <span class="mi">400</span><span class="p">)</span>  
+</span></span><span class="line"><span class="cl">        <span class="n">img</span><span class="o">.</span><span class="n">thumbnail</span><span class="p">(</span><span class="n">display_size</span><span class="p">)</span>  
+</span></span><span class="line"><span class="cl">        <span class="n">photo</span> <span class="o">=</span> <span class="n">ImageTk</span><span class="o">.</span><span class="n">PhotoImage</span><span class="p">(</span><span class="n">img</span><span class="p">)</span>  
+</span></span><span class="line"><span class="cl">        <span class="bp">self</span><span class="o">.</span><span class="n">main_image_label</span><span class="o">.</span><span class="n">configure</span><span class="p">(</span><span class="n">image</span><span class="o">=</span><span class="n">photo</span><span class="p">)</span>  
+</span></span><span class="line"><span class="cl">        <span class="bp">self</span><span class="o">.</span><span class="n">main_image_label</span><span class="o">.</span><span class="n">image</span> <span class="o">=</span> <span class="n">photo</span>  
+</span></span><span class="line"><span class="cl">  
+</span></span><span class="line"><span class="cl">        <span class="c1"># 更新图片序号显示  </span>
+</span></span><span class="line"><span class="cl">        <span class="bp">self</span><span class="o">.</span><span class="n">image_counter_label</span><span class="o">.</span><span class="n">configure</span><span class="p">(</span>  
+</span></span><span class="line"><span class="cl">            <span class="n">text</span><span class="o">=</span><span class="sa">f</span><span class="s2">&#34;当前第 </span><span class="si">{</span><span class="bp">self</span><span class="o">.</span><span class="n">current_display_index</span> <span class="o">+</span> <span class="mi">1</span><span class="si">}</span><span class="s2"> 张，共 </span><span class="si">{</span><span class="nb">len</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">images</span><span class="p">)</span><span class="si">}</span><span class="s2"> 张&#34;</span>  
+</span></span><span class="line"><span class="cl">        <span class="p">)</span>  
+</span></span><span class="line"><span class="cl">  
+</span></span><span class="line"><span class="cl">    <span class="k">def</span> <span class="nf">prev_image</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>  
+</span></span><span class="line"><span class="cl">        <span class="s2">&#34;&#34;&#34;显示上一张图片&#34;&#34;&#34;</span>  
+</span></span><span class="line"><span class="cl">        <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">images</span><span class="p">:</span>  
+</span></span><span class="line"><span class="cl">            <span class="bp">self</span><span class="o">.</span><span class="n">current_display_index</span> <span class="o">=</span> <span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">current_display_index</span> <span class="o">-</span> <span class="mi">1</span><span class="p">)</span> <span class="o">%</span> <span class="nb">len</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">images</span><span class="p">)</span>  
+</span></span><span class="line"><span class="cl">            <span class="bp">self</span><span class="o">.</span><span class="n">update_main_display</span><span class="p">()</span>  
+</span></span><span class="line"><span class="cl">  
+</span></span><span class="line"><span class="cl">    <span class="k">def</span> <span class="nf">next_image</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>  
+</span></span><span class="line"><span class="cl">        <span class="s2">&#34;&#34;&#34;显示下一张图片&#34;&#34;&#34;</span>  
+</span></span><span class="line"><span class="cl">        <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">images</span><span class="p">:</span>  
+</span></span><span class="line"><span class="cl">            <span class="bp">self</span><span class="o">.</span><span class="n">current_display_index</span> <span class="o">=</span> <span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">current_display_index</span> <span class="o">+</span> <span class="mi">1</span><span class="p">)</span> <span class="o">%</span> <span class="nb">len</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">images</span><span class="p">)</span>  
+</span></span><span class="line"><span class="cl">            <span class="bp">self</span><span class="o">.</span><span class="n">update_main_display</span><span class="p">()</span>  
+</span></span><span class="line"><span class="cl">  
+</span></span><span class="line"><span class="cl">    <span class="k">def</span> <span class="nf">select_images</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>  
+</span></span><span class="line"><span class="cl">        <span class="n">filepaths</span> <span class="o">=</span> <span class="n">filedialog</span><span class="o">.</span><span class="n">askopenfilenames</span><span class="p">(</span>  
+</span></span><span class="line"><span class="cl">            <span class="n">title</span><span class="o">=</span><span class="s2">&#34;选择图片&#34;</span><span class="p">,</span>  
+</span></span><span class="line"><span class="cl">            <span class="n">filetypes</span><span class="o">=</span><span class="p">[(</span><span class="s2">&#34;Image files&#34;</span><span class="p">,</span> <span class="s2">&#34;*.png *.jpg *.jpeg *.gif *.bmp&#34;</span><span class="p">)]</span>  
+</span></span><span class="line"><span class="cl">        <span class="p">)</span>  
+</span></span><span class="line"><span class="cl">  
+</span></span><span class="line"><span class="cl">        <span class="k">if</span> <span class="ow">not</span> <span class="n">filepaths</span><span class="p">:</span>  
+</span></span><span class="line"><span class="cl">            <span class="k">return</span>  
+</span></span><span class="line"><span class="cl">  
+</span></span><span class="line"><span class="cl">        <span class="c1"># 加载新图片  </span>
+</span></span><span class="line"><span class="cl">        <span class="k">for</span> <span class="n">filepath</span> <span class="ow">in</span> <span class="n">filepaths</span><span class="p">:</span>  
+</span></span><span class="line"><span class="cl">            <span class="k">try</span><span class="p">:</span>  
+</span></span><span class="line"><span class="cl">                <span class="n">image</span> <span class="o">=</span> <span class="n">Image</span><span class="o">.</span><span class="n">open</span><span class="p">(</span><span class="n">filepath</span><span class="p">)</span>  
+</span></span><span class="line"><span class="cl">                <span class="bp">self</span><span class="o">.</span><span class="n">images</span><span class="o">.</span><span class="n">append</span><span class="p">({</span>  
+</span></span><span class="line"><span class="cl">                    <span class="s2">&#34;filepath&#34;</span><span class="p">:</span> <span class="n">filepath</span><span class="p">,</span>  
+</span></span><span class="line"><span class="cl">                    <span class="s2">&#34;image&#34;</span><span class="p">:</span> <span class="n">image</span>  
+</span></span><span class="line"><span class="cl">                <span class="p">})</span>  
+</span></span><span class="line"><span class="cl">            <span class="k">except</span> <span class="ne">Exception</span> <span class="k">as</span> <span class="n">e</span><span class="p">:</span>  
+</span></span><span class="line"><span class="cl">                <span class="n">tk</span><span class="o">.</span><span class="n">messagebox</span><span class="o">.</span><span class="n">showerror</span><span class="p">(</span><span class="s2">&#34;错误&#34;</span><span class="p">,</span> <span class="sa">f</span><span class="s2">&#34;无法加载图片 </span><span class="si">{</span><span class="n">filepath</span><span class="si">}</span><span class="s2">: </span><span class="si">{</span><span class="nb">str</span><span class="p">(</span><span class="n">e</span><span class="p">)</span><span class="si">}</span><span class="s2">&#34;</span><span class="p">)</span>  
+</span></span><span class="line"><span class="cl">  
+</span></span><span class="line"><span class="cl">        <span class="c1"># 刷新显示  </span>
+</span></span><span class="line"><span class="cl">        <span class="bp">self</span><span class="o">.</span><span class="n">refresh_thumbnail_view</span><span class="p">()</span>  
+</span></span><span class="line"><span class="cl">        <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">images</span><span class="p">:</span>  
+</span></span><span class="line"><span class="cl">            <span class="bp">self</span><span class="o">.</span><span class="n">show_image</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">images</span><span class="p">)</span> <span class="o">-</span> <span class="mi">1</span><span class="p">)</span>  
+</span></span><span class="line"><span class="cl">  
+</span></span><span class="line"><span class="cl">    <span class="k">def</span> <span class="nf">update_fields</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>  
+</span></span><span class="line"><span class="cl">        <span class="n">field_text</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">fields_text</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s1">&#39;1.0&#39;</span><span class="p">,</span> <span class="n">tk</span><span class="o">.</span><span class="n">END</span><span class="p">)</span>  
+</span></span><span class="line"><span class="cl">        <span class="bp">self</span><span class="o">.</span><span class="n">fields</span> <span class="o">=</span> <span class="p">[</span><span class="n">f</span><span class="o">.</span><span class="n">strip</span><span class="p">()</span> <span class="k">for</span> <span class="n">f</span> <span class="ow">in</span> <span class="n">field_text</span><span class="o">.</span><span class="n">split</span><span class="p">(</span><span class="s1">&#39;</span><span class="se">\n</span><span class="s1">&#39;</span><span class="p">)</span> <span class="k">if</span> <span class="n">f</span><span class="o">.</span><span class="n">strip</span><span class="p">()]</span>  
+</span></span><span class="line"><span class="cl">        <span class="n">tk</span><span class="o">.</span><span class="n">messagebox</span><span class="o">.</span><span class="n">showinfo</span><span class="p">(</span><span class="s2">&#34;成功&#34;</span><span class="p">,</span> <span class="s2">&#34;字段已更新！&#34;</span><span class="p">)</span>  
+</span></span><span class="line"><span class="cl">  
+</span></span><span class="line"><span class="cl">    <span class="k">def</span> <span class="nf">select_output_path</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>  
+</span></span><span class="line"><span class="cl">        <span class="n">folder_path</span> <span class="o">=</span> <span class="n">filedialog</span><span class="o">.</span><span class="n">askdirectory</span><span class="p">(</span><span class="n">title</span><span class="o">=</span><span class="s2">&#34;选择Excel导出目录&#34;</span><span class="p">)</span>  
+</span></span><span class="line"><span class="cl">        <span class="k">if</span> <span class="n">folder_path</span><span class="p">:</span>  
+</span></span><span class="line"><span class="cl">            <span class="bp">self</span><span class="o">.</span><span class="n">excel_output_path</span> <span class="o">=</span> <span class="n">folder_path</span>  
+</span></span><span class="line"><span class="cl">            <span class="bp">self</span><span class="o">.</span><span class="n">path_var</span><span class="o">.</span><span class="n">set</span><span class="p">(</span><span class="n">folder_path</span><span class="p">)</span>  
+</span></span><span class="line"><span class="cl">  
+</span></span><span class="line"><span class="cl">    <span class="k">def</span> <span class="nf">process_images</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>  
+</span></span><span class="line"><span class="cl">        <span class="k">if</span> <span class="ow">not</span> <span class="bp">self</span><span class="o">.</span><span class="n">images</span><span class="p">:</span>  
+</span></span><span class="line"><span class="cl">            <span class="n">tk</span><span class="o">.</span><span class="n">messagebox</span><span class="o">.</span><span class="n">showwarning</span><span class="p">(</span><span class="s2">&#34;警告&#34;</span><span class="p">,</span> <span class="s2">&#34;请先选择图片！&#34;</span><span class="p">)</span>  
+</span></span><span class="line"><span class="cl">            <span class="k">return</span>  
+</span></span><span class="line"><span class="cl">  
+</span></span><span class="line"><span class="cl">        <span class="k">if</span> <span class="ow">not</span> <span class="bp">self</span><span class="o">.</span><span class="n">excel_output_path</span><span class="p">:</span>  
+</span></span><span class="line"><span class="cl">            <span class="n">tk</span><span class="o">.</span><span class="n">messagebox</span><span class="o">.</span><span class="n">showwarning</span><span class="p">(</span><span class="s2">&#34;警告&#34;</span><span class="p">,</span> <span class="s2">&#34;请先选择Excel导出路径！&#34;</span><span class="p">)</span>  
+</span></span><span class="line"><span class="cl">            <span class="k">return</span>  
+</span></span><span class="line"><span class="cl">  
+</span></span><span class="line"><span class="cl">        <span class="n">all_data</span> <span class="o">=</span> <span class="p">[]</span>  
+</span></span><span class="line"><span class="cl">  
+</span></span><span class="line"><span class="cl">        <span class="k">for</span> <span class="n">img_info</span> <span class="ow">in</span> <span class="bp">self</span><span class="o">.</span><span class="n">images</span><span class="p">:</span>  
+</span></span><span class="line"><span class="cl">            <span class="k">try</span><span class="p">:</span>  
+</span></span><span class="line"><span class="cl">                <span class="c1"># 将图片转换为PNG格式（确保格式兼容性）  </span>
+</span></span><span class="line"><span class="cl">                <span class="n">img</span> <span class="o">=</span> <span class="n">img_info</span><span class="p">[</span><span class="s1">&#39;image&#39;</span><span class="p">]</span>  
+</span></span><span class="line"><span class="cl">                <span class="n">buffered</span> <span class="o">=</span> <span class="n">io</span><span class="o">.</span><span class="n">BytesIO</span><span class="p">()</span>  
+</span></span><span class="line"><span class="cl">                <span class="c1"># 统一转换为PNG格式  </span>
+</span></span><span class="line"><span class="cl">                <span class="k">if</span> <span class="n">img</span><span class="o">.</span><span class="n">mode</span> <span class="ow">in</span> <span class="p">(</span><span class="s1">&#39;RGBA&#39;</span><span class="p">,</span> <span class="s1">&#39;LA&#39;</span><span class="p">)</span> <span class="ow">or</span> <span class="p">(</span><span class="n">img</span><span class="o">.</span><span class="n">mode</span> <span class="o">==</span> <span class="s1">&#39;P&#39;</span> <span class="ow">and</span> <span class="s1">&#39;transparency&#39;</span> <span class="ow">in</span> <span class="n">img</span><span class="o">.</span><span class="n">info</span><span class="p">):</span>  
+</span></span><span class="line"><span class="cl">                    <span class="c1"># 如果图片带有透明通道，先转换为RGB  </span>
+</span></span><span class="line"><span class="cl">                    <span class="n">img</span> <span class="o">=</span> <span class="n">img</span><span class="o">.</span><span class="n">convert</span><span class="p">(</span><span class="s1">&#39;RGB&#39;</span><span class="p">)</span>  
+</span></span><span class="line"><span class="cl">                <span class="n">img</span><span class="o">.</span><span class="n">save</span><span class="p">(</span><span class="n">buffered</span><span class="p">,</span> <span class="nb">format</span><span class="o">=</span><span class="s2">&#34;PNG&#34;</span><span class="p">)</span>  
+</span></span><span class="line"><span class="cl">                <span class="n">img_str</span> <span class="o">=</span> <span class="n">base64</span><span class="o">.</span><span class="n">b64encode</span><span class="p">(</span><span class="n">buffered</span><span class="o">.</span><span class="n">getvalue</span><span class="p">())</span><span class="o">.</span><span class="n">decode</span><span class="p">(</span><span class="s1">&#39;utf-8&#39;</span><span class="p">)</span>  
+</span></span><span class="line"><span class="cl">  
+</span></span><span class="line"><span class="cl">                <span class="c1"># 第一次提示词优化  </span>
+</span></span><span class="line"><span class="cl">                <span class="n">prompt</span> <span class="o">=</span> <span class="p">(</span>  
+</span></span><span class="line"><span class="cl">                    <span class="sa">f</span><span class="s2">&#34;请仔细分析这张图片，提取以下字段的信息并以JSON格式返回：</span><span class="si">{</span><span class="s1">&#39;, &#39;</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">fields</span><span class="p">)</span><span class="si">}</span><span class="s2">。</span><span class="se">\n</span><span class="s2">&#34;</span>  
+</span></span><span class="line"><span class="cl">                    <span class="s2">&#34;注意事项：</span><span class="se">\n</span><span class="s2">&#34;</span>  
+</span></span><span class="line"><span class="cl">                    <span class="s2">&#34;1. 图片中包含手写体文字，请特别注意：</span><span class="se">\n</span><span class="s2">&#34;</span>  
+</span></span><span class="line"><span class="cl">                    <span class="s2">&#34;   - 仔细辨识每个手写字符，包括潦草字迹</span><span class="se">\n</span><span class="s2">&#34;</span>  
+</span></span><span class="line"><span class="cl">                    <span class="s2">&#34;   - 注意辨识英文字母、数字和特殊符号</span><span class="se">\n</span><span class="s2">&#34;</span>  
+</span></span><span class="line"><span class="cl">                    <span class="s2">&#34;   - 对于不确定的字符，尝试从上下文推断</span><span class="se">\n</span><span class="s2">&#34;</span>  
+</span></span><span class="line"><span class="cl">                    <span class="s2">&#34;2. 关于涂抹和修改的处理：</span><span class="se">\n</span><span class="s2">&#34;</span>  
+</span></span><span class="line"><span class="cl">                    <span class="s2">&#34;   - 如有涂抹内容，优先识别涂抹处周围或上方的新增内容</span><span class="se">\n</span><span class="s2">&#34;</span>  
+</span></span><span class="line"><span class="cl">                    <span class="s2">&#34;   - 对于部分涂抹但仍可见的内容，尝试识别可见部分</span><span class="se">\n</span><span class="s2">&#34;</span>  
+</span></span><span class="line"><span class="cl">                    <span class="s2">&#34;   - 注意识别批注、更正或添加的内容</span><span class="se">\n</span><span class="s2">&#34;</span>  
+</span></span><span class="line"><span class="cl">                    <span class="s2">&#34;3. 特殊情况处理：</span><span class="se">\n</span><span class="s2">&#34;</span>  
+</span></span><span class="line"><span class="cl">                    <span class="s2">&#34;   - 对于缩写或简写，尽可能还原完整内容</span><span class="se">\n</span><span class="s2">&#34;</span>  
+</span></span><span class="line"><span class="cl">                    <span class="s2">&#34;   - 注意识别表格边缘或角落的信息</span><span class="se">\n</span><span class="s2">&#34;</span>  
+</span></span><span class="line"><span class="cl">                    <span class="s2">&#34;   - 对于模糊不清的内容，根据上下文推断</span><span class="se">\n</span><span class="s2">&#34;</span>  
+</span></span><span class="line"><span class="cl">                    <span class="s2">&#34;4. 如果某字段信息确实无法识别或不存在，返回空字符串</span><span class="se">\n</span><span class="s2">&#34;</span>  
+</span></span><span class="line"><span class="cl">                    <span class="s2">&#34;5. 优先提取最新的、有效的信息，忽略已被明确删除的内容&#34;</span>  
+</span></span><span class="line"><span class="cl">                <span class="p">)</span>  
+</span></span><span class="line"><span class="cl">  
+</span></span><span class="line"><span class="cl">                <span class="n">messages</span> <span class="o">=</span> <span class="p">[</span>  
+</span></span><span class="line"><span class="cl">                    <span class="p">{</span>  
+</span></span><span class="line"><span class="cl">                        <span class="s2">&#34;role&#34;</span><span class="p">:</span> <span class="s2">&#34;user&#34;</span><span class="p">,</span>  
+</span></span><span class="line"><span class="cl">                        <span class="s2">&#34;content&#34;</span><span class="p">:</span> <span class="p">[</span>  
+</span></span><span class="line"><span class="cl">                            <span class="p">{</span>  
+</span></span><span class="line"><span class="cl">                                <span class="s2">&#34;type&#34;</span><span class="p">:</span> <span class="s2">&#34;text&#34;</span><span class="p">,</span>  
+</span></span><span class="line"><span class="cl">                                <span class="s2">&#34;text&#34;</span><span class="p">:</span> <span class="n">prompt</span>  
+</span></span><span class="line"><span class="cl">                            <span class="p">},</span>  
+</span></span><span class="line"><span class="cl">                            <span class="p">{</span>  
+</span></span><span class="line"><span class="cl">                                <span class="s2">&#34;type&#34;</span><span class="p">:</span> <span class="s2">&#34;image_url&#34;</span><span class="p">,</span>  
+</span></span><span class="line"><span class="cl">                                <span class="s2">&#34;image_url&#34;</span><span class="p">:</span> <span class="p">{</span>  
+</span></span><span class="line"><span class="cl">                                    <span class="s2">&#34;url&#34;</span><span class="p">:</span> <span class="sa">f</span><span class="s2">&#34;data:image/png;base64,</span><span class="si">{</span><span class="n">img_str</span><span class="si">}</span><span class="s2">&#34;</span>  
+</span></span><span class="line"><span class="cl">                                <span class="p">}</span>  
+</span></span><span class="line"><span class="cl">                            <span class="p">}</span>  
+</span></span><span class="line"><span class="cl">                        <span class="p">]</span>  
+</span></span><span class="line"><span class="cl">                    <span class="p">}</span>  
+</span></span><span class="line"><span class="cl">                <span class="p">]</span>  
+</span></span><span class="line"><span class="cl">  
+</span></span><span class="line"><span class="cl">                <span class="c1"># 发送请求  </span>
+</span></span><span class="line"><span class="cl">                <span class="n">response</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">client</span><span class="o">.</span><span class="n">chat</span><span class="o">.</span><span class="n">completions</span><span class="o">.</span><span class="n">create</span><span class="p">(</span>  
+</span></span><span class="line"><span class="cl">                    <span class="n">model</span><span class="o">=</span><span class="s2">&#34;ep-20250118110159-n2vsp&#34;</span><span class="p">,</span>  
+</span></span><span class="line"><span class="cl">                    <span class="n">messages</span><span class="o">=</span><span class="n">messages</span>  
+</span></span><span class="line"><span class="cl">                <span class="p">)</span>  
+</span></span><span class="line"><span class="cl">  
+</span></span><span class="line"><span class="cl">                <span class="c1"># 解析第一次响应  </span>
+</span></span><span class="line"><span class="cl">                <span class="k">if</span> <span class="n">response</span><span class="o">.</span><span class="n">choices</span> <span class="ow">and</span> <span class="n">response</span><span class="o">.</span><span class="n">choices</span><span class="p">[</span><span class="mi">0</span><span class="p">]:</span>  
+</span></span><span class="line"><span class="cl">                    <span class="n">raw_result</span> <span class="o">=</span> <span class="n">json</span><span class="o">.</span><span class="n">loads</span><span class="p">(</span><span class="n">response</span><span class="o">.</span><span class="n">choices</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="o">.</span><span class="n">message</span><span class="o">.</span><span class="n">content</span><span class="p">)</span>  
+</span></span><span class="line"><span class="cl">  
+</span></span><span class="line"><span class="cl">                    <span class="c1"># 修改数据整理的提示词  </span>
+</span></span><span class="line"><span class="cl">                    <span class="n">organize_prompt</span> <span class="o">=</span> <span class="p">(</span>  
+</span></span><span class="line"><span class="cl">                            <span class="s2">&#34;我需要你帮我整理以下数据到规范的格式。这些数据来自图片识别结果，需要被整理成独立的记录。</span><span class="se">\n</span><span class="s2">&#34;</span>  
+</span></span><span class="line"><span class="cl">                            <span class="s2">&#34;原始数据如下：</span><span class="se">\n</span><span class="s2">&#34;</span>  
+</span></span><span class="line"><span class="cl">                            <span class="sa">f</span><span class="s2">&#34;</span><span class="si">{</span><span class="n">json</span><span class="o">.</span><span class="n">dumps</span><span class="p">(</span><span class="n">raw_result</span><span class="p">,</span> <span class="n">ensure_ascii</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span> <span class="n">indent</span><span class="o">=</span><span class="mi">2</span><span class="p">)</span><span class="si">}</span><span class="se">\n\n</span><span class="s2">&#34;</span>  
+</span></span><span class="line"><span class="cl">                            <span class="s2">&#34;请你将数据处理成列表格式，每个元素都是一个字典，对应一条完整的记录。</span><span class="se">\n</span><span class="s2">&#34;</span>  
+</span></span><span class="line"><span class="cl">                            <span class="s2">&#34;处理要求：</span><span class="se">\n</span><span class="s2">&#34;</span>  
+</span></span><span class="line"><span class="cl">                            <span class="s2">&#34;1. 数据拆分和整理：</span><span class="se">\n</span><span class="s2">&#34;</span>  
+</span></span><span class="line"><span class="cl">                            <span class="s2">&#34;   - 如果任何字段中包含多个值，将其拆分成多个独立记录</span><span class="se">\n</span><span class="s2">&#34;</span>  
+</span></span><span class="line"><span class="cl">                            <span class="s2">&#34;   - 确保拆分后的每条记录包含所有必要字段：&#34;</span> <span class="o">+</span>  
+</span></span><span class="line"><span class="cl">                            <span class="sa">f</span><span class="s2">&#34;</span><span class="si">{</span><span class="s1">&#39;, &#39;</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">fields</span><span class="p">)</span><span class="si">}</span><span class="se">\n</span><span class="s2">&#34;</span>  
+</span></span><span class="line"><span class="cl">                            <span class="s2">&#34;   - 保持各字段之间的对应关系</span><span class="se">\n</span><span class="s2">&#34;</span>  
+</span></span><span class="line"><span class="cl">                            <span class="s2">&#34;2. 特殊内容处理：</span><span class="se">\n</span><span class="s2">&#34;</span>  
+</span></span><span class="line"><span class="cl">                            <span class="s2">&#34;   - 统一处理英文大小写（如缩写、代码等）</span><span class="se">\n</span><span class="s2">&#34;</span>  
+</span></span><span class="line"><span class="cl">                            <span class="s2">&#34;   - 规范化数字格式（如价格、编号等）</span><span class="se">\n</span><span class="s2">&#34;</span>  
+</span></span><span class="line"><span class="cl">                            <span class="s2">&#34;   - 处理可能的重复信息</span><span class="se">\n</span><span class="s2">&#34;</span>  
+</span></span><span class="line"><span class="cl">                            <span class="s2">&#34;3. 数据完整性：</span><span class="se">\n</span><span class="s2">&#34;</span>  
+</span></span><span class="line"><span class="cl">                            <span class="s2">&#34;   - 返回JSON格式，确保每个字段都存在</span><span class="se">\n</span><span class="s2">&#34;</span>  
+</span></span><span class="line"><span class="cl">                            <span class="s2">&#34;   - 对无法识别的信息使用空字符串</span><span class="se">\n</span><span class="s2">&#34;</span>  
+</span></span><span class="line"><span class="cl">                            <span class="s2">&#34;   - 保持数据的一致性和完整性</span><span class="se">\n</span><span class="s2">&#34;</span>  
+</span></span><span class="line"><span class="cl">                            <span class="s2">&#34;4. 上下文关联：</span><span class="se">\n</span><span class="s2">&#34;</span>  
+</span></span><span class="line"><span class="cl">                            <span class="s2">&#34;   - 利用上下文补充可能缺失的信息</span><span class="se">\n</span><span class="s2">&#34;</span>  
+</span></span><span class="line"><span class="cl">                            <span class="s2">&#34;   - 确保关联字段之间的逻辑性</span><span class="se">\n</span><span class="s2">&#34;</span>  
+</span></span><span class="line"><span class="cl">                            <span class="s2">&#34;   - 处理可能的交叉引用</span><span class="se">\n</span><span class="s2">&#34;</span>  
+</span></span><span class="line"><span class="cl">                            <span class="s2">&#34;5. 数据清理：</span><span class="se">\n</span><span class="s2">&#34;</span>  
+</span></span><span class="line"><span class="cl">                            <span class="s2">&#34;   - 移除多余的空格和特殊字符</span><span class="se">\n</span><span class="s2">&#34;</span>  
+</span></span><span class="line"><span class="cl">                            <span class="s2">&#34;   - 统一格式化字符串</span><span class="se">\n</span><span class="s2">&#34;</span>  
+</span></span><span class="line"><span class="cl">                            <span class="s2">&#34;   - 确保数据的规范性</span><span class="se">\n</span><span class="s2">&#34;</span>  
+</span></span><span class="line"><span class="cl">                            <span class="s2">&#34;请直接返回JSON数组，数组中的每个元素都应该是包含所有必要字段的字典。不要包含任何其他解释文字。&#34;</span>  
+</span></span><span class="line"><span class="cl">                    <span class="p">)</span>  
+</span></span><span class="line"><span class="cl">  
+</span></span><span class="line"><span class="cl">                    <span class="c1"># 发送第二次请求进行数据整理  </span>
+</span></span><span class="line"><span class="cl">                    <span class="n">organize_response</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">client</span><span class="o">.</span><span class="n">chat</span><span class="o">.</span><span class="n">completions</span><span class="o">.</span><span class="n">create</span><span class="p">(</span>  
+</span></span><span class="line"><span class="cl">                        <span class="n">model</span><span class="o">=</span><span class="s2">&#34;ep-20250117235826-zpdh8&#34;</span><span class="p">,</span>  
+</span></span><span class="line"><span class="cl">                        <span class="n">messages</span><span class="o">=</span><span class="p">[</span>  
+</span></span><span class="line"><span class="cl">                            <span class="p">{</span>  
+</span></span><span class="line"><span class="cl">                                <span class="s2">&#34;role&#34;</span><span class="p">:</span> <span class="s2">&#34;user&#34;</span><span class="p">,</span>  
+</span></span><span class="line"><span class="cl">                                <span class="s2">&#34;content&#34;</span><span class="p">:</span> <span class="n">organize_prompt</span>  
+</span></span><span class="line"><span class="cl">                            <span class="p">}</span>  
+</span></span><span class="line"><span class="cl">                        <span class="p">]</span>  
+</span></span><span class="line"><span class="cl">                    <span class="p">)</span>  
+</span></span><span class="line"><span class="cl">  
+</span></span><span class="line"><span class="cl">                    <span class="k">if</span> <span class="n">organize_response</span><span class="o">.</span><span class="n">choices</span> <span class="ow">and</span> <span class="n">organize_response</span><span class="o">.</span><span class="n">choices</span><span class="p">[</span><span class="mi">0</span><span class="p">]:</span>  
+</span></span><span class="line"><span class="cl">                        <span class="c1"># 解析整理后的数据  </span>
+</span></span><span class="line"><span class="cl">                        <span class="n">organized_results</span> <span class="o">=</span> <span class="n">json</span><span class="o">.</span><span class="n">loads</span><span class="p">(</span><span class="n">organize_response</span><span class="o">.</span><span class="n">choices</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="o">.</span><span class="n">message</span><span class="o">.</span><span class="n">content</span><span class="p">)</span>  
+</span></span><span class="line"><span class="cl">                        <span class="n">all_data</span><span class="o">.</span><span class="n">extend</span><span class="p">(</span><span class="n">organized_results</span><span class="p">)</span>  <span class="c1"># 使用extend而不是append  </span>
+</span></span><span class="line"><span class="cl">                        <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&#34;处理完成图片：</span><span class="si">{</span><span class="n">img_info</span><span class="p">[</span><span class="s1">&#39;filepath&#39;</span><span class="p">]</span><span class="si">}</span><span class="s2">&#34;</span><span class="p">)</span>  
+</span></span><span class="line"><span class="cl">                        <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&#34;整理后的结果：</span><span class="si">{</span><span class="n">organized_results</span><span class="si">}</span><span class="s2">&#34;</span><span class="p">)</span>  
+</span></span><span class="line"><span class="cl">  
+</span></span><span class="line"><span class="cl">            <span class="k">except</span> <span class="ne">Exception</span> <span class="k">as</span> <span class="n">e</span><span class="p">:</span>  
+</span></span><span class="line"><span class="cl">                <span class="n">tk</span><span class="o">.</span><span class="n">messagebox</span><span class="o">.</span><span class="n">showerror</span><span class="p">(</span><span class="s2">&#34;错误&#34;</span><span class="p">,</span> <span class="sa">f</span><span class="s2">&#34;处理图片时出错：</span><span class="si">{</span><span class="nb">str</span><span class="p">(</span><span class="n">e</span><span class="p">)</span><span class="si">}</span><span class="s2">&#34;</span><span class="p">)</span>  
+</span></span><span class="line"><span class="cl">                <span class="k">continue</span>  
+</span></span><span class="line"><span class="cl">  
+</span></span><span class="line"><span class="cl">        <span class="k">if</span> <span class="n">all_data</span><span class="p">:</span>  
+</span></span><span class="line"><span class="cl">            <span class="k">try</span><span class="p">:</span>  
+</span></span><span class="line"><span class="cl">                <span class="c1"># 直接使用整理后的数据创建DataFrame  </span>
+</span></span><span class="line"><span class="cl">                <span class="n">df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">(</span><span class="n">all_data</span><span class="p">)</span>  
+</span></span><span class="line"><span class="cl">  
+</span></span><span class="line"><span class="cl">                <span class="c1"># 使用指定路径保存Excel  </span>
+</span></span><span class="line"><span class="cl">                <span class="n">timestamp</span> <span class="o">=</span> <span class="n">datetime</span><span class="o">.</span><span class="n">datetime</span><span class="o">.</span><span class="n">now</span><span class="p">()</span><span class="o">.</span><span class="n">strftime</span><span class="p">(</span><span class="s2">&#34;%Y%m</span><span class="si">%d</span><span class="s2">_%H%M%S&#34;</span><span class="p">)</span>  
+</span></span><span class="line"><span class="cl">                <span class="n">output_file</span> <span class="o">=</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">excel_output_path</span><span class="p">,</span> <span class="sa">f</span><span class="s2">&#34;提取结果_</span><span class="si">{</span><span class="n">timestamp</span><span class="si">}</span><span class="s2">.xlsx&#34;</span><span class="p">)</span>  
+</span></span><span class="line"><span class="cl">  
+</span></span><span class="line"><span class="cl">                <span class="n">df</span><span class="o">.</span><span class="n">to_excel</span><span class="p">(</span><span class="n">output_file</span><span class="p">,</span> <span class="n">index</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>  
+</span></span><span class="line"><span class="cl">                <span class="n">tk</span><span class="o">.</span><span class="n">messagebox</span><span class="o">.</span><span class="n">showinfo</span><span class="p">(</span><span class="s2">&#34;成功&#34;</span><span class="p">,</span> <span class="sa">f</span><span class="s2">&#34;数据已保存到：</span><span class="si">{</span><span class="n">output_file</span><span class="si">}</span><span class="s2">&#34;</span><span class="p">)</span>  
+</span></span><span class="line"><span class="cl">            <span class="k">except</span> <span class="ne">Exception</span> <span class="k">as</span> <span class="n">e</span><span class="p">:</span>  
+</span></span><span class="line"><span class="cl">                <span class="n">tk</span><span class="o">.</span><span class="n">messagebox</span><span class="o">.</span><span class="n">showerror</span><span class="p">(</span><span class="s2">&#34;错误&#34;</span><span class="p">,</span> <span class="sa">f</span><span class="s2">&#34;保存Excel文件时出错：</span><span class="si">{</span><span class="nb">str</span><span class="p">(</span><span class="n">e</span><span class="p">)</span><span class="si">}</span><span class="s2">&#34;</span><span class="p">)</span>  
+</span></span><span class="line"><span class="cl">  
+</span></span><span class="line"><span class="cl">    <span class="k">def</span> <span class="nf">crop_current_image</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>  
+</span></span><span class="line"><span class="cl">        <span class="s2">&#34;&#34;&#34;裁剪当前显示的图片&#34;&#34;&#34;</span>  
+</span></span><span class="line"><span class="cl">        <span class="k">if</span> <span class="ow">not</span> <span class="bp">self</span><span class="o">.</span><span class="n">images</span> <span class="ow">or</span> <span class="bp">self</span><span class="o">.</span><span class="n">current_display_index</span> <span class="o">&gt;=</span> <span class="nb">len</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">images</span><span class="p">):</span>  
+</span></span><span class="line"><span class="cl">            <span class="n">tk</span><span class="o">.</span><span class="n">messagebox</span><span class="o">.</span><span class="n">showwarning</span><span class="p">(</span><span class="s2">&#34;警告&#34;</span><span class="p">,</span> <span class="s2">&#34;没有可裁剪的图片！&#34;</span><span class="p">)</span>  
+</span></span><span class="line"><span class="cl">            <span class="k">return</span>  
+</span></span><span class="line"><span class="cl">  
+</span></span><span class="line"><span class="cl">        <span class="n">img_info</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">images</span><span class="p">[</span><span class="bp">self</span><span class="o">.</span><span class="n">current_display_index</span><span class="p">]</span>  
+</span></span><span class="line"><span class="cl">        <span class="n">CropWindow</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">root</span><span class="p">,</span> <span class="n">img_info</span><span class="p">[</span><span class="s1">&#39;filepath&#39;</span><span class="p">],</span>  
+</span></span><span class="line"><span class="cl">                   <span class="k">lambda</span> <span class="n">cropped</span><span class="p">:</span> <span class="bp">self</span><span class="o">.</span><span class="n">on_crop_complete</span><span class="p">(</span><span class="n">cropped</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">current_display_index</span><span class="p">))</span>  
+</span></span><span class="line"><span class="cl">  
+</span></span><span class="line"><span class="cl">    <span class="k">def</span> <span class="nf">on_crop_complete</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">cropped_image</span><span class="p">,</span> <span class="n">index</span><span class="p">):</span>  
+</span></span><span class="line"><span class="cl">        <span class="s2">&#34;&#34;&#34;处理裁剪完成的图片&#34;&#34;&#34;</span>  
+</span></span><span class="line"><span class="cl">        <span class="k">if</span> <span class="mi">0</span> <span class="o">&lt;=</span> <span class="n">index</span> <span class="o">&lt;</span> <span class="nb">len</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">images</span><span class="p">):</span>  
+</span></span><span class="line"><span class="cl">            <span class="bp">self</span><span class="o">.</span><span class="n">images</span><span class="p">[</span><span class="n">index</span><span class="p">][</span><span class="s1">&#39;image&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">cropped_image</span>  
+</span></span><span class="line"><span class="cl">            <span class="bp">self</span><span class="o">.</span><span class="n">refresh_thumbnail_view</span><span class="p">()</span>  
+</span></span><span class="line"><span class="cl">            <span class="bp">self</span><span class="o">.</span><span class="n">update_main_display</span><span class="p">()</span>  
+</span></span><span class="line"><span class="cl">  
+</span></span><span class="line"><span class="cl">  
+</span></span><span class="line"><span class="cl"><span class="k">def</span> <span class="nf">main</span><span class="p">():</span>  
+</span></span><span class="line"><span class="cl">    <span class="n">root</span> <span class="o">=</span> <span class="n">tk</span><span class="o">.</span><span class="n">Tk</span><span class="p">()</span>  
+</span></span><span class="line"><span class="cl">    <span class="n">app</span> <span class="o">=</span> <span class="n">ImageProcessorApp</span><span class="p">(</span><span class="n">root</span><span class="p">)</span>  
+</span></span><span class="line"><span class="cl">    <span class="n">root</span><span class="o">.</span><span class="n">mainloop</span><span class="p">()</span>  
+</span></span><span class="line"><span class="cl">  
+</span></span><span class="line"><span class="cl"><span class="k">if</span> <span class="vm">__name__</span> <span class="o">==</span> <span class="s2">&#34;__main__&#34;</span><span class="p">:</span>  
+</span></span><span class="line"><span class="cl">    <span class="n">main</span><span class="p">()</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div>
+</section>
+
+
+    <footer class="article-footer">
+    
+
+    
+    <section class="article-copyright">
+        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-copyright" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="12" cy="12" r="9" />
+  <path d="M14.5 9a3.5 4 0 1 0 0 6" />
+</svg>
+
+
+
+        <span>Licensed under CC BY-NC-SA 4.0</span>
+    </section>
+    </footer>
+
+
+    
+        <link 
+                rel="stylesheet" 
+                href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI&#43;WdtXRGWt2kTvGFasHpSy3SV"crossorigin="anonymous"
+            ><script 
+                src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG&#43;vnGctmUb0ZY0l8"crossorigin="anonymous"
+                defer
+                >
+            </script><script 
+                src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"integrity="sha384-&#43;VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4&#43;/RRE05"crossorigin="anonymous"
+                defer
+                >
+            </script><script>
+    window.addEventListener("DOMContentLoaded", () => {
+        renderMathInElement(document.body, {
+            delimiters: [
+                { left: "$$", right: "$$", display: true },
+                { left: "$", right: "$", display: false },
+                { left: "\\(", right: "\\)", display: false },
+                { left: "\\[", right: "\\]", display: true }
+            ],
+            ignoredClasses: ["gist"]
+        });})
+</script>
+    
+</article>
+
+    
+
+    
+
+     
+    
+        
+    
+
+    <footer class="site-footer">
+    <section class="copyright">
+        &copy; 
+        
+        2025 SweetGargamel
+    </section>
+    
+    <section class="powerby">
+        
+            Recording Myself! <br/>
+        使用 <a href="https://gohugo.io/" target="_blank" rel="noopener">Hugo</a> 构建 <br />
+        主题 <b><a href="https://github.com/CaiJimmy/hugo-theme-stack" target="_blank" rel="noopener" data-version="3.28.0">Stack</a></b> 由 <a href="https://jimmycai.com" target="_blank" rel="noopener">Jimmy</a> 设计
+    </section>
+</footer>
+
+
+    
+<div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+
+    
+    <div class="pswp__bg"></div>
+
+    
+    <div class="pswp__scroll-wrap">
+
+        
+        <div class="pswp__container">
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+        </div>
+
+        
+        <div class="pswp__ui pswp__ui--hidden">
+
+            <div class="pswp__top-bar">
+
+                
+
+                <div class="pswp__counter"></div>
+
+                <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+
+                <button class="pswp__button pswp__button--share" title="Share"></button>
+
+                <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+
+                <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+
+                
+                
+                <div class="pswp__preloader">
+                    <div class="pswp__preloader__icn">
+                        <div class="pswp__preloader__cut">
+                            <div class="pswp__preloader__donut"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+                <div class="pswp__share-tooltip"></div>
+            </div>
+
+            <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
+            </button>
+
+            <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
+            </button>
+
+            <div class="pswp__caption">
+                <div class="pswp__caption__center"></div>
+            </div>
+
+        </div>
+
+    </div>
+
+</div><script 
+                src="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe.min.js"integrity="sha256-ePwmChbbvXbsO02lbM3HoHbSHTHFAeChekF1xKJdleo="crossorigin="anonymous"
+                defer
+                >
+            </script><script 
+                src="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe-ui-default.min.js"integrity="sha256-UKkzOn/w1mBxRmLLGrSeyB4e1xbrp4xylgAWb3M42pU="crossorigin="anonymous"
+                defer
+                >
+            </script><link 
+                rel="stylesheet" 
+                href="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/default-skin/default-skin.min.css"crossorigin="anonymous"
+            ><link 
+                rel="stylesheet" 
+                href="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe.min.css"crossorigin="anonymous"
+            >
+
+            </main>
+        </div>
+        <script 
+                src="https://cdn.jsdelivr.net/npm/node-vibrant@3.1.6/dist/vibrant.min.js"integrity="sha256-awcR2jno4kI5X0zL8ex0vi2z&#43;KMkF24hUW8WePSA9HM="crossorigin="anonymous"
+                
+                >
+            </script><script type="text/javascript" src="/ts/main.1e9a3bafd846ced4c345d084b355fb8c7bae75701c338f8a1f8a82c780137826.js" defer></script>
+<script>
+    (function () {
+        const customFont = document.createElement('link');
+        customFont.href = "https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap";
+
+        customFont.type = "text/css";
+        customFont.rel = "stylesheet";
+
+        document.head.appendChild(customFont);
+    }());
+</script>
+
+    </body>
+</html>

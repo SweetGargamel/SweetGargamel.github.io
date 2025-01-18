@@ -32,6 +32,10 @@
 &lt;p&gt;本文章请搭配NJU-SICP Project04 EC (Adopted from CS61A from Berkeley) 食用&lt;/p&gt;
 &lt;p&gt;Written By SweetGargamel&lt;/p&gt;
 &lt;/blockquote&gt;
+&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://sicp.pascal-lab.net/2024/projects/proj04/intro.html&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;Introduction - proj04: Scheme&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://sicp.pascal-lab.net/2024/projects/proj04/guide1.html&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;Debugging Guide - proj04: Scheme&lt;/a&gt;&lt;/p&gt;
 &lt;h2 id=&#34;原问题&#34;&gt;原问题
 &lt;/h2&gt;&lt;h3 id=&#34;why-current-interpreter-cannot-properly-process-tail-call&#34;&gt;Why current interpreter cannot properly process tail call?
 &lt;/h3&gt;&lt;p&gt;Consider such scheme code:&lt;/p&gt;
