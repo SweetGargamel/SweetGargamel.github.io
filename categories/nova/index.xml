@@ -26,19 +26,46 @@
 &lt;/li&gt;
 &lt;li&gt;
 &lt;p&gt;点第二个
-![[Cursor.png|500]]&lt;/p&gt;
+&lt;img src=&#34;https://SweetGargamel.github.io/Cursor.png&#34;
+	
+	
+	
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;500&#34;
+	
+	
+&gt;&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
 &lt;p&gt;后面你可以直接导入VScode的客户端即可&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
 &lt;p&gt;这里最好选隐私模式
-![[Cursor-1.png|500]]&lt;/p&gt;
+&lt;img src=&#34;https://SweetGargamel.github.io/Cursor-1.png&#34;
+	
+	
+	
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;500&#34;
+	
+	
+&gt;&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
 &lt;h2 id=&#34;2使用cursor&#34;&gt;2	使用Cursor
 &lt;/h2&gt;&lt;h3 id=&#34;21最核心的就是tab自动补全&#34;&gt;2.1	最核心的就是tab自动补全
-&lt;/h3&gt;&lt;p&gt;![[df89e7876aad97304565aecf2f862db1_MD5.png]]&lt;/p&gt;
+&lt;/h3&gt;&lt;p&gt;&lt;img src=&#34;https://SweetGargamel.github.io/df89e7876aad97304565aecf2f862db1_MD5.png&#34;
+	
+	
+	
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;df89e7876aad97304565aecf2f862db1_MD5&#34;
+	
+	
+&gt;&lt;/p&gt;
 &lt;h2 id=&#34;3chat--和-composer&#34;&gt;3	Chat  和 Composer
 &lt;/h2&gt;&lt;h3 id=&#34;31怎么使用&#34;&gt;3.1	怎么使用
 &lt;/h3&gt;&lt;ul&gt;
@@ -82,17 +109,71 @@
 &lt;h3 id=&#34;34添加文档&#34;&gt;3.4	添加文档
 &lt;/h3&gt;&lt;p&gt;&lt;code&gt;@doc&lt;/code&gt;可以添加本地文档，当然他默认会带一些，但是我们也可以自己添加；&lt;/p&gt;
 &lt;p&gt;后面带有&lt;code&gt;offical&lt;/code&gt;的就是官方文档&lt;/p&gt;
-&lt;p&gt;![[74f1a15c6f7a9a2da98784532c388351_MD5.png]]&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://SweetGargamel.github.io/74f1a15c6f7a9a2da98784532c388351_MD5.png&#34;
+	
+	
+	
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;74f1a15c6f7a9a2da98784532c388351_MD5&#34;
+	
+	
+&gt;&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;code&gt;Setting-Features-Docs&lt;/code&gt;中我们可以直接输入一个在线链接的地址&lt;/li&gt;
-&lt;li&gt;![[d89d690afbf87a287040bf748bcfd81f_MD5.png]]&lt;/li&gt;
+&lt;li&gt;&lt;img src=&#34;https://SweetGargamel.github.io/d89d690afbf87a287040bf748bcfd81f_MD5.png&#34;
+	
+	
+	
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;d89d690afbf87a287040bf748bcfd81f_MD5&#34;
+	
+	
+&gt;&lt;/li&gt;
 &lt;li&gt;注意如果只是一个单独的url的话，他就是检索当前页面
-![[29f8fe125190d2344076cee710a1e26c_MD5.png|475]]&lt;/li&gt;
+&lt;img src=&#34;https://SweetGargamel.github.io/29f8fe125190d2344076cee710a1e26c_MD5.png&#34;
+	
+	
+	
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;475&#34;
+	
+	
+&gt;&lt;/li&gt;
 &lt;li&gt;否则就是检索当前页面和其子页面
-![[140880261c12f1165943e723072182f1_MD5.png|475]]
-![[7213941e53af5b8984e88a845f0bdff1_MD5.png|475]]&lt;/li&gt;
+&lt;img src=&#34;https://SweetGargamel.github.io/140880261c12f1165943e723072182f1_MD5.png&#34;
+	
+	
+	
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;475&#34;
+	
+	
+&gt;
+&lt;img src=&#34;https://SweetGargamel.github.io/7213941e53af5b8984e88a845f0bdff1_MD5.png&#34;
+	
+	
+	
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;475&#34;
+	
+	
+&gt;&lt;/li&gt;
 &lt;li&gt;如果我临时有链接，可以直接&lt;code&gt;@link&lt;/code&gt;+你的链接的话，他就会解析你的链接，否则他会把他当做prompt去看待
-![[c0850ecfb35b85d301be5140d58eb430_MD5.png|500]]&lt;/li&gt;
+&lt;img src=&#34;https://SweetGargamel.github.io/c0850ecfb35b85d301be5140d58eb430_MD5.png&#34;
+	
+	
+	
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;500&#34;
+	
+	
+&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h3 id=&#34;35链接网页&#34;&gt;3.5	链接网页
 &lt;/h3&gt;&lt;p&gt;使用&lt;code&gt;@web&lt;/code&gt;就是可以直接让这个东西联网查找&lt;/p&gt;
@@ -102,7 +183,16 @@
 &lt;h3 id=&#34;37git提交自动生成commit&#34;&gt;3.7	git提交自动生成commit
 &lt;/h3&gt;&lt;ul&gt;
 &lt;li&gt;如果你前面有比较规范的commit书写的方法的话，这里他可以自动帮你生成比较好的新的commit提交信息
-![[bc8e4c3a9691997359ac1ff3481a03fb_MD5.png|500]]&lt;/li&gt;
+&lt;img src=&#34;https://SweetGargamel.github.io/bc8e4c3a9691997359ac1ff3481a03fb_MD5.png&#34;
+	
+	
+	
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;500&#34;
+	
+	
+&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h3 id=&#34;38notepad&#34;&gt;3.8	notepad
 &lt;/h3&gt;&lt;ul&gt;
@@ -117,7 +207,16 @@
 &lt;/li&gt;
 &lt;li&gt;
 &lt;p&gt;如果需要新建的话，在右边做新增
-![[2dc96b02005873ed373ee78ad81ea270_MD5.png|500]]&lt;/p&gt;
+&lt;img src=&#34;https://SweetGargamel.github.io/2dc96b02005873ed373ee78ad81ea270_MD5.png&#34;
+	
+	
+	
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;500&#34;
+	
+	
+&gt;&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
 &lt;h3 id=&#34;39codebase&#34;&gt;3.9	codebase
@@ -132,13 +231,31 @@
 &lt;li&gt;然后最后生成回应&lt;/li&gt;
 &lt;/ol&gt;
 &lt;p&gt;虽然理论每次打开Cursor都会采集一次，但是为了以防万一，还是按照下面的路径来重新采集一次
-![[5c87f926e7e38c7d0927b24b0fe5fc25_MD5.png|500]]&lt;/p&gt;
+&lt;img src=&#34;https://SweetGargamel.github.io/5c87f926e7e38c7d0927b24b0fe5fc25_MD5.png&#34;
+	
+	
+	
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;500&#34;
+	
+	
+&gt;&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;理论他会把你的数据上传到OpenAI上（应该是这个意思）做一个远程数据库检测&lt;/li&gt;
 &lt;li&gt;他会检查&lt;code&gt;gitignore&lt;/code&gt;，这样就可以防止秘钥等问题上传泄漏的问题&lt;/li&gt;
 &lt;li&gt;如果没有，你也可以新建&lt;code&gt;.cursorignore&lt;/code&gt;来做忽略，这样就可以减少被索引的文件信息量，从而提高检索效率/避免数据泄露&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;![[cb2bfe7c4c7927239b7b715589a72c81_MD5.png|500]]&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://SweetGargamel.github.io/cb2bfe7c4c7927239b7b715589a72c81_MD5.png&#34;
+	
+	
+	
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;500&#34;
+	
+	
+&gt;&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;理论来说，日志文件、环境变量（隐私数据）、构建文件、缓存信息文件、第三方信息配置文件都可以忽略&lt;/li&gt;
 &lt;li&gt;你也可以让Cursor来帮你生成对应的文件&lt;/li&gt;
@@ -147,7 +264,16 @@
 &lt;/h3&gt;&lt;ul&gt;
 &lt;li&gt;这个是对Cursor的全局回复的设置&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;![[b6a1d2aa7a985c711117703c583da6b7_MD5.png|500]]&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://SweetGargamel.github.io/b6a1d2aa7a985c711117703c583da6b7_MD5.png&#34;
+	
+	
+	
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;500&#34;
+	
+	
+&gt;&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;对于某一个项目文件，我们可以生成一个&lt;code&gt;cursorrules&lt;/code&gt;的文件只针对这个项目的规则&lt;/li&gt;
 &lt;/ul&gt;
@@ -156,19 +282,55 @@
 &lt;/h3&gt;&lt;ul&gt;
 &lt;li&gt;你可以一个个查看来看是否修改&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;![[eb0812392718c5e9f85c3b27f2594e70_MD5.png|500]]&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://SweetGargamel.github.io/eb0812392718c5e9f85c3b27f2594e70_MD5.png&#34;
+	
+	
+	
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;500&#34;
+	
+	
+&gt;&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;我们也可以先点击&lt;code&gt;save all&lt;/code&gt;然后运行，测试后在接收即可&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h3 id=&#34;42回滚&#34;&gt;4.2	回滚
 &lt;/h3&gt;&lt;p&gt;Cursor会对每次回答做一个&lt;code&gt;Checkpoint&lt;/code&gt;，我们可以做回滚、甚至重新编辑问题
-![[2c62f8b8c6aef041e5dd5d528dedb51b_MD5.png|500]]&lt;/p&gt;
+&lt;img src=&#34;https://SweetGargamel.github.io/2c62f8b8c6aef041e5dd5d528dedb51b_MD5.png&#34;
+	
+	
+	
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;500&#34;
+	
+	
+&gt;&lt;/p&gt;
 &lt;h3 id=&#34;43预防最泛化的&#34;&gt;4.3	预防（最泛化的）
 &lt;/h3&gt;&lt;h4 id=&#34;431让ai重复你的要求&#34;&gt;4.3.1	让AI重复你的要求
 &lt;/h4&gt;&lt;p&gt;在给AI的需求的时候，我们要先让他复述一遍需求，然后再答复操作，这样可以做二次核对&lt;/p&gt;
-&lt;p&gt;![[0b04d4d18f63b1848a0f3afec52fe724_MD5.png|500]]&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://SweetGargamel.github.io/0b04d4d18f63b1848a0f3afec52fe724_MD5.png&#34;
+	
+	
+	
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;500&#34;
+	
+	
+&gt;&lt;/p&gt;
 &lt;h4 id=&#34;432缩小指令的辐射范围&#34;&gt;4.3.2	缩小指令的辐射范围
-&lt;/h4&gt;&lt;p&gt;![[0fa5e3e61cb0069eafd902573f22d0c5_MD5.png|500]]&lt;/p&gt;
+&lt;/h4&gt;&lt;p&gt;&lt;img src=&#34;https://SweetGargamel.github.io/0fa5e3e61cb0069eafd902573f22d0c5_MD5.png&#34;
+	
+	
+	
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;500&#34;
+	
+	
+&gt;&lt;/p&gt;
 &lt;h4 id=&#34;433需求拆解&#34;&gt;4.3.3	需求拆解
 &lt;/h4&gt;&lt;ul&gt;
 &lt;li&gt;如果需求不方便自己拆开给ai做，我们可以按照有序或者无序列表的形式来给到AI&lt;/li&gt;
@@ -199,7 +361,16 @@
 &lt;/li&gt;
 &lt;li&gt;
 &lt;p&gt;然后做&lt;code&gt;Codebase indexing&lt;/code&gt;下的&lt;code&gt;Resvnc Index&lt;/code&gt;重新索引
-![[89d9ead8310cd654ae09a61c4c9d67a9_MD5.png|500]]&lt;/p&gt;
+&lt;img src=&#34;https://SweetGargamel.github.io/89d9ead8310cd654ae09a61c4c9d67a9_MD5.png&#34;
+	
+	
+	
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;500&#34;
+	
+	
+&gt;&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
 &lt;p&gt;然后把所有的技术文档都录入到doc中以作备用&lt;/p&gt;
@@ -227,14 +398,32 @@
 &lt;/li&gt;
 &lt;li&gt;
 &lt;p&gt;我们可以使用一些临时邮箱
-![[42584f5a1fff54d60abde24da575b224_MD5.png|500]]&lt;/p&gt;
+&lt;img src=&#34;https://SweetGargamel.github.io/42584f5a1fff54d60abde24da575b224_MD5.png&#34;
+	
+	
+	
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;500&#34;
+	
+	
+&gt;&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
 &lt;p&gt;无限邮箱&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;使用2925无限邮箱，实际上这个东西的话就是一个主邮箱，然后主邮箱后面跟一堆自由项的序号就行
-![[5465a71a152140895356d53a0e3d4e5a_MD5.png|500]]&lt;/p&gt;
+&lt;img src=&#34;https://SweetGargamel.github.io/5465a71a152140895356d53a0e3d4e5a_MD5.png&#34;
+	
+	
+	
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;500&#34;
+	
+	
+&gt;&lt;/p&gt;
 &lt;h2 id=&#34;6防止指纹检测&#34;&gt;6	防止指纹检测
 &lt;/h2&gt;&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://www.bilibili.com/video/BV1yorUYWEGD?spm_id_from=333.788.player.switch&amp;amp;vd_source=911b19e1c06331136e08168cdcc3966e&amp;amp;p=7&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;如何免费白嫖 Cursor（2）_哔哩哔哩_bilibili&lt;/a&gt;&lt;/p&gt;
