@@ -25,15 +25,17 @@
 &lt;p&gt;前面自己选编辑器和Language即可，其他默认&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
-&lt;p&gt;点第二个
-&lt;img src=&#34;https://SweetGargamel.github.io/Cursor.png&#34;
-	
-	
-	
+&lt;p&gt;点第二个&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://SweetGargamel.github.io/p/cursor%E4%BD%BF%E7%94%A8%E7%9A%84%E7%AC%94%E8%AE%B0/attachments/Cursor.png&#34;
+	width=&#34;880&#34;
+	height=&#34;368&#34;
+	srcset=&#34;https://SweetGargamel.github.io/p/cursor%E4%BD%BF%E7%94%A8%E7%9A%84%E7%AC%94%E8%AE%B0/attachments/Cursor_hu_44f003fc75063bb4.png 480w, https://SweetGargamel.github.io/p/cursor%E4%BD%BF%E7%94%A8%E7%9A%84%E7%AC%94%E8%AE%B0/attachments/Cursor_hu_8ae34dfcd92fa2b8.png 1024w&#34;
 	loading=&#34;lazy&#34;
 	
-		alt=&#34;500&#34;
 	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;239&#34;
+		data-flex-basis=&#34;573px&#34;
 	
 &gt;&lt;/p&gt;
 &lt;/li&gt;
@@ -42,28 +44,32 @@
 &lt;/li&gt;
 &lt;li&gt;
 &lt;p&gt;这里最好选隐私模式
-&lt;img src=&#34;https://SweetGargamel.github.io/Cursor-1.png&#34;
-	
-	
-	
+&lt;img src=&#34;https://SweetGargamel.github.io/p/cursor%E4%BD%BF%E7%94%A8%E7%9A%84%E7%AC%94%E8%AE%B0/attachments/Cursor-1.png&#34;
+	width=&#34;984&#34;
+	height=&#34;786&#34;
+	srcset=&#34;https://SweetGargamel.github.io/p/cursor%E4%BD%BF%E7%94%A8%E7%9A%84%E7%AC%94%E8%AE%B0/attachments/Cursor-1_hu_2e5d5bdbd8c02367.png 480w, https://SweetGargamel.github.io/p/cursor%E4%BD%BF%E7%94%A8%E7%9A%84%E7%AC%94%E8%AE%B0/attachments/Cursor-1_hu_dfd80a2f14098e22.png 1024w&#34;
 	loading=&#34;lazy&#34;
 	
-		alt=&#34;500&#34;
 	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;125&#34;
+		data-flex-basis=&#34;300px&#34;
 	
 &gt;&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
 &lt;h2 id=&#34;2使用cursor&#34;&gt;2	使用Cursor
 &lt;/h2&gt;&lt;h3 id=&#34;21最核心的就是tab自动补全&#34;&gt;2.1	最核心的就是tab自动补全
-&lt;/h3&gt;&lt;p&gt;&lt;img src=&#34;https://SweetGargamel.github.io/df89e7876aad97304565aecf2f862db1_MD5.png&#34;
-	
-	
-	
+&lt;/h3&gt;&lt;p&gt;&lt;img src=&#34;https://SweetGargamel.github.io/p/cursor%E4%BD%BF%E7%94%A8%E7%9A%84%E7%AC%94%E8%AE%B0/attachments/df89e7876aad97304565aecf2f862db1_MD5.png&#34;
+	width=&#34;541&#34;
+	height=&#34;472&#34;
+	srcset=&#34;https://SweetGargamel.github.io/p/cursor%E4%BD%BF%E7%94%A8%E7%9A%84%E7%AC%94%E8%AE%B0/attachments/df89e7876aad97304565aecf2f862db1_MD5_hu_ea148af3db250a31.png 480w, https://SweetGargamel.github.io/p/cursor%E4%BD%BF%E7%94%A8%E7%9A%84%E7%AC%94%E8%AE%B0/attachments/df89e7876aad97304565aecf2f862db1_MD5_hu_8f653697e25e4029.png 1024w&#34;
 	loading=&#34;lazy&#34;
 	
-		alt=&#34;df89e7876aad97304565aecf2f862db1_MD5&#34;
 	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;114&#34;
+		data-flex-basis=&#34;275px&#34;
 	
 &gt;&lt;/p&gt;
 &lt;h2 id=&#34;3chat--和-composer&#34;&gt;3	Chat  和 Composer
@@ -108,70 +114,86 @@
 &lt;/ul&gt;
 &lt;h3 id=&#34;34添加文档&#34;&gt;3.4	添加文档
 &lt;/h3&gt;&lt;p&gt;&lt;code&gt;@doc&lt;/code&gt;可以添加本地文档，当然他默认会带一些，但是我们也可以自己添加；&lt;/p&gt;
-&lt;p&gt;后面带有&lt;code&gt;offical&lt;/code&gt;的就是官方文档&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://SweetGargamel.github.io/74f1a15c6f7a9a2da98784532c388351_MD5.png&#34;
-	
-	
-	
+&lt;p&gt;后面带有&lt;code&gt;offical&lt;/code&gt;的就是官方文档
+&lt;img src=&#34;https://SweetGargamel.github.io/p/cursor%E4%BD%BF%E7%94%A8%E7%9A%84%E7%AC%94%E8%AE%B0/attachments/74f1a15c6f7a9a2da98784532c388351_MD5.png&#34;
+	width=&#34;772&#34;
+	height=&#34;697&#34;
+	srcset=&#34;https://SweetGargamel.github.io/p/cursor%E4%BD%BF%E7%94%A8%E7%9A%84%E7%AC%94%E8%AE%B0/attachments/74f1a15c6f7a9a2da98784532c388351_MD5_hu_299780f6929e313d.png 480w, https://SweetGargamel.github.io/p/cursor%E4%BD%BF%E7%94%A8%E7%9A%84%E7%AC%94%E8%AE%B0/attachments/74f1a15c6f7a9a2da98784532c388351_MD5_hu_e531e927cf2235f1.png 1024w&#34;
 	loading=&#34;lazy&#34;
 	
 		alt=&#34;74f1a15c6f7a9a2da98784532c388351_MD5&#34;
 	
 	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;110&#34;
+		data-flex-basis=&#34;265px&#34;
+	
 &gt;&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;code&gt;Setting-Features-Docs&lt;/code&gt;中我们可以直接输入一个在线链接的地址&lt;/li&gt;
-&lt;li&gt;&lt;img src=&#34;https://SweetGargamel.github.io/d89d690afbf87a287040bf748bcfd81f_MD5.png&#34;
-	
-	
-	
+&lt;li&gt;&lt;code&gt;Setting-Features-Docs&lt;/code&gt;中我们可以直接输入一个在线链接的地址
+&lt;img src=&#34;https://SweetGargamel.github.io/p/cursor%E4%BD%BF%E7%94%A8%E7%9A%84%E7%AC%94%E8%AE%B0/attachments/d89d690afbf87a287040bf748bcfd81f_MD5.png&#34;
+	width=&#34;488&#34;
+	height=&#34;192&#34;
+	srcset=&#34;https://SweetGargamel.github.io/p/cursor%E4%BD%BF%E7%94%A8%E7%9A%84%E7%AC%94%E8%AE%B0/attachments/d89d690afbf87a287040bf748bcfd81f_MD5_hu_eed3288685e83748.png 480w, https://SweetGargamel.github.io/p/cursor%E4%BD%BF%E7%94%A8%E7%9A%84%E7%AC%94%E8%AE%B0/attachments/d89d690afbf87a287040bf748bcfd81f_MD5_hu_57000fc617a0ae89.png 1024w&#34;
 	loading=&#34;lazy&#34;
 	
 		alt=&#34;d89d690afbf87a287040bf748bcfd81f_MD5&#34;
 	
 	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;254&#34;
+		data-flex-basis=&#34;610px&#34;
+	
 &gt;&lt;/li&gt;
 &lt;li&gt;注意如果只是一个单独的url的话，他就是检索当前页面
-&lt;img src=&#34;https://SweetGargamel.github.io/29f8fe125190d2344076cee710a1e26c_MD5.png&#34;
-	
-	
-	
+&lt;img src=&#34;https://SweetGargamel.github.io/p/cursor%E4%BD%BF%E7%94%A8%E7%9A%84%E7%AC%94%E8%AE%B0/attachments/29f8fe125190d2344076cee710a1e26c_MD5.png&#34;
+	width=&#34;1094&#34;
+	height=&#34;533&#34;
+	srcset=&#34;https://SweetGargamel.github.io/p/cursor%E4%BD%BF%E7%94%A8%E7%9A%84%E7%AC%94%E8%AE%B0/attachments/29f8fe125190d2344076cee710a1e26c_MD5_hu_1d718fcd94563f79.png 480w, https://SweetGargamel.github.io/p/cursor%E4%BD%BF%E7%94%A8%E7%9A%84%E7%AC%94%E8%AE%B0/attachments/29f8fe125190d2344076cee710a1e26c_MD5_hu_63c198fb12f849be.png 1024w&#34;
 	loading=&#34;lazy&#34;
 	
-		alt=&#34;475&#34;
 	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;205&#34;
+		data-flex-basis=&#34;492px&#34;
 	
 &gt;&lt;/li&gt;
 &lt;li&gt;否则就是检索当前页面和其子页面
-&lt;img src=&#34;https://SweetGargamel.github.io/140880261c12f1165943e723072182f1_MD5.png&#34;
-	
-	
-	
+&lt;img src=&#34;https://SweetGargamel.github.io/p/cursor%E4%BD%BF%E7%94%A8%E7%9A%84%E7%AC%94%E8%AE%B0/attachments/140880261c12f1165943e723072182f1_MD5.png&#34;
+	width=&#34;1111&#34;
+	height=&#34;759&#34;
+	srcset=&#34;https://SweetGargamel.github.io/p/cursor%E4%BD%BF%E7%94%A8%E7%9A%84%E7%AC%94%E8%AE%B0/attachments/140880261c12f1165943e723072182f1_MD5_hu_9162da43a313fee2.png 480w, https://SweetGargamel.github.io/p/cursor%E4%BD%BF%E7%94%A8%E7%9A%84%E7%AC%94%E8%AE%B0/attachments/140880261c12f1165943e723072182f1_MD5_hu_d9fede07722962d.png 1024w&#34;
 	loading=&#34;lazy&#34;
 	
-		alt=&#34;475&#34;
 	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;146&#34;
+		data-flex-basis=&#34;351px&#34;
 	
 &gt;
-&lt;img src=&#34;https://SweetGargamel.github.io/7213941e53af5b8984e88a845f0bdff1_MD5.png&#34;
-	
-	
-	
+&lt;img src=&#34;https://SweetGargamel.github.io/p/cursor%E4%BD%BF%E7%94%A8%E7%9A%84%E7%AC%94%E8%AE%B0/attachments/7213941e53af5b8984e88a845f0bdff1_MD5.png&#34;
+	width=&#34;802&#34;
+	height=&#34;616&#34;
+	srcset=&#34;https://SweetGargamel.github.io/p/cursor%E4%BD%BF%E7%94%A8%E7%9A%84%E7%AC%94%E8%AE%B0/attachments/7213941e53af5b8984e88a845f0bdff1_MD5_hu_ff51b89dac42eb79.png 480w, https://SweetGargamel.github.io/p/cursor%E4%BD%BF%E7%94%A8%E7%9A%84%E7%AC%94%E8%AE%B0/attachments/7213941e53af5b8984e88a845f0bdff1_MD5_hu_61559be4bde364d0.png 1024w&#34;
 	loading=&#34;lazy&#34;
 	
-		alt=&#34;475&#34;
 	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;130&#34;
+		data-flex-basis=&#34;312px&#34;
 	
 &gt;&lt;/li&gt;
 &lt;li&gt;如果我临时有链接，可以直接&lt;code&gt;@link&lt;/code&gt;+你的链接的话，他就会解析你的链接，否则他会把他当做prompt去看待
-&lt;img src=&#34;https://SweetGargamel.github.io/c0850ecfb35b85d301be5140d58eb430_MD5.png&#34;
-	
-	
-	
+&lt;img src=&#34;https://SweetGargamel.github.io/p/cursor%E4%BD%BF%E7%94%A8%E7%9A%84%E7%AC%94%E8%AE%B0/attachments/c0850ecfb35b85d301be5140d58eb430_MD5.png&#34;
+	width=&#34;1048&#34;
+	height=&#34;573&#34;
+	srcset=&#34;https://SweetGargamel.github.io/p/cursor%E4%BD%BF%E7%94%A8%E7%9A%84%E7%AC%94%E8%AE%B0/attachments/c0850ecfb35b85d301be5140d58eb430_MD5_hu_b1155b3f987e51e8.png 480w, https://SweetGargamel.github.io/p/cursor%E4%BD%BF%E7%94%A8%E7%9A%84%E7%AC%94%E8%AE%B0/attachments/c0850ecfb35b85d301be5140d58eb430_MD5_hu_cb888c30eafcb0fd.png 1024w&#34;
 	loading=&#34;lazy&#34;
 	
-		alt=&#34;500&#34;
 	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;182&#34;
+		data-flex-basis=&#34;438px&#34;
 	
 &gt;&lt;/li&gt;
 &lt;/ul&gt;
@@ -183,14 +205,16 @@
 &lt;h3 id=&#34;37git提交自动生成commit&#34;&gt;3.7	git提交自动生成commit
 &lt;/h3&gt;&lt;ul&gt;
 &lt;li&gt;如果你前面有比较规范的commit书写的方法的话，这里他可以自动帮你生成比较好的新的commit提交信息
-&lt;img src=&#34;https://SweetGargamel.github.io/bc8e4c3a9691997359ac1ff3481a03fb_MD5.png&#34;
-	
-	
-	
+&lt;img src=&#34;https://SweetGargamel.github.io/p/cursor%E4%BD%BF%E7%94%A8%E7%9A%84%E7%AC%94%E8%AE%B0/attachments/bc8e4c3a9691997359ac1ff3481a03fb_MD5.png&#34;
+	width=&#34;1073&#34;
+	height=&#34;873&#34;
+	srcset=&#34;https://SweetGargamel.github.io/p/cursor%E4%BD%BF%E7%94%A8%E7%9A%84%E7%AC%94%E8%AE%B0/attachments/bc8e4c3a9691997359ac1ff3481a03fb_MD5_hu_5656b433130e4b28.png 480w, https://SweetGargamel.github.io/p/cursor%E4%BD%BF%E7%94%A8%E7%9A%84%E7%AC%94%E8%AE%B0/attachments/bc8e4c3a9691997359ac1ff3481a03fb_MD5_hu_fd895fcd30f263a6.png 1024w&#34;
 	loading=&#34;lazy&#34;
 	
-		alt=&#34;500&#34;
 	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;122&#34;
+		data-flex-basis=&#34;294px&#34;
 	
 &gt;&lt;/li&gt;
 &lt;/ul&gt;
@@ -207,14 +231,16 @@
 &lt;/li&gt;
 &lt;li&gt;
 &lt;p&gt;如果需要新建的话，在右边做新增
-&lt;img src=&#34;https://SweetGargamel.github.io/2dc96b02005873ed373ee78ad81ea270_MD5.png&#34;
-	
-	
-	
+&lt;img src=&#34;https://SweetGargamel.github.io/p/cursor%E4%BD%BF%E7%94%A8%E7%9A%84%E7%AC%94%E8%AE%B0/attachments/2dc96b02005873ed373ee78ad81ea270_MD5.png&#34;
+	width=&#34;1335&#34;
+	height=&#34;822&#34;
+	srcset=&#34;https://SweetGargamel.github.io/p/cursor%E4%BD%BF%E7%94%A8%E7%9A%84%E7%AC%94%E8%AE%B0/attachments/2dc96b02005873ed373ee78ad81ea270_MD5_hu_e8e99cfda8b3fc.png 480w, https://SweetGargamel.github.io/p/cursor%E4%BD%BF%E7%94%A8%E7%9A%84%E7%AC%94%E8%AE%B0/attachments/2dc96b02005873ed373ee78ad81ea270_MD5_hu_74b545e04dfbf65d.png 1024w&#34;
 	loading=&#34;lazy&#34;
 	
-		alt=&#34;500&#34;
 	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;162&#34;
+		data-flex-basis=&#34;389px&#34;
 	
 &gt;&lt;/p&gt;
 &lt;/li&gt;
@@ -231,104 +257,131 @@
 &lt;li&gt;然后最后生成回应&lt;/li&gt;
 &lt;/ol&gt;
 &lt;p&gt;虽然理论每次打开Cursor都会采集一次，但是为了以防万一，还是按照下面的路径来重新采集一次
-&lt;img src=&#34;https://SweetGargamel.github.io/5c87f926e7e38c7d0927b24b0fe5fc25_MD5.png&#34;
-	
-	
-	
+&lt;img src=&#34;https://SweetGargamel.github.io/p/cursor%E4%BD%BF%E7%94%A8%E7%9A%84%E7%AC%94%E8%AE%B0/attachments/5c87f926e7e38c7d0927b24b0fe5fc25_MD5.png&#34;
+	width=&#34;1029&#34;
+	height=&#34;777&#34;
+	srcset=&#34;https://SweetGargamel.github.io/p/cursor%E4%BD%BF%E7%94%A8%E7%9A%84%E7%AC%94%E8%AE%B0/attachments/5c87f926e7e38c7d0927b24b0fe5fc25_MD5_hu_744cad6fc5223e92.png 480w, https://SweetGargamel.github.io/p/cursor%E4%BD%BF%E7%94%A8%E7%9A%84%E7%AC%94%E8%AE%B0/attachments/5c87f926e7e38c7d0927b24b0fe5fc25_MD5_hu_709924908b14e3d4.png 1024w&#34;
 	loading=&#34;lazy&#34;
 	
-		alt=&#34;500&#34;
 	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;132&#34;
+		data-flex-basis=&#34;317px&#34;
 	
 &gt;&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;理论他会把你的数据上传到OpenAI上（应该是这个意思）做一个远程数据库检测&lt;/li&gt;
-&lt;li&gt;他会检查&lt;code&gt;gitignore&lt;/code&gt;，这样就可以防止秘钥等问题上传泄漏的问题&lt;/li&gt;
-&lt;li&gt;如果没有，你也可以新建&lt;code&gt;.cursorignore&lt;/code&gt;来做忽略，这样就可以减少被索引的文件信息量，从而提高检索效率/避免数据泄露&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;&lt;img src=&#34;https://SweetGargamel.github.io/cb2bfe7c4c7927239b7b715589a72c81_MD5.png&#34;
-	
-	
-	
+&lt;li&gt;
+&lt;p&gt;理论他会把你的数据上传到OpenAI上（应该是这个意思）做一个远程数据库检测&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;他会检查&lt;code&gt;gitignore&lt;/code&gt;，这样就可以防止秘钥等问题上传泄漏的问题&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;如果没有，你也可以新建&lt;code&gt;.cursorignore&lt;/code&gt;来做忽略，这样就可以减少被索引的文件信息量，从而提高检索效率/避免数据泄露&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://SweetGargamel.github.io/p/cursor%E4%BD%BF%E7%94%A8%E7%9A%84%E7%AC%94%E8%AE%B0/attachments/cb2bfe7c4c7927239b7b715589a72c81_MD5.png&#34;
+	width=&#34;751&#34;
+	height=&#34;783&#34;
+	srcset=&#34;https://SweetGargamel.github.io/p/cursor%E4%BD%BF%E7%94%A8%E7%9A%84%E7%AC%94%E8%AE%B0/attachments/cb2bfe7c4c7927239b7b715589a72c81_MD5_hu_96969e30437b5955.png 480w, https://SweetGargamel.github.io/p/cursor%E4%BD%BF%E7%94%A8%E7%9A%84%E7%AC%94%E8%AE%B0/attachments/cb2bfe7c4c7927239b7b715589a72c81_MD5_hu_6e2acb2c13d81451.png 1024w&#34;
 	loading=&#34;lazy&#34;
 	
-		alt=&#34;500&#34;
 	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;95&#34;
+		data-flex-basis=&#34;230px&#34;
 	
 &gt;&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;理论来说，日志文件、环境变量（隐私数据）、构建文件、缓存信息文件、第三方信息配置文件都可以忽略&lt;/li&gt;
-&lt;li&gt;你也可以让Cursor来帮你生成对应的文件&lt;/li&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;理论来说，日志文件、环境变量（隐私数据）、构建文件、缓存信息文件、第三方信息配置文件都可以忽略&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;你也可以让Cursor来帮你生成对应的文件&lt;/p&gt;
+&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h3 id=&#34;310cursor-rules&#34;&gt;3.10	Cursor Rules
 &lt;/h3&gt;&lt;ul&gt;
-&lt;li&gt;这个是对Cursor的全局回复的设置&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;&lt;img src=&#34;https://SweetGargamel.github.io/b6a1d2aa7a985c711117703c583da6b7_MD5.png&#34;
-	
-	
-	
+&lt;li&gt;
+&lt;p&gt;这个是对Cursor的全局回复的设置&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://SweetGargamel.github.io/p/cursor%E4%BD%BF%E7%94%A8%E7%9A%84%E7%AC%94%E8%AE%B0/attachments/b6a1d2aa7a985c711117703c583da6b7_MD5.png&#34;
+	width=&#34;808&#34;
+	height=&#34;838&#34;
+	srcset=&#34;https://SweetGargamel.github.io/p/cursor%E4%BD%BF%E7%94%A8%E7%9A%84%E7%AC%94%E8%AE%B0/attachments/b6a1d2aa7a985c711117703c583da6b7_MD5_hu_2223a42b14be8ced.png 480w, https://SweetGargamel.github.io/p/cursor%E4%BD%BF%E7%94%A8%E7%9A%84%E7%AC%94%E8%AE%B0/attachments/b6a1d2aa7a985c711117703c583da6b7_MD5_hu_750048b1cb32975.png 1024w&#34;
 	loading=&#34;lazy&#34;
 	
-		alt=&#34;500&#34;
 	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;96&#34;
+		data-flex-basis=&#34;231px&#34;
 	
 &gt;&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;对于某一个项目文件，我们可以生成一个&lt;code&gt;cursorrules&lt;/code&gt;的文件只针对这个项目的规则&lt;/li&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;对于某一个项目文件，我们可以生成一个&lt;code&gt;cursorrules&lt;/code&gt;的文件只针对这个项目的规则&lt;/p&gt;
+&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h2 id=&#34;4技巧和思路&#34;&gt;4	技巧和思路
 &lt;/h2&gt;&lt;h3 id=&#34;41检测&#34;&gt;4.1	检测
 &lt;/h3&gt;&lt;ul&gt;
-&lt;li&gt;你可以一个个查看来看是否修改&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;&lt;img src=&#34;https://SweetGargamel.github.io/eb0812392718c5e9f85c3b27f2594e70_MD5.png&#34;
-	
-	
-	
+&lt;li&gt;
+&lt;p&gt;你可以一个个查看来看是否修改&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://SweetGargamel.github.io/p/cursor%E4%BD%BF%E7%94%A8%E7%9A%84%E7%AC%94%E8%AE%B0/attachments/eb0812392718c5e9f85c3b27f2594e70_MD5.png&#34;
+	width=&#34;1295&#34;
+	height=&#34;872&#34;
+	srcset=&#34;https://SweetGargamel.github.io/p/cursor%E4%BD%BF%E7%94%A8%E7%9A%84%E7%AC%94%E8%AE%B0/attachments/eb0812392718c5e9f85c3b27f2594e70_MD5_hu_c73a67d73bc34968.png 480w, https://SweetGargamel.github.io/p/cursor%E4%BD%BF%E7%94%A8%E7%9A%84%E7%AC%94%E8%AE%B0/attachments/eb0812392718c5e9f85c3b27f2594e70_MD5_hu_7ab3798eb7a57118.png 1024w&#34;
 	loading=&#34;lazy&#34;
 	
-		alt=&#34;500&#34;
 	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;148&#34;
+		data-flex-basis=&#34;356px&#34;
 	
 &gt;&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;我们也可以先点击&lt;code&gt;save all&lt;/code&gt;然后运行，测试后在接收即可&lt;/li&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;我们也可以先点击&lt;code&gt;save all&lt;/code&gt;然后运行，测试后在接收即可&lt;/p&gt;
+&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h3 id=&#34;42回滚&#34;&gt;4.2	回滚
 &lt;/h3&gt;&lt;p&gt;Cursor会对每次回答做一个&lt;code&gt;Checkpoint&lt;/code&gt;，我们可以做回滚、甚至重新编辑问题
-&lt;img src=&#34;https://SweetGargamel.github.io/2c62f8b8c6aef041e5dd5d528dedb51b_MD5.png&#34;
-	
-	
-	
+&lt;img src=&#34;https://SweetGargamel.github.io/p/cursor%E4%BD%BF%E7%94%A8%E7%9A%84%E7%AC%94%E8%AE%B0/attachments/2c62f8b8c6aef041e5dd5d528dedb51b_MD5.png&#34;
+	width=&#34;1059&#34;
+	height=&#34;942&#34;
+	srcset=&#34;https://SweetGargamel.github.io/p/cursor%E4%BD%BF%E7%94%A8%E7%9A%84%E7%AC%94%E8%AE%B0/attachments/2c62f8b8c6aef041e5dd5d528dedb51b_MD5_hu_fc626c30be8488b2.png 480w, https://SweetGargamel.github.io/p/cursor%E4%BD%BF%E7%94%A8%E7%9A%84%E7%AC%94%E8%AE%B0/attachments/2c62f8b8c6aef041e5dd5d528dedb51b_MD5_hu_61c593eb5fa9e382.png 1024w&#34;
 	loading=&#34;lazy&#34;
 	
-		alt=&#34;500&#34;
 	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;112&#34;
+		data-flex-basis=&#34;269px&#34;
 	
 &gt;&lt;/p&gt;
 &lt;h3 id=&#34;43预防最泛化的&#34;&gt;4.3	预防（最泛化的）
 &lt;/h3&gt;&lt;h4 id=&#34;431让ai重复你的要求&#34;&gt;4.3.1	让AI重复你的要求
-&lt;/h4&gt;&lt;p&gt;在给AI的需求的时候，我们要先让他复述一遍需求，然后再答复操作，这样可以做二次核对&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://SweetGargamel.github.io/0b04d4d18f63b1848a0f3afec52fe724_MD5.png&#34;
-	
-	
-	
+&lt;/h4&gt;&lt;p&gt;在给AI的需求的时候，我们要先让他复述一遍需求，然后再答复操作，这样可以做二次核对
+&lt;img src=&#34;https://SweetGargamel.github.io/p/cursor%E4%BD%BF%E7%94%A8%E7%9A%84%E7%AC%94%E8%AE%B0/attachments/0b04d4d18f63b1848a0f3afec52fe724_MD5.png&#34;
+	width=&#34;1008&#34;
+	height=&#34;803&#34;
+	srcset=&#34;https://SweetGargamel.github.io/p/cursor%E4%BD%BF%E7%94%A8%E7%9A%84%E7%AC%94%E8%AE%B0/attachments/0b04d4d18f63b1848a0f3afec52fe724_MD5_hu_b229f4ddb2043978.png 480w, https://SweetGargamel.github.io/p/cursor%E4%BD%BF%E7%94%A8%E7%9A%84%E7%AC%94%E8%AE%B0/attachments/0b04d4d18f63b1848a0f3afec52fe724_MD5_hu_b6520fdb1ac027ce.png 1024w&#34;
 	loading=&#34;lazy&#34;
 	
-		alt=&#34;500&#34;
 	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;125&#34;
+		data-flex-basis=&#34;301px&#34;
 	
 &gt;&lt;/p&gt;
 &lt;h4 id=&#34;432缩小指令的辐射范围&#34;&gt;4.3.2	缩小指令的辐射范围
-&lt;/h4&gt;&lt;p&gt;&lt;img src=&#34;https://SweetGargamel.github.io/0fa5e3e61cb0069eafd902573f22d0c5_MD5.png&#34;
-	
-	
-	
+&lt;/h4&gt;&lt;p&gt;缩小指令范围
+&lt;img src=&#34;https://SweetGargamel.github.io/p/cursor%E4%BD%BF%E7%94%A8%E7%9A%84%E7%AC%94%E8%AE%B0/attachments/0fa5e3e61cb0069eafd902573f22d0c5_MD5.png&#34;
+	width=&#34;799&#34;
+	height=&#34;918&#34;
+	srcset=&#34;https://SweetGargamel.github.io/p/cursor%E4%BD%BF%E7%94%A8%E7%9A%84%E7%AC%94%E8%AE%B0/attachments/0fa5e3e61cb0069eafd902573f22d0c5_MD5_hu_6e71a63077a6bdf8.png 480w, https://SweetGargamel.github.io/p/cursor%E4%BD%BF%E7%94%A8%E7%9A%84%E7%AC%94%E8%AE%B0/attachments/0fa5e3e61cb0069eafd902573f22d0c5_MD5_hu_6b6a415db0fa4c75.png 1024w&#34;
 	loading=&#34;lazy&#34;
 	
-		alt=&#34;500&#34;
 	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;87&#34;
+		data-flex-basis=&#34;208px&#34;
 	
 &gt;&lt;/p&gt;
 &lt;h4 id=&#34;433需求拆解&#34;&gt;4.3.3	需求拆解
@@ -361,14 +414,16 @@
 &lt;/li&gt;
 &lt;li&gt;
 &lt;p&gt;然后做&lt;code&gt;Codebase indexing&lt;/code&gt;下的&lt;code&gt;Resvnc Index&lt;/code&gt;重新索引
-&lt;img src=&#34;https://SweetGargamel.github.io/89d9ead8310cd654ae09a61c4c9d67a9_MD5.png&#34;
-	
-	
-	
+&lt;img src=&#34;https://SweetGargamel.github.io/p/cursor%E4%BD%BF%E7%94%A8%E7%9A%84%E7%AC%94%E8%AE%B0/attachments/89d9ead8310cd654ae09a61c4c9d67a9_MD5.png&#34;
+	width=&#34;1141&#34;
+	height=&#34;699&#34;
+	srcset=&#34;https://SweetGargamel.github.io/p/cursor%E4%BD%BF%E7%94%A8%E7%9A%84%E7%AC%94%E8%AE%B0/attachments/89d9ead8310cd654ae09a61c4c9d67a9_MD5_hu_60885913f3f8ef7c.png 480w, https://SweetGargamel.github.io/p/cursor%E4%BD%BF%E7%94%A8%E7%9A%84%E7%AC%94%E8%AE%B0/attachments/89d9ead8310cd654ae09a61c4c9d67a9_MD5_hu_e0b33fa8f6ad25d.png 1024w&#34;
 	loading=&#34;lazy&#34;
 	
-		alt=&#34;500&#34;
 	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;163&#34;
+		data-flex-basis=&#34;391px&#34;
 	
 &gt;&lt;/p&gt;
 &lt;/li&gt;
@@ -398,14 +453,16 @@
 &lt;/li&gt;
 &lt;li&gt;
 &lt;p&gt;我们可以使用一些临时邮箱
-&lt;img src=&#34;https://SweetGargamel.github.io/42584f5a1fff54d60abde24da575b224_MD5.png&#34;
-	
-	
-	
+&lt;img src=&#34;https://SweetGargamel.github.io/p/cursor%E4%BD%BF%E7%94%A8%E7%9A%84%E7%AC%94%E8%AE%B0/attachments/42584f5a1fff54d60abde24da575b224_MD5.png&#34;
+	width=&#34;1131&#34;
+	height=&#34;763&#34;
+	srcset=&#34;https://SweetGargamel.github.io/p/cursor%E4%BD%BF%E7%94%A8%E7%9A%84%E7%AC%94%E8%AE%B0/attachments/42584f5a1fff54d60abde24da575b224_MD5_hu_63807d13df205751.png 480w, https://SweetGargamel.github.io/p/cursor%E4%BD%BF%E7%94%A8%E7%9A%84%E7%AC%94%E8%AE%B0/attachments/42584f5a1fff54d60abde24da575b224_MD5_hu_7d523c4dde0cfd0d.png 1024w&#34;
 	loading=&#34;lazy&#34;
 	
-		alt=&#34;500&#34;
 	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;148&#34;
+		data-flex-basis=&#34;355px&#34;
 	
 &gt;&lt;/p&gt;
 &lt;/li&gt;
@@ -414,14 +471,16 @@
 &lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;使用2925无限邮箱，实际上这个东西的话就是一个主邮箱，然后主邮箱后面跟一堆自由项的序号就行
-&lt;img src=&#34;https://SweetGargamel.github.io/5465a71a152140895356d53a0e3d4e5a_MD5.png&#34;
-	
-	
-	
+&lt;img src=&#34;https://SweetGargamel.github.io/p/cursor%E4%BD%BF%E7%94%A8%E7%9A%84%E7%AC%94%E8%AE%B0/attachments/5465a71a152140895356d53a0e3d4e5a_MD5.png&#34;
+	width=&#34;1213&#34;
+	height=&#34;830&#34;
+	srcset=&#34;https://SweetGargamel.github.io/p/cursor%E4%BD%BF%E7%94%A8%E7%9A%84%E7%AC%94%E8%AE%B0/attachments/5465a71a152140895356d53a0e3d4e5a_MD5_hu_8379fcba3128403a.png 480w, https://SweetGargamel.github.io/p/cursor%E4%BD%BF%E7%94%A8%E7%9A%84%E7%AC%94%E8%AE%B0/attachments/5465a71a152140895356d53a0e3d4e5a_MD5_hu_8884860a12a50d0d.png 1024w&#34;
 	loading=&#34;lazy&#34;
 	
-		alt=&#34;500&#34;
 	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;146&#34;
+		data-flex-basis=&#34;350px&#34;
 	
 &gt;&lt;/p&gt;
 &lt;h2 id=&#34;6防止指纹检测&#34;&gt;6	防止指纹检测
@@ -2508,16 +2567,7 @@
 &lt;p&gt;Most &lt;mark&gt;salamanders&lt;/mark&gt; are nocturnal, and hunt for insects, worms, and other small creatures.&lt;/p&gt;
 &lt;h2 id=&#34;hyperlinked-image&#34;&gt;Hyperlinked image
 &lt;/h2&gt;&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://google.com&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
-    &gt;&lt;img src=&#34;https://SweetGargamel.github.io/fbd3eea69cc016df702f2f87583a19e8_MD5.png&#34;
-	
-	
-	
-	loading=&#34;lazy&#34;
-	
-		alt=&#34;fbd3eea69cc016df702f2f87583a19e8_MD5&#34;
-	
-	
-&gt;&lt;/a&gt;&lt;/p&gt;
+    &gt;![[fbd3eea69cc016df702f2f87583a19e8_MD5.png]]&lt;/a&gt;&lt;/p&gt;
 &lt;div class=&#34;footnotes&#34; role=&#34;doc-endnotes&#34;&gt;
 &lt;hr&gt;
 &lt;ol&gt;
