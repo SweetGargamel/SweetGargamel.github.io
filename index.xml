@@ -8,416 +8,252 @@
         <language>zh-cn</language>
         <copyright>SweetGargamel</copyright>
         <lastBuildDate>Sun, 23 Feb 2025 00:00:00 +0000</lastBuildDate><atom:link href="https://SweetGargamel.github.io/index.xml" rel="self" type="application/rss+xml" /><item>
-        <title>Cursor使用的笔记</title>
-        <link>https://SweetGargamel.github.io/p/cursor%E4%BD%BF%E7%94%A8%E7%9A%84%E7%AC%94%E8%AE%B0/</link>
+        <title>Cursor-Nova分享</title>
+        <link>https://SweetGargamel.github.io/p/cursor-nova%E5%88%86%E4%BA%AB/</link>
         <pubDate>Sun, 23 Feb 2025 00:00:00 +0000</pubDate>
         
-        <guid>https://SweetGargamel.github.io/p/cursor%E4%BD%BF%E7%94%A8%E7%9A%84%E7%AC%94%E8%AE%B0/</guid>
-        <description>&lt;h1 id=&#34;cursor的使用和介绍&#34;&gt;Cursor的使用和介绍
-&lt;/h1&gt;&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://www.bilibili.com/video/BV1yorUYWEGD/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
-    &gt;参考的视频&lt;/a&gt;&lt;/p&gt;
-&lt;h2 id=&#34;1下载安装&#34;&gt;1	下载安装
+        <guid>https://SweetGargamel.github.io/p/cursor-nova%E5%88%86%E4%BA%AB/</guid>
+        <description>&lt;h1 id=&#34;当编程像对话一样简单一个改变我开发方式的神奇工具&#34;&gt;当编程像对话一样简单：一个改变我开发方式的神奇工具
+&lt;/h1&gt;&lt;h2 id=&#34;cursor是啥&#34;&gt;Cursor是啥
 &lt;/h2&gt;&lt;ul&gt;
 &lt;li&gt;
-&lt;p&gt;直接去官网下载即可，&lt;/p&gt;
+&lt;p&gt;其实就是一个集成到你IDE里面的AI工具&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
-&lt;p&gt;前面自己选编辑器和Language即可，其他默认&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;点第二个&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://SweetGargamel.github.io/p/cursor%E4%BD%BF%E7%94%A8%E7%9A%84%E7%AC%94%E8%AE%B0/attachments/Cursor.png&#34;
-	width=&#34;880&#34;
-	height=&#34;368&#34;
-	srcset=&#34;https://SweetGargamel.github.io/p/cursor%E4%BD%BF%E7%94%A8%E7%9A%84%E7%AC%94%E8%AE%B0/attachments/Cursor_hu_44f003fc75063bb4.png 480w, https://SweetGargamel.github.io/p/cursor%E4%BD%BF%E7%94%A8%E7%9A%84%E7%AC%94%E8%AE%B0/attachments/Cursor_hu_8ae34dfcd92fa2b8.png 1024w&#34;
-	loading=&#34;lazy&#34;
-	
-	
-		class=&#34;gallery-image&#34; 
-		data-flex-grow=&#34;239&#34;
-		data-flex-basis=&#34;573px&#34;
-	
-&gt;&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;后面你可以直接导入VScode的客户端即可&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;这里最好选隐私模式
-&lt;img src=&#34;https://SweetGargamel.github.io/p/cursor%E4%BD%BF%E7%94%A8%E7%9A%84%E7%AC%94%E8%AE%B0/attachments/Cursor-1.png&#34;
-	width=&#34;984&#34;
-	height=&#34;786&#34;
-	srcset=&#34;https://SweetGargamel.github.io/p/cursor%E4%BD%BF%E7%94%A8%E7%9A%84%E7%AC%94%E8%AE%B0/attachments/Cursor-1_hu_2e5d5bdbd8c02367.png 480w, https://SweetGargamel.github.io/p/cursor%E4%BD%BF%E7%94%A8%E7%9A%84%E7%AC%94%E8%AE%B0/attachments/Cursor-1_hu_dfd80a2f14098e22.png 1024w&#34;
-	loading=&#34;lazy&#34;
-	
-	
-		class=&#34;gallery-image&#34; 
-		data-flex-grow=&#34;125&#34;
-		data-flex-basis=&#34;300px&#34;
-	
-&gt;&lt;/p&gt;
+&lt;p&gt;可以让弱基础小白快速上手代码（据说有人已经实现通过Cursor编程 上线什么小猫补光灯等产品赚米了）&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
-&lt;h2 id=&#34;2使用cursor&#34;&gt;2	使用Cursor
-&lt;/h2&gt;&lt;h3 id=&#34;21最核心的就是tab自动补全&#34;&gt;2.1	最核心的就是tab自动补全
-&lt;/h3&gt;&lt;p&gt;&lt;img src=&#34;https://SweetGargamel.github.io/p/cursor%E4%BD%BF%E7%94%A8%E7%9A%84%E7%AC%94%E8%AE%B0/attachments/df89e7876aad97304565aecf2f862db1_MD5.png&#34;
-	width=&#34;541&#34;
-	height=&#34;472&#34;
-	srcset=&#34;https://SweetGargamel.github.io/p/cursor%E4%BD%BF%E7%94%A8%E7%9A%84%E7%AC%94%E8%AE%B0/attachments/df89e7876aad97304565aecf2f862db1_MD5_hu_ea148af3db250a31.png 480w, https://SweetGargamel.github.io/p/cursor%E4%BD%BF%E7%94%A8%E7%9A%84%E7%AC%94%E8%AE%B0/attachments/df89e7876aad97304565aecf2f862db1_MD5_hu_8f653697e25e4029.png 1024w&#34;
-	loading=&#34;lazy&#34;
-	
-	
-		class=&#34;gallery-image&#34; 
-		data-flex-grow=&#34;114&#34;
-		data-flex-basis=&#34;275px&#34;
-	
-&gt;&lt;/p&gt;
-&lt;h2 id=&#34;3chat--和-composer&#34;&gt;3	Chat  和 Composer
-&lt;/h2&gt;&lt;h3 id=&#34;31怎么使用&#34;&gt;3.1	怎么使用
+&lt;h2 id=&#34;讲点干货--为啥好用&#34;&gt;讲点干货- 为啥好用
+&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;&lt;del&gt;因为要钱的肯定比不要钱的好用&lt;/del&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;blockquote&gt;
+&lt;p&gt;下面VSCode有的我就直接用Vscode演示了&lt;/p&gt;&lt;/blockquote&gt;
+&lt;h3 id=&#34;demo演示&#34;&gt;Demo演示
 &lt;/h3&gt;&lt;ul&gt;
 &lt;li&gt;
-&lt;p&gt;热键（&lt;code&gt;Ctrl+I&lt;/code&gt; 和 &lt;code&gt;Ctrl+L&lt;/code&gt; )如果是行就&lt;code&gt;C^K&lt;/code&gt;&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;我们可以选中一段代码后直接按着问&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;两者类似，前者就是普通对待对话，后者则可以根据工作流来回答&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;建议使用侧边栏问答，这样有上下文&lt;/p&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h3 id=&#34;32选择模型&#34;&gt;3.2	选择模型
-&lt;/h3&gt;&lt;p&gt;你可以在&lt;code&gt;Setting-Models&lt;/code&gt;进行设置&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;建议Chat功能选择gpt的模型&lt;/li&gt;
-&lt;li&gt;Composer的话建议使用claude&lt;/li&gt;
-&lt;li&gt;注意模型的账号限量&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;Composer还区分&lt;code&gt;Normal&lt;/code&gt;和&lt;code&gt;Agent&lt;/code&gt;&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;前者检测代码库和文档，还可以正常的创建和写入文件&lt;/li&gt;
-&lt;li&gt;后者还可以执行命令，提取上下文等，更高级，但是只能用claude&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h3 id=&#34;33具体案例&#34;&gt;3.3	具体案例
-&lt;/h3&gt;&lt;ul&gt;
-&lt;li&gt;
-&lt;p&gt;我们打开哪个文件夹，那么这个文件夹就会被认为是一个项目&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;使用&lt;code&gt;@&lt;/code&gt;符号，可以选中某个想要的文件或者文件夹&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;或者可以直接拖拽左侧文件过去/也可以直接用&lt;code&gt;@&lt;/code&gt;来选中一块代码&lt;/p&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h3 id=&#34;34添加文档&#34;&gt;3.4	添加文档
-&lt;/h3&gt;&lt;p&gt;&lt;code&gt;@doc&lt;/code&gt;可以添加本地文档，当然他默认会带一些，但是我们也可以自己添加；&lt;/p&gt;
-&lt;p&gt;后面带有&lt;code&gt;offical&lt;/code&gt;的就是官方文档
-&lt;img src=&#34;https://SweetGargamel.github.io/p/cursor%E4%BD%BF%E7%94%A8%E7%9A%84%E7%AC%94%E8%AE%B0/attachments/74f1a15c6f7a9a2da98784532c388351_MD5.png&#34;
-	width=&#34;772&#34;
-	height=&#34;697&#34;
-	srcset=&#34;https://SweetGargamel.github.io/p/cursor%E4%BD%BF%E7%94%A8%E7%9A%84%E7%AC%94%E8%AE%B0/attachments/74f1a15c6f7a9a2da98784532c388351_MD5_hu_299780f6929e313d.png 480w, https://SweetGargamel.github.io/p/cursor%E4%BD%BF%E7%94%A8%E7%9A%84%E7%AC%94%E8%AE%B0/attachments/74f1a15c6f7a9a2da98784532c388351_MD5_hu_e531e927cf2235f1.png 1024w&#34;
+&lt;p&gt;比如这样一个Python的UI界面，还有相关的API调用，我全部都是拿Cursor实现的，我基本没有写代码&lt;img src=&#34;https://SweetGargamel.github.io/p/cursor-nova%E5%88%86%E4%BA%AB/attachments/index.zh-cn-5.png&#34;
+	width=&#34;2560&#34;
+	height=&#34;1528&#34;
+	srcset=&#34;https://SweetGargamel.github.io/p/cursor-nova%E5%88%86%E4%BA%AB/attachments/index.zh-cn-5_hu_48220e56f98c0b74.png 480w, https://SweetGargamel.github.io/p/cursor-nova%E5%88%86%E4%BA%AB/attachments/index.zh-cn-5_hu_c2cb1c8aa892d7ab.png 1024w&#34;
 	loading=&#34;lazy&#34;
-	
-		alt=&#34;74f1a15c6f7a9a2da98784532c388351_MD5&#34;
 	
 	
 		class=&#34;gallery-image&#34; 
-		data-flex-grow=&#34;110&#34;
-		data-flex-basis=&#34;265px&#34;
+		data-flex-grow=&#34;167&#34;
+		data-flex-basis=&#34;402px&#34;
 	
 &gt;&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;code&gt;Setting-Features-Docs&lt;/code&gt;中我们可以直接输入一个在线链接的地址
-&lt;img src=&#34;https://SweetGargamel.github.io/p/cursor%E4%BD%BF%E7%94%A8%E7%9A%84%E7%AC%94%E8%AE%B0/attachments/d89d690afbf87a287040bf748bcfd81f_MD5.png&#34;
-	width=&#34;488&#34;
-	height=&#34;192&#34;
-	srcset=&#34;https://SweetGargamel.github.io/p/cursor%E4%BD%BF%E7%94%A8%E7%9A%84%E7%AC%94%E8%AE%B0/attachments/d89d690afbf87a287040bf748bcfd81f_MD5_hu_eed3288685e83748.png 480w, https://SweetGargamel.github.io/p/cursor%E4%BD%BF%E7%94%A8%E7%9A%84%E7%AC%94%E8%AE%B0/attachments/d89d690afbf87a287040bf748bcfd81f_MD5_hu_57000fc617a0ae89.png 1024w&#34;
-	loading=&#34;lazy&#34;
-	
-		alt=&#34;d89d690afbf87a287040bf748bcfd81f_MD5&#34;
-	
-	
-		class=&#34;gallery-image&#34; 
-		data-flex-grow=&#34;254&#34;
-		data-flex-basis=&#34;610px&#34;
-	
-&gt;&lt;/li&gt;
-&lt;li&gt;注意如果只是一个单独的url的话，他就是检索当前页面
-&lt;img src=&#34;https://SweetGargamel.github.io/p/cursor%E4%BD%BF%E7%94%A8%E7%9A%84%E7%AC%94%E8%AE%B0/attachments/29f8fe125190d2344076cee710a1e26c_MD5.png&#34;
-	width=&#34;1094&#34;
-	height=&#34;533&#34;
-	srcset=&#34;https://SweetGargamel.github.io/p/cursor%E4%BD%BF%E7%94%A8%E7%9A%84%E7%AC%94%E8%AE%B0/attachments/29f8fe125190d2344076cee710a1e26c_MD5_hu_1d718fcd94563f79.png 480w, https://SweetGargamel.github.io/p/cursor%E4%BD%BF%E7%94%A8%E7%9A%84%E7%AC%94%E8%AE%B0/attachments/29f8fe125190d2344076cee710a1e26c_MD5_hu_63c198fb12f849be.png 1024w&#34;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;甚至于说当时很复杂的需要参考的阿里云的代码，都是他帮我代劳的（甚至于我自己都没看到的文档，他帮我看到了并且想办法帮我用OSS存储来上传文件）&lt;img src=&#34;https://SweetGargamel.github.io/p/cursor-nova%E5%88%86%E4%BA%AB/attachments/index.zh-cn-6.png&#34;
+	width=&#34;2560&#34;
+	height=&#34;1528&#34;
+	srcset=&#34;https://SweetGargamel.github.io/p/cursor-nova%E5%88%86%E4%BA%AB/attachments/index.zh-cn-6_hu_7a7737a984625544.png 480w, https://SweetGargamel.github.io/p/cursor-nova%E5%88%86%E4%BA%AB/attachments/index.zh-cn-6_hu_7b2ce322782a2a47.png 1024w&#34;
 	loading=&#34;lazy&#34;
 	
 	
 		class=&#34;gallery-image&#34; 
-		data-flex-grow=&#34;205&#34;
-		data-flex-basis=&#34;492px&#34;
-	
-&gt;&lt;/li&gt;
-&lt;li&gt;否则就是检索当前页面和其子页面
-&lt;img src=&#34;https://SweetGargamel.github.io/p/cursor%E4%BD%BF%E7%94%A8%E7%9A%84%E7%AC%94%E8%AE%B0/attachments/140880261c12f1165943e723072182f1_MD5.png&#34;
-	width=&#34;1111&#34;
-	height=&#34;759&#34;
-	srcset=&#34;https://SweetGargamel.github.io/p/cursor%E4%BD%BF%E7%94%A8%E7%9A%84%E7%AC%94%E8%AE%B0/attachments/140880261c12f1165943e723072182f1_MD5_hu_9162da43a313fee2.png 480w, https://SweetGargamel.github.io/p/cursor%E4%BD%BF%E7%94%A8%E7%9A%84%E7%AC%94%E8%AE%B0/attachments/140880261c12f1165943e723072182f1_MD5_hu_d9fede07722962d.png 1024w&#34;
-	loading=&#34;lazy&#34;
-	
-	
-		class=&#34;gallery-image&#34; 
-		data-flex-grow=&#34;146&#34;
-		data-flex-basis=&#34;351px&#34;
+		data-flex-grow=&#34;167&#34;
+		data-flex-basis=&#34;402px&#34;
 	
 &gt;
-&lt;img src=&#34;https://SweetGargamel.github.io/p/cursor%E4%BD%BF%E7%94%A8%E7%9A%84%E7%AC%94%E8%AE%B0/attachments/7213941e53af5b8984e88a845f0bdff1_MD5.png&#34;
-	width=&#34;802&#34;
-	height=&#34;616&#34;
-	srcset=&#34;https://SweetGargamel.github.io/p/cursor%E4%BD%BF%E7%94%A8%E7%9A%84%E7%AC%94%E8%AE%B0/attachments/7213941e53af5b8984e88a845f0bdff1_MD5_hu_ff51b89dac42eb79.png 480w, https://SweetGargamel.github.io/p/cursor%E4%BD%BF%E7%94%A8%E7%9A%84%E7%AC%94%E8%AE%B0/attachments/7213941e53af5b8984e88a845f0bdff1_MD5_hu_61559be4bde364d0.png 1024w&#34;
-	loading=&#34;lazy&#34;
-	
-	
-		class=&#34;gallery-image&#34; 
-		data-flex-grow=&#34;130&#34;
-		data-flex-basis=&#34;312px&#34;
-	
-&gt;&lt;/li&gt;
-&lt;li&gt;如果我临时有链接，可以直接&lt;code&gt;@link&lt;/code&gt;+你的链接的话，他就会解析你的链接，否则他会把他当做prompt去看待
-&lt;img src=&#34;https://SweetGargamel.github.io/p/cursor%E4%BD%BF%E7%94%A8%E7%9A%84%E7%AC%94%E8%AE%B0/attachments/c0850ecfb35b85d301be5140d58eb430_MD5.png&#34;
-	width=&#34;1048&#34;
-	height=&#34;573&#34;
-	srcset=&#34;https://SweetGargamel.github.io/p/cursor%E4%BD%BF%E7%94%A8%E7%9A%84%E7%AC%94%E8%AE%B0/attachments/c0850ecfb35b85d301be5140d58eb430_MD5_hu_b1155b3f987e51e8.png 480w, https://SweetGargamel.github.io/p/cursor%E4%BD%BF%E7%94%A8%E7%9A%84%E7%AC%94%E8%AE%B0/attachments/c0850ecfb35b85d301be5140d58eb430_MD5_hu_cb888c30eafcb0fd.png 1024w&#34;
-	loading=&#34;lazy&#34;
-	
-	
-		class=&#34;gallery-image&#34; 
-		data-flex-grow=&#34;182&#34;
-		data-flex-basis=&#34;438px&#34;
-	
-&gt;&lt;/li&gt;
+&lt;a class=&#34;link&#34; href=&#34;https://nova.yuque.com/mnpcnp/svpsod/bg6nq5clisml947q#Hu1pa&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;一些尝试- 王浩宸&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h3 id=&#34;35链接网页&#34;&gt;3.5	链接网页
-&lt;/h3&gt;&lt;p&gt;使用&lt;code&gt;@web&lt;/code&gt;就是可以直接让这个东西联网查找&lt;/p&gt;
-&lt;h3 id=&#34;36链接git&#34;&gt;3.6	链接git
-&lt;/h3&gt;&lt;p&gt;&lt;code&gt;@git&lt;/code&gt;可以链接某次提交，这样会很友好&lt;/p&gt;
-&lt;p&gt;尤其是在协作开发的时候，可以让ai看我们做了哪些更改/比较多个提交的差异&lt;/p&gt;
-&lt;h3 id=&#34;37git提交自动生成commit&#34;&gt;3.7	git提交自动生成commit
+&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://help.aliyun.com/zh/document-mind/developer-reference/sdk-for-python-user-guide?spm=a2c4g.11186623.help-menu-445637.d_3_0_1_5.32b32384OTkq3p&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;https://help.aliyun.com/zh/document-mind/developer-reference/sdk-for-python-user-guide?spm=a2c4g.11186623.help-menu-445637.d_3_0_1_5.32b32384OTkq3p&lt;/a&gt;&lt;br&gt;
+&lt;a class=&#34;link&#34; href=&#34;https://help.aliyun.com/zh/document-mind/developer-reference/convertimagetoexcel?spm=a2c4g.11186623.help-menu-445637.d_3_0_0_2_3.39757051uwNEnn&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;https://help.aliyun.com/zh/document-mind/developer-reference/convertimagetoexcel?spm=a2c4g.11186623.help-menu-445637.d_3_0_0_2_3.39757051uwNEnn&lt;/a&gt;&lt;br&gt;
+&lt;a class=&#34;link&#34; href=&#34;https://help.aliyun.com/zh/document-mind/developer-reference/sdk-for-python-user-guide?spm=a2c4g.11186623.help-menu-445637.d_3_0_1_5.5e7a104e50dTrl&amp;amp;scm=20140722.H_455184._.OR_help-T_cn~zh-V_1&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;https://help.aliyun.com/zh/document-mind/developer-reference/sdk-for-python-user-guide?spm=a2c4g.11186623.help-menu-445637.d_3_0_1_5.5e7a104e50dTrl&amp;amp;scm=20140722.H_455184._.OR_help-T_cn~zh-V_1&lt;/a&gt;&lt;br&gt;
+&lt;a class=&#34;link&#34; href=&#34;https://help.aliyun.com/zh/oss/getting-started/get-started-with-oss?spm=a2c4g.11186623.help-menu-31815.d_1_0.3a8631c1gRr796&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;https://help.aliyun.com/zh/oss/getting-started/get-started-with-oss?spm=a2c4g.11186623.help-menu-31815.d_1_0.3a8631c1gRr796&lt;/a&gt;&lt;/p&gt;
+&lt;h3 id=&#34;模型选择&#34;&gt;模型选择
 &lt;/h3&gt;&lt;ul&gt;
-&lt;li&gt;如果你前面有比较规范的commit书写的方法的话，这里他可以自动帮你生成比较好的新的commit提交信息
-&lt;img src=&#34;https://SweetGargamel.github.io/p/cursor%E4%BD%BF%E7%94%A8%E7%9A%84%E7%AC%94%E8%AE%B0/attachments/bc8e4c3a9691997359ac1ff3481a03fb_MD5.png&#34;
-	width=&#34;1073&#34;
-	height=&#34;873&#34;
-	srcset=&#34;https://SweetGargamel.github.io/p/cursor%E4%BD%BF%E7%94%A8%E7%9A%84%E7%AC%94%E8%AE%B0/attachments/bc8e4c3a9691997359ac1ff3481a03fb_MD5_hu_5656b433130e4b28.png 480w, https://SweetGargamel.github.io/p/cursor%E4%BD%BF%E7%94%A8%E7%9A%84%E7%AC%94%E8%AE%B0/attachments/bc8e4c3a9691997359ac1ff3481a03fb_MD5_hu_fd895fcd30f263a6.png 1024w&#34;
+&lt;li&gt;其实可以说很多了，这点应该是超过Trae和Coplit的&lt;img src=&#34;https://SweetGargamel.github.io/p/cursor-nova%E5%88%86%E4%BA%AB/attachments/index.zh-cn-11.png&#34;
+	width=&#34;2560&#34;
+	height=&#34;1530&#34;
+	srcset=&#34;https://SweetGargamel.github.io/p/cursor-nova%E5%88%86%E4%BA%AB/attachments/index.zh-cn-11_hu_cf94f13af6aa2bbf.png 480w, https://SweetGargamel.github.io/p/cursor-nova%E5%88%86%E4%BA%AB/attachments/index.zh-cn-11_hu_1a28907e31a6fe22.png 1024w&#34;
 	loading=&#34;lazy&#34;
 	
 	
 		class=&#34;gallery-image&#34; 
-		data-flex-grow=&#34;122&#34;
-		data-flex-basis=&#34;294px&#34;
+		data-flex-grow=&#34;167&#34;
+		data-flex-basis=&#34;401px&#34;
 	
 &gt;&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h3 id=&#34;38notepad&#34;&gt;3.8	notepad
+&lt;h3 id=&#34;tab-补全&#34;&gt;Tab 补全
 &lt;/h3&gt;&lt;ul&gt;
-&lt;li&gt;
-&lt;p&gt;这个东西可以做一个临时的记事本&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;注意&lt;code&gt;Chat&lt;/code&gt;和&lt;code&gt;Composer&lt;/code&gt;是不互通的，可以利用这个来做一个解决(存储对话记录)&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;也可以用来记录一些待办事项&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;如果需要新建的话，在右边做新增
-&lt;img src=&#34;https://SweetGargamel.github.io/p/cursor%E4%BD%BF%E7%94%A8%E7%9A%84%E7%AC%94%E8%AE%B0/attachments/2dc96b02005873ed373ee78ad81ea270_MD5.png&#34;
-	width=&#34;1335&#34;
-	height=&#34;822&#34;
-	srcset=&#34;https://SweetGargamel.github.io/p/cursor%E4%BD%BF%E7%94%A8%E7%9A%84%E7%AC%94%E8%AE%B0/attachments/2dc96b02005873ed373ee78ad81ea270_MD5_hu_e8e99cfda8b3fc.png 480w, https://SweetGargamel.github.io/p/cursor%E4%BD%BF%E7%94%A8%E7%9A%84%E7%AC%94%E8%AE%B0/attachments/2dc96b02005873ed373ee78ad81ea270_MD5_hu_74b545e04dfbf65d.png 1024w&#34;
+&lt;li&gt;不过这个Coplit也有，就不多说了&lt;img src=&#34;https://SweetGargamel.github.io/p/cursor-nova%E5%88%86%E4%BA%AB/attachments/index.zh-cn-1.png&#34;
+	width=&#34;2560&#34;
+	height=&#34;1528&#34;
+	srcset=&#34;https://SweetGargamel.github.io/p/cursor-nova%E5%88%86%E4%BA%AB/attachments/index.zh-cn-1_hu_1db3bd66e6ffc62f.png 480w, https://SweetGargamel.github.io/p/cursor-nova%E5%88%86%E4%BA%AB/attachments/index.zh-cn-1_hu_b35606c837bc46e0.png 1024w&#34;
 	loading=&#34;lazy&#34;
 	
 	
 		class=&#34;gallery-image&#34; 
-		data-flex-grow=&#34;162&#34;
-		data-flex-basis=&#34;389px&#34;
+		data-flex-grow=&#34;167&#34;
+		data-flex-basis=&#34;402px&#34;
 	
-&gt;&lt;/p&gt;
-&lt;/li&gt;
+&gt;&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h3 id=&#34;39codebase&#34;&gt;3.9	codebase
+&lt;h3 id=&#34;直接帮你改代码-compose功能&#34;&gt;直接帮你改代码-Compose功能
 &lt;/h3&gt;&lt;ul&gt;
-&lt;li&gt;&lt;code&gt;@codebase&lt;/code&gt;是视频里面最推崇的做法&lt;/li&gt;
-&lt;li&gt;他会这么做&lt;/li&gt;
+&lt;li&gt;可以帮你 直接改代码（不过目前Coplit也有对应的功能，但是据说效果不好？）
+&lt;ul&gt;
+&lt;li&gt;可能一部分原因是他用的模型垃圾，在一部分可能确实做的不太好，毕竟只是插件&lt;/li&gt;
 &lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;他甚至可以直接把你终端的报错给扔上去&lt;img src=&#34;https://SweetGargamel.github.io/p/cursor-nova%E5%88%86%E4%BA%AB/attachments/index.zh-cn-15.png&#34;
+	width=&#34;2560&#34;
+	height=&#34;1530&#34;
+	srcset=&#34;https://SweetGargamel.github.io/p/cursor-nova%E5%88%86%E4%BA%AB/attachments/index.zh-cn-15_hu_ee607411fab0566c.png 480w, https://SweetGargamel.github.io/p/cursor-nova%E5%88%86%E4%BA%AB/attachments/index.zh-cn-15_hu_4d6e14578e9114ba.png 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;167&#34;
+		data-flex-basis=&#34;401px&#34;
+	
+&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;bug-finder&#34;&gt;Bug-Finder
+&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;没试过，但是据说比较费次数&lt;img src=&#34;https://SweetGargamel.github.io/p/cursor-nova%E5%88%86%E4%BA%AB/attachments/index.zh-cn-16.png&#34;
+	width=&#34;2560&#34;
+	height=&#34;1530&#34;
+	srcset=&#34;https://SweetGargamel.github.io/p/cursor-nova%E5%88%86%E4%BA%AB/attachments/index.zh-cn-16_hu_77e135bc9319b44f.png 480w, https://SweetGargamel.github.io/p/cursor-nova%E5%88%86%E4%BA%AB/attachments/index.zh-cn-16_hu_eea46b95037bf333.png 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;167&#34;
+		data-flex-basis=&#34;401px&#34;
+	
+&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;codebase-自动识别所有的项目文件&#34;&gt;CodeBase-自动识别所有的项目文件
+&lt;/h3&gt;&lt;blockquote&gt;
+&lt;p&gt;这个是视频里面最推崇的做法&lt;/p&gt;&lt;/blockquote&gt;
+&lt;p&gt;他会这么做&lt;/p&gt;
 &lt;ol&gt;
 &lt;li&gt;AI会根据我们的提示词，查找与指令相关的文件或者是代码块&lt;/li&gt;
 &lt;li&gt;重新排序：然后对收集到的代码排序，越相关的越靠前&lt;/li&gt;
 &lt;li&gt;推理&lt;/li&gt;
 &lt;li&gt;然后最后生成回应&lt;/li&gt;
 &lt;/ol&gt;
-&lt;p&gt;虽然理论每次打开Cursor都会采集一次，但是为了以防万一，还是按照下面的路径来重新采集一次
-&lt;img src=&#34;https://SweetGargamel.github.io/p/cursor%E4%BD%BF%E7%94%A8%E7%9A%84%E7%AC%94%E8%AE%B0/attachments/5c87f926e7e38c7d0927b24b0fe5fc25_MD5.png&#34;
-	width=&#34;1029&#34;
-	height=&#34;777&#34;
-	srcset=&#34;https://SweetGargamel.github.io/p/cursor%E4%BD%BF%E7%94%A8%E7%9A%84%E7%AC%94%E8%AE%B0/attachments/5c87f926e7e38c7d0927b24b0fe5fc25_MD5_hu_744cad6fc5223e92.png 480w, https://SweetGargamel.github.io/p/cursor%E4%BD%BF%E7%94%A8%E7%9A%84%E7%AC%94%E8%AE%B0/attachments/5c87f926e7e38c7d0927b24b0fe5fc25_MD5_hu_709924908b14e3d4.png 1024w&#34;
-	loading=&#34;lazy&#34;
-	
-	
-		class=&#34;gallery-image&#34; 
-		data-flex-grow=&#34;132&#34;
-		data-flex-basis=&#34;317px&#34;
-	
-&gt;&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;
-&lt;p&gt;理论他会把你的数据上传到OpenAI上（应该是这个意思）做一个远程数据库检测&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;他会检查&lt;code&gt;gitignore&lt;/code&gt;，这样就可以防止秘钥等问题上传泄漏的问题&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;如果没有，你也可以新建&lt;code&gt;.cursorignore&lt;/code&gt;来做忽略，这样就可以减少被索引的文件信息量，从而提高检索效率/避免数据泄露&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://SweetGargamel.github.io/p/cursor%E4%BD%BF%E7%94%A8%E7%9A%84%E7%AC%94%E8%AE%B0/attachments/cb2bfe7c4c7927239b7b715589a72c81_MD5.png&#34;
-	width=&#34;751&#34;
-	height=&#34;783&#34;
-	srcset=&#34;https://SweetGargamel.github.io/p/cursor%E4%BD%BF%E7%94%A8%E7%9A%84%E7%AC%94%E8%AE%B0/attachments/cb2bfe7c4c7927239b7b715589a72c81_MD5_hu_96969e30437b5955.png 480w, https://SweetGargamel.github.io/p/cursor%E4%BD%BF%E7%94%A8%E7%9A%84%E7%AC%94%E8%AE%B0/attachments/cb2bfe7c4c7927239b7b715589a72c81_MD5_hu_6e2acb2c13d81451.png 1024w&#34;
+&lt;li&gt;所以要经常引用CodeBase&lt;img src=&#34;https://SweetGargamel.github.io/p/cursor-nova%E5%88%86%E4%BA%AB/attachments/index.zh-cn-3.png&#34;
+	width=&#34;2560&#34;
+	height=&#34;1530&#34;
+	srcset=&#34;https://SweetGargamel.github.io/p/cursor-nova%E5%88%86%E4%BA%AB/attachments/index.zh-cn-3_hu_b254a6f8d72505fd.png 480w, https://SweetGargamel.github.io/p/cursor-nova%E5%88%86%E4%BA%AB/attachments/index.zh-cn-3_hu_4defcccf7489ce3c.png 1024w&#34;
 	loading=&#34;lazy&#34;
 	
 	
 		class=&#34;gallery-image&#34; 
-		data-flex-grow=&#34;95&#34;
-		data-flex-basis=&#34;230px&#34;
+		data-flex-grow=&#34;167&#34;
+		data-flex-basis=&#34;401px&#34;
+	
+&gt;&lt;/li&gt;
+&lt;li&gt;理论他会把你的数据上传到OpenAI上（应该是这个意思）做一个远程数据库检测&lt;/li&gt;
+&lt;li&gt;他会检查&lt;code&gt;gitignore&lt;/code&gt;，这样就可以防止秘钥等问题上传泄漏的问题&lt;/li&gt;
+&lt;li&gt;如果没有，你也可以新建&lt;code&gt;.cursorignore&lt;/code&gt;来做忽略，这样就可以减少被索引的文件信息量，从而提高检索效率/避免数据泄露
+演示&lt;img src=&#34;https://SweetGargamel.github.io/p/cursor-nova%E5%88%86%E4%BA%AB/attachments/index.zh-cn-9.png&#34;
+	width=&#34;896&#34;
+	height=&#34;955&#34;
+	srcset=&#34;https://SweetGargamel.github.io/p/cursor-nova%E5%88%86%E4%BA%AB/attachments/index.zh-cn-9_hu_f9b0acb9d988052.png 480w, https://SweetGargamel.github.io/p/cursor-nova%E5%88%86%E4%BA%AB/attachments/index.zh-cn-9_hu_7876ecab2ba22038.png 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;93&#34;
+		data-flex-basis=&#34;225px&#34;
+	
+&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;doc-自动爬虫读参考文献&#34;&gt;Doc-自动爬虫读参考文献
+&lt;/h3&gt;&lt;p&gt;使用&lt;code&gt;@doc&lt;/code&gt;功能，自动帮你去读网页下的参考文献（参考上图）
+&lt;img src=&#34;https://SweetGargamel.github.io/p/cursor-nova%E5%88%86%E4%BA%AB/attachments/index.zh-cn-2.png&#34;
+	width=&#34;1120&#34;
+	height=&#34;986&#34;
+	srcset=&#34;https://SweetGargamel.github.io/p/cursor-nova%E5%88%86%E4%BA%AB/attachments/index.zh-cn-2_hu_52ba3813b9c3a678.png 480w, https://SweetGargamel.github.io/p/cursor-nova%E5%88%86%E4%BA%AB/attachments/index.zh-cn-2_hu_cd1c4151603ae591.png 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;113&#34;
+		data-flex-basis=&#34;272px&#34;
 	
 &gt;&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;理论来说，日志文件、环境变量（隐私数据）、构建文件、缓存信息文件、第三方信息配置文件都可以忽略&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;你也可以让Cursor来帮你生成对应的文件&lt;/p&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h3 id=&#34;310cursor-rules&#34;&gt;3.10	Cursor Rules
+&lt;h3 id=&#34;web&#34;&gt;web
+&lt;/h3&gt;&lt;p&gt;&lt;code&gt;@web&lt;/code&gt;可以联网搜索，这个也是Trae和Coplit没有的&lt;/p&gt;
+&lt;h3 id=&#34;自动git提交&#34;&gt;自动git提交
 &lt;/h3&gt;&lt;ul&gt;
-&lt;li&gt;
-&lt;p&gt;这个是对Cursor的全局回复的设置&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://SweetGargamel.github.io/p/cursor%E4%BD%BF%E7%94%A8%E7%9A%84%E7%AC%94%E8%AE%B0/attachments/b6a1d2aa7a985c711117703c583da6b7_MD5.png&#34;
-	width=&#34;808&#34;
-	height=&#34;838&#34;
-	srcset=&#34;https://SweetGargamel.github.io/p/cursor%E4%BD%BF%E7%94%A8%E7%9A%84%E7%AC%94%E8%AE%B0/attachments/b6a1d2aa7a985c711117703c583da6b7_MD5_hu_2223a42b14be8ced.png 480w, https://SweetGargamel.github.io/p/cursor%E4%BD%BF%E7%94%A8%E7%9A%84%E7%AC%94%E8%AE%B0/attachments/b6a1d2aa7a985c711117703c583da6b7_MD5_hu_750048b1cb32975.png 1024w&#34;
+&lt;li&gt;这个没用过，但是可以帮帮你自动生成git的提交信息&lt;img src=&#34;https://SweetGargamel.github.io/p/cursor-nova%E5%88%86%E4%BA%AB/attachments/index.zh-cn-4.png&#34;
+	width=&#34;2560&#34;
+	height=&#34;1530&#34;
+	srcset=&#34;https://SweetGargamel.github.io/p/cursor-nova%E5%88%86%E4%BA%AB/attachments/index.zh-cn-4_hu_34f201cfc4c1d959.png 480w, https://SweetGargamel.github.io/p/cursor-nova%E5%88%86%E4%BA%AB/attachments/index.zh-cn-4_hu_f3566098078dffb7.png 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;167&#34;
+		data-flex-basis=&#34;401px&#34;
+	
+&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;notepad&#34;&gt;NotePad
+&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;这个东西可以做一个临时的记事本&lt;/li&gt;
+&lt;li&gt;注意&lt;code&gt;Chat&lt;/code&gt;和&lt;code&gt;Composer&lt;/code&gt;是不互通的，可以利用这个来做一个解决(存储对话记录)&lt;/li&gt;
+&lt;li&gt;也可以用来记录一些待办事项&lt;img src=&#34;https://SweetGargamel.github.io/p/cursor-nova%E5%88%86%E4%BA%AB/attachments/index.zh-cn-7.png&#34;
+	width=&#34;2560&#34;
+	height=&#34;1530&#34;
+	srcset=&#34;https://SweetGargamel.github.io/p/cursor-nova%E5%88%86%E4%BA%AB/attachments/index.zh-cn-7_hu_546b40b560aa09a7.png 480w, https://SweetGargamel.github.io/p/cursor-nova%E5%88%86%E4%BA%AB/attachments/index.zh-cn-7_hu_25b6b6a43823cfab.png 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;167&#34;
+		data-flex-basis=&#34;401px&#34;
+	
+&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;cursorrule&#34;&gt;CursorRule
+&lt;/h3&gt;&lt;p&gt;&lt;img src=&#34;https://SweetGargamel.github.io/p/cursor-nova%E5%88%86%E4%BA%AB/attachments/index.zh-cn-10.png&#34;
+	width=&#34;905&#34;
+	height=&#34;941&#34;
+	srcset=&#34;https://SweetGargamel.github.io/p/cursor-nova%E5%88%86%E4%BA%AB/attachments/index.zh-cn-10_hu_8e729c8647c816a6.png 480w, https://SweetGargamel.github.io/p/cursor-nova%E5%88%86%E4%BA%AB/attachments/index.zh-cn-10_hu_470f2fa70083f5fd.png 1024w&#34;
 	loading=&#34;lazy&#34;
 	
 	
 		class=&#34;gallery-image&#34; 
 		data-flex-grow=&#34;96&#34;
-		data-flex-basis=&#34;231px&#34;
+		data-flex-basis=&#34;230px&#34;
 	
 &gt;&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;对于某一个项目文件，我们可以生成一个&lt;code&gt;cursorrules&lt;/code&gt;的文件只针对这个项目的规则&lt;/p&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2 id=&#34;4技巧和思路&#34;&gt;4	技巧和思路
-&lt;/h2&gt;&lt;h3 id=&#34;41检测&#34;&gt;4.1	检测
-&lt;/h3&gt;&lt;ul&gt;
-&lt;li&gt;
-&lt;p&gt;你可以一个个查看来看是否修改&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://SweetGargamel.github.io/p/cursor%E4%BD%BF%E7%94%A8%E7%9A%84%E7%AC%94%E8%AE%B0/attachments/eb0812392718c5e9f85c3b27f2594e70_MD5.png&#34;
-	width=&#34;1295&#34;
-	height=&#34;872&#34;
-	srcset=&#34;https://SweetGargamel.github.io/p/cursor%E4%BD%BF%E7%94%A8%E7%9A%84%E7%AC%94%E8%AE%B0/attachments/eb0812392718c5e9f85c3b27f2594e70_MD5_hu_c73a67d73bc34968.png 480w, https://SweetGargamel.github.io/p/cursor%E4%BD%BF%E7%94%A8%E7%9A%84%E7%AC%94%E8%AE%B0/attachments/eb0812392718c5e9f85c3b27f2594e70_MD5_hu_7ab3798eb7a57118.png 1024w&#34;
-	loading=&#34;lazy&#34;
-	
-	
-		class=&#34;gallery-image&#34; 
-		data-flex-grow=&#34;148&#34;
-		data-flex-basis=&#34;356px&#34;
-	
-&gt;&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;我们也可以先点击&lt;code&gt;save all&lt;/code&gt;然后运行，测试后在接收即可&lt;/p&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h3 id=&#34;42回滚&#34;&gt;4.2	回滚
-&lt;/h3&gt;&lt;p&gt;Cursor会对每次回答做一个&lt;code&gt;Checkpoint&lt;/code&gt;，我们可以做回滚、甚至重新编辑问题
-&lt;img src=&#34;https://SweetGargamel.github.io/p/cursor%E4%BD%BF%E7%94%A8%E7%9A%84%E7%AC%94%E8%AE%B0/attachments/2c62f8b8c6aef041e5dd5d528dedb51b_MD5.png&#34;
-	width=&#34;1059&#34;
-	height=&#34;942&#34;
-	srcset=&#34;https://SweetGargamel.github.io/p/cursor%E4%BD%BF%E7%94%A8%E7%9A%84%E7%AC%94%E8%AE%B0/attachments/2c62f8b8c6aef041e5dd5d528dedb51b_MD5_hu_fc626c30be8488b2.png 480w, https://SweetGargamel.github.io/p/cursor%E4%BD%BF%E7%94%A8%E7%9A%84%E7%AC%94%E8%AE%B0/attachments/2c62f8b8c6aef041e5dd5d528dedb51b_MD5_hu_61c593eb5fa9e382.png 1024w&#34;
-	loading=&#34;lazy&#34;
-	
-	
-		class=&#34;gallery-image&#34; 
-		data-flex-grow=&#34;112&#34;
-		data-flex-basis=&#34;269px&#34;
-	
-&gt;&lt;/p&gt;
-&lt;h3 id=&#34;43预防最泛化的&#34;&gt;4.3	预防（最泛化的）
-&lt;/h3&gt;&lt;h4 id=&#34;431让ai重复你的要求&#34;&gt;4.3.1	让AI重复你的要求
-&lt;/h4&gt;&lt;p&gt;在给AI的需求的时候，我们要先让他复述一遍需求，然后再答复操作，这样可以做二次核对
-&lt;img src=&#34;https://SweetGargamel.github.io/p/cursor%E4%BD%BF%E7%94%A8%E7%9A%84%E7%AC%94%E8%AE%B0/attachments/0b04d4d18f63b1848a0f3afec52fe724_MD5.png&#34;
-	width=&#34;1008&#34;
-	height=&#34;803&#34;
-	srcset=&#34;https://SweetGargamel.github.io/p/cursor%E4%BD%BF%E7%94%A8%E7%9A%84%E7%AC%94%E8%AE%B0/attachments/0b04d4d18f63b1848a0f3afec52fe724_MD5_hu_b229f4ddb2043978.png 480w, https://SweetGargamel.github.io/p/cursor%E4%BD%BF%E7%94%A8%E7%9A%84%E7%AC%94%E8%AE%B0/attachments/0b04d4d18f63b1848a0f3afec52fe724_MD5_hu_b6520fdb1ac027ce.png 1024w&#34;
-	loading=&#34;lazy&#34;
-	
-	
-		class=&#34;gallery-image&#34; 
-		data-flex-grow=&#34;125&#34;
-		data-flex-basis=&#34;301px&#34;
-	
-&gt;&lt;/p&gt;
-&lt;h4 id=&#34;432缩小指令的辐射范围&#34;&gt;4.3.2	缩小指令的辐射范围
-&lt;/h4&gt;&lt;p&gt;缩小指令范围
-&lt;img src=&#34;https://SweetGargamel.github.io/p/cursor%E4%BD%BF%E7%94%A8%E7%9A%84%E7%AC%94%E8%AE%B0/attachments/0fa5e3e61cb0069eafd902573f22d0c5_MD5.png&#34;
-	width=&#34;799&#34;
-	height=&#34;918&#34;
-	srcset=&#34;https://SweetGargamel.github.io/p/cursor%E4%BD%BF%E7%94%A8%E7%9A%84%E7%AC%94%E8%AE%B0/attachments/0fa5e3e61cb0069eafd902573f22d0c5_MD5_hu_6e71a63077a6bdf8.png 480w, https://SweetGargamel.github.io/p/cursor%E4%BD%BF%E7%94%A8%E7%9A%84%E7%AC%94%E8%AE%B0/attachments/0fa5e3e61cb0069eafd902573f22d0c5_MD5_hu_6b6a415db0fa4c75.png 1024w&#34;
-	loading=&#34;lazy&#34;
-	
-	
-		class=&#34;gallery-image&#34; 
-		data-flex-grow=&#34;87&#34;
-		data-flex-basis=&#34;208px&#34;
-	
-&gt;&lt;/p&gt;
-&lt;h4 id=&#34;433需求拆解&#34;&gt;4.3.3	需求拆解
-&lt;/h4&gt;&lt;ul&gt;
-&lt;li&gt;如果需求不方便自己拆开给ai做，我们可以按照有序或者无序列表的形式来给到AI&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h4 id=&#34;434把ai当做小孩子&#34;&gt;4.3.4	把ai当做小孩子
-&lt;/h4&gt;&lt;ul&gt;
-&lt;li&gt;要做引导，尽可能清晰有逻辑，必要的时候给参考/自己的思路&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h3 id=&#34;44如果我们对想要完成的不够清楚怎么办&#34;&gt;4.4	如果我们对想要完成的不够清楚怎么办？
-&lt;/h3&gt;&lt;ul&gt;
-&lt;li&gt;应该先去chat模式去交流你的想法，向ai描述你的需求，然后问ai如果你想做怎么办？&lt;/li&gt;
-&lt;li&gt;比如我想做一个网站，应该在chat问：
 &lt;ul&gt;
-&lt;li&gt;我想做什么样子的&lt;/li&gt;
-&lt;li&gt;有什么主流的技术，各自有什么优缺点&lt;/li&gt;
-&lt;li&gt;我们应该怎么选择&lt;/li&gt;
-&lt;li&gt;做完之后怎么发布&lt;/li&gt;
+&lt;li&gt;对于某一个项目文件，我们可以生成一个&lt;code&gt;cursorrules&lt;/code&gt;的文件只针对这个项目的规则&lt;/li&gt;
 &lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;然后再去composer里面去做&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;我们也可以在Chat里面问清楚之后，使用Notepad功能把问题拆解，然后一步步的喂给ai，得到方案（或者composer生成的有问题的话）可以再返回来去修改&lt;/p&gt;
-&lt;h3 id=&#34;45使用cursor的具体开发流程&#34;&gt;4.5	使用Cursor的具体开发流程
-&lt;/h3&gt;&lt;p&gt;如果你是程序员的话，希望Cursor帮你完成后续项目：&lt;/p&gt;
+&lt;p&gt;由于.cursorrules需要针对特定项目进行撰写（一般会涉及技术栈的选择），这就引发一个问题，大多cursor初学者，尤其是零编码基础的小伙伴根本就不知道怎么选择技术栈，所以入门阶段就很难写好一份.cursorrules。那怎么办？有两种方法：&lt;/p&gt;
+&lt;p&gt;第一种是先不写.cursorrules，直接开干，这就是最开始提到的“先下场干，把手弄脏”的心态。因为对于一些相对简单的项目，有无cursorrules其实差别不会很大，顶多就是中间绕个弯路，最后还是能搞定项目的。&lt;/p&gt;
+&lt;p&gt;第二种是把一些.cursorrules范例丢给ai，让ai让帮我们写一份合格的.cursorrules。&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;
-&lt;p&gt;你应该先让Cursor检索的你的项目，去做一个&lt;code&gt;cursorignore&lt;/code&gt;文件&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;然后做&lt;code&gt;Codebase indexing&lt;/code&gt;下的&lt;code&gt;Resvnc Index&lt;/code&gt;重新索引
-&lt;img src=&#34;https://SweetGargamel.github.io/p/cursor%E4%BD%BF%E7%94%A8%E7%9A%84%E7%AC%94%E8%AE%B0/attachments/89d9ead8310cd654ae09a61c4c9d67a9_MD5.png&#34;
-	width=&#34;1141&#34;
-	height=&#34;699&#34;
-	srcset=&#34;https://SweetGargamel.github.io/p/cursor%E4%BD%BF%E7%94%A8%E7%9A%84%E7%AC%94%E8%AE%B0/attachments/89d9ead8310cd654ae09a61c4c9d67a9_MD5_hu_60885913f3f8ef7c.png 480w, https://SweetGargamel.github.io/p/cursor%E4%BD%BF%E7%94%A8%E7%9A%84%E7%AC%94%E8%AE%B0/attachments/89d9ead8310cd654ae09a61c4c9d67a9_MD5_hu_e0b33fa8f6ad25d.png 1024w&#34;
+&lt;li&gt;cursor directory：&lt;a class=&#34;link&#34; href=&#34;https://cursor.directory/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;https://cursor.directory/&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;awesome cursorrules：&lt;a class=&#34;link&#34; href=&#34;https://github.com/PatrickJS/awesome-cursorrules?tab=readme-ov-file&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;https://github.com/PatrickJS/aw&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;一些技巧&#34;&gt;一些技巧
+&lt;/h2&gt;&lt;h3 id=&#34;先保存再accept&#34;&gt;先保存再Accept
+&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;先跑一下看看能不能work再说&lt;img src=&#34;https://SweetGargamel.github.io/p/cursor-nova%E5%88%86%E4%BA%AB/attachments/index.zh-cn-12.png&#34;
+	width=&#34;952&#34;
+	height=&#34;583&#34;
+	srcset=&#34;https://SweetGargamel.github.io/p/cursor-nova%E5%88%86%E4%BA%AB/attachments/index.zh-cn-12_hu_2fc8bc7ea06e704d.png 480w, https://SweetGargamel.github.io/p/cursor-nova%E5%88%86%E4%BA%AB/attachments/index.zh-cn-12_hu_83425ea77a2a0360.png 1024w&#34;
 	loading=&#34;lazy&#34;
 	
 	
@@ -425,7 +261,51 @@
 		data-flex-grow=&#34;163&#34;
 		data-flex-basis=&#34;391px&#34;
 	
-&gt;&lt;/p&gt;
+&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;回滚&#34;&gt;回滚
+&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;Cursor会对每次回答做一个&lt;code&gt;Checkpoint&lt;/code&gt;，我们可以做回滚、甚至重新编辑问题&lt;img src=&#34;https://SweetGargamel.github.io/p/cursor-nova%E5%88%86%E4%BA%AB/attachments/index.zh-cn-13.png&#34;
+	width=&#34;933&#34;
+	height=&#34;835&#34;
+	srcset=&#34;https://SweetGargamel.github.io/p/cursor-nova%E5%88%86%E4%BA%AB/attachments/index.zh-cn-13_hu_2cf89f3795b0c5bb.png 480w, https://SweetGargamel.github.io/p/cursor-nova%E5%88%86%E4%BA%AB/attachments/index.zh-cn-13_hu_d1b2bbda8920f3c4.png 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;111&#34;
+		data-flex-basis=&#34;268px&#34;
+	
+&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;提前判断&#34;&gt;提前判断
+&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;在给AI的需求的时候，我们要先让他复述一遍需求，然后再答复操作，这样可以做二次核对&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;缩小指令辐射范围&#34;&gt;缩小指令辐射范围
+&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;如图&lt;img src=&#34;https://SweetGargamel.github.io/p/cursor-nova%E5%88%86%E4%BA%AB/attachments/index.zh-cn-14.png&#34;
+	width=&#34;868&#34;
+	height=&#34;1015&#34;
+	srcset=&#34;https://SweetGargamel.github.io/p/cursor-nova%E5%88%86%E4%BA%AB/attachments/index.zh-cn-14_hu_fe53662664fe7380.png 480w, https://SweetGargamel.github.io/p/cursor-nova%E5%88%86%E4%BA%AB/attachments/index.zh-cn-14_hu_33ab61a315db4e25.png 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;85&#34;
+		data-flex-basis=&#34;205px&#34;
+	
+&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;使用cursor的具体开发流程&#34;&gt;使用Cursor的具体开发流程
+&lt;/h2&gt;&lt;p&gt;如果你是程序员的话，希望Cursor帮你完成后续项目&lt;/p&gt;
+&lt;p&gt;开启这个(indexing)功能，意味着你的文件是会被上传到cursor服务器进行分析的，如果你不想一些核心文件或无关文件被cursor索引，是可以将它们添加到这下面的“Ignore files”中的。&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;你应该先让Cursor检索的你的项目，去做一个&lt;code&gt;cursorignore&lt;/code&gt;文件&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;然后做&lt;code&gt;Codebase indexing&lt;/code&gt;下的&lt;code&gt;Resvnc Index&lt;/code&gt;重新索引&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
 &lt;p&gt;然后把所有的技术文档都录入到doc中以作备用&lt;/p&gt;
@@ -437,7 +317,7 @@
 &lt;p&gt;如果后面写的东西有bug了，可以使用&lt;code&gt;@git&lt;/code&gt;来看之前没有bug的版本，或者对于比较简单直接让composer做修改即可&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
-&lt;p&gt;如果比较复杂就创建一个notepad，让他基于这个notepade里面的内容来例假问题&lt;/p&gt;
+&lt;p&gt;如果比较复杂就创建一个notepad，让他基于这个notepad里面的内容来例假问题&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
 &lt;p&gt;这样以后这些notepad可以导出之后生成一个类似的doc文档，如果有一天再打开文档的时候，可以让ai快速理解&lt;/p&gt;
@@ -446,46 +326,9 @@
 &lt;p&gt;当然记得及时归档，因为notepad只是Cursor的缓存&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
-&lt;h2 id=&#34;5白嫖&#34;&gt;5	白嫖
-&lt;/h2&gt;&lt;ul&gt;
-&lt;li&gt;
-&lt;p&gt;因为Cursor是有时间/API调用模型的限制的，到期之后只用不断的换邮箱注册即可&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;我们可以使用一些临时邮箱
-&lt;img src=&#34;https://SweetGargamel.github.io/p/cursor%E4%BD%BF%E7%94%A8%E7%9A%84%E7%AC%94%E8%AE%B0/attachments/42584f5a1fff54d60abde24da575b224_MD5.png&#34;
-	width=&#34;1131&#34;
-	height=&#34;763&#34;
-	srcset=&#34;https://SweetGargamel.github.io/p/cursor%E4%BD%BF%E7%94%A8%E7%9A%84%E7%AC%94%E8%AE%B0/attachments/42584f5a1fff54d60abde24da575b224_MD5_hu_63807d13df205751.png 480w, https://SweetGargamel.github.io/p/cursor%E4%BD%BF%E7%94%A8%E7%9A%84%E7%AC%94%E8%AE%B0/attachments/42584f5a1fff54d60abde24da575b224_MD5_hu_7d523c4dde0cfd0d.png 1024w&#34;
-	loading=&#34;lazy&#34;
-	
-	
-		class=&#34;gallery-image&#34; 
-		data-flex-grow=&#34;148&#34;
-		data-flex-basis=&#34;355px&#34;
-	
-&gt;&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;无限邮箱&lt;/p&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;使用2925无限邮箱，实际上这个东西的话就是一个主邮箱，然后主邮箱后面跟一堆自由项的序号就行
-&lt;img src=&#34;https://SweetGargamel.github.io/p/cursor%E4%BD%BF%E7%94%A8%E7%9A%84%E7%AC%94%E8%AE%B0/attachments/5465a71a152140895356d53a0e3d4e5a_MD5.png&#34;
-	width=&#34;1213&#34;
-	height=&#34;830&#34;
-	srcset=&#34;https://SweetGargamel.github.io/p/cursor%E4%BD%BF%E7%94%A8%E7%9A%84%E7%AC%94%E8%AE%B0/attachments/5465a71a152140895356d53a0e3d4e5a_MD5_hu_8379fcba3128403a.png 480w, https://SweetGargamel.github.io/p/cursor%E4%BD%BF%E7%94%A8%E7%9A%84%E7%AC%94%E8%AE%B0/attachments/5465a71a152140895356d53a0e3d4e5a_MD5_hu_8884860a12a50d0d.png 1024w&#34;
-	loading=&#34;lazy&#34;
-	
-	
-		class=&#34;gallery-image&#34; 
-		data-flex-grow=&#34;146&#34;
-		data-flex-basis=&#34;350px&#34;
-	
-&gt;&lt;/p&gt;
-&lt;h2 id=&#34;6防止指纹检测&#34;&gt;6	防止指纹检测
-&lt;/h2&gt;&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://www.bilibili.com/video/BV1yorUYWEGD?spm_id_from=333.788.player.switch&amp;amp;vd_source=911b19e1c06331136e08168cdcc3966e&amp;amp;p=7&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
-    &gt;如何免费白嫖 Cursor（2）_哔哩哔哩_bilibili&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id=&#34;白嫖&#34;&gt;白嫖
+&lt;/h2&gt;&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://github.com/yeongpin/cursor-free-vip&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;https://github.com/yeongpin/cursor-free-vip&lt;/a&gt;&lt;/p&gt;
 </description>
         </item>
         <item>

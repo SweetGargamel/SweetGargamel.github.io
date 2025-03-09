@@ -1,0 +1,869 @@
+<!DOCTYPE html>
+<html lang="zh-cn" dir="ltr">
+    <head><meta charset='utf-8'>
+<meta name='viewport' content='width=device-width, initial-scale=1'><meta name='description' content="本文介绍了Cursor的相关使用">
+<title>Cursor-Nova分享</title>
+
+<link rel='canonical' href='https://SweetGargamel.github.io/p/cursor-nova%E5%88%86%E4%BA%AB/'>
+
+<link rel="stylesheet" href="/scss/style.min.663803bebe609202d5b39d848f2d7c2dc8b598a2d879efa079fa88893d29c49c.css"><meta property='og:title' content="Cursor-Nova分享">
+<meta property='og:description' content="本文介绍了Cursor的相关使用">
+<meta property='og:url' content='https://SweetGargamel.github.io/p/cursor-nova%E5%88%86%E4%BA%AB/'>
+<meta property='og:site_name' content='SweetGargamel'>
+<meta property='og:type' content='article'><meta property='article:section' content='Post' /><meta property='article:published_time' content='2025-02-23T00:00:00&#43;00:00'/><meta property='article:modified_time' content='2025-02-23T00:00:00&#43;00:00'/>
+<meta name="twitter:title" content="Cursor-Nova分享">
+<meta name="twitter:description" content="本文介绍了Cursor的相关使用">
+    <link rel="shortcut icon" href="/favicon.ico" />
+
+    </head>
+    <body class="
+    article-page
+    ">
+    <script>
+        (function() {
+            const colorSchemeKey = 'StackColorScheme';
+            if(!localStorage.getItem(colorSchemeKey)){
+                localStorage.setItem(colorSchemeKey, "auto");
+            }
+        })();
+    </script><script>
+    (function() {
+        const colorSchemeKey = 'StackColorScheme';
+        const colorSchemeItem = localStorage.getItem(colorSchemeKey);
+        const supportDarkMode = window.matchMedia('(prefers-color-scheme: dark)').matches === true;
+
+        if (colorSchemeItem == 'dark' || colorSchemeItem === 'auto' && supportDarkMode) {
+            
+
+            document.documentElement.dataset.scheme = 'dark';
+        } else {
+            document.documentElement.dataset.scheme = 'light';
+        }
+    })();
+</script>
+<div class="container main-container flex on-phone--column extended"><aside class="sidebar left-sidebar sticky ">
+    <button class="hamburger hamburger--spin" type="button" id="toggle-menu" aria-label="切换菜单">
+        <span class="hamburger-box">
+            <span class="hamburger-inner"></span>
+        </span>
+    </button>
+
+    <header>
+        
+            
+            <figure class="site-avatar">
+                <a href="/">
+                
+                    
+                    
+                    
+                        
+                        <img src="/img/avatar_hu_d0d1b1b0ed5a6570.jpg" width="300"
+                            height="300" class="site-logo" loading="lazy" alt="Avatar">
+                    
+                
+                </a>
+                
+                    <span class="emoji">😊</span>
+                
+            </figure>
+            
+        
+        
+        <div class="site-meta">
+            <h1 class="site-name"><a href="/">SweetGargamel</a></h1>
+            <h2 class="site-description">Welcome to my blog!</h2>
+        </div>
+    </header><ol class="menu-social">
+            
+                <li>
+                    <a 
+                        href='https://github.com/SweetGargamel'
+                        target="_blank"
+                        title="GitHub"
+                        rel="me"
+                    >
+                        
+                        
+                            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-github" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+  <path d="M9 19c-4.3 1.4 -4.3 -2.5 -6 -3m12 5v-3.5c0 -1 .1 -1.4 -.5 -2c2.8 -.3 5.5 -1.4 5.5 -6a4.6 4.6 0 0 0 -1.3 -3.2a4.2 4.2 0 0 0 -.1 -3.2s-1.1 -.3 -3.5 1.3a12.3 12.3 0 0 0 -6.2 0c-2.4 -1.6 -3.5 -1.3 -3.5 -1.3a4.2 4.2 0 0 0 -.1 3.2a4.6 4.6 0 0 0 -1.3 3.2c0 4.6 2.7 5.7 5.5 6c-.6 .6 -.6 1.2 -.5 2v3.5" />
+</svg>
+
+
+
+                        
+                    </a>
+                </li>
+            
+        </ol><ol class="menu" id="main-menu">
+        
+        
+        
+        <li >
+            <a href='/' >
+                
+                
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-home" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <polyline points="5 12 3 12 12 3 21 12 19 12" />
+  <path d="M5 12v7a2 2 0 0 0 2 2h10a2 2 0 0 0 2 -2v-7" />
+  <path d="M9 21v-6a2 2 0 0 1 2 -2h2a2 2 0 0 1 2 2v6" />
+</svg>
+
+
+
+                
+                <span>主页</span>
+            </a>
+        </li>
+        
+        
+        <li >
+            <a href='/%E5%85%B3%E4%BA%8E/' >
+                
+                
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-user" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="12" cy="7" r="4" />
+  <path d="M6 21v-2a4 4 0 0 1 4 -4h4a4 4 0 0 1 4 4v2" />
+</svg>
+
+
+
+                
+                <span>关于</span>
+            </a>
+        </li>
+        
+        
+        <li >
+            <a href='/archives/' >
+                
+                
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-archive" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <rect x="3" y="4" width="18" height="4" rx="2" />
+  <path d="M5 8v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2 -2v-10" />
+  <line x1="10" y1="12" x2="14" y2="12" />
+</svg>
+
+
+
+                
+                <span>归档</span>
+            </a>
+        </li>
+        
+        
+        <li >
+            <a href='/search/' >
+                
+                
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-search" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="10" cy="10" r="7" />
+  <line x1="21" y1="21" x2="15" y2="15" />
+</svg>
+
+
+
+                
+                <span>搜索</span>
+            </a>
+        </li>
+        
+        
+        <li >
+            <a href='/%E7%9B%B8%E5%85%B3%E9%93%BE%E6%8E%A5/' >
+                
+                
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-link" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <path d="M10 14a3.5 3.5 0 0 0 5 0l4 -4a3.5 3.5 0 0 0 -5 -5l-.5 .5" />
+  <path d="M14 10a3.5 3.5 0 0 0 -5 0l-4 4a3.5 3.5 0 0 0 5 5l.5 -.5" />
+</svg>
+
+
+
+                
+                <span>相关链接</span>
+            </a>
+        </li>
+        
+        <li class="menu-bottom-section">
+            <ol class="menu">
+
+                
+                    <li id="dark-mode-toggle">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-toggle-left" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="8" cy="12" r="2" />
+  <rect x="2" y="6" width="20" height="12" rx="6" />
+</svg>
+
+
+
+                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-toggle-right" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="16" cy="12" r="2" />
+  <rect x="2" y="6" width="20" height="12" rx="6" />
+</svg>
+
+
+
+                        <span>暗色模式</span>
+                    </li>
+                
+            </ol>
+        </li>
+    </ol>
+</aside>
+
+    <aside class="sidebar right-sidebar sticky">
+        
+            
+                
+    <section class="widget archives">
+        <div class="widget-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-hash" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <line x1="5" y1="9" x2="19" y2="9" />
+  <line x1="5" y1="15" x2="19" y2="15" />
+  <line x1="11" y1="4" x2="7" y2="20" />
+  <line x1="17" y1="4" x2="13" y2="20" />
+</svg>
+
+
+
+        </div>
+        <h2 class="widget-title section-title">目录</h2>
+        
+        <div class="widget--toc">
+            <nav id="TableOfContents">
+  <ol>
+    <li><a href="#cursor是啥">Cursor是啥</a></li>
+    <li><a href="#讲点干货--为啥好用">讲点干货- 为啥好用</a>
+      <ol>
+        <li><a href="#demo演示">Demo演示</a></li>
+        <li><a href="#模型选择">模型选择</a></li>
+        <li><a href="#tab-补全">Tab 补全</a></li>
+        <li><a href="#直接帮你改代码-compose功能">直接帮你改代码-Compose功能</a></li>
+        <li><a href="#bug-finder">Bug-Finder</a></li>
+        <li><a href="#codebase-自动识别所有的项目文件">CodeBase-自动识别所有的项目文件</a></li>
+        <li><a href="#doc-自动爬虫读参考文献">Doc-自动爬虫读参考文献</a></li>
+        <li><a href="#web">web</a></li>
+        <li><a href="#自动git提交">自动git提交</a></li>
+        <li><a href="#notepad">NotePad</a></li>
+        <li><a href="#cursorrule">CursorRule</a></li>
+      </ol>
+    </li>
+    <li><a href="#一些技巧">一些技巧</a>
+      <ol>
+        <li><a href="#先保存再accept">先保存再Accept</a></li>
+        <li><a href="#回滚">回滚</a></li>
+        <li><a href="#提前判断">提前判断</a></li>
+        <li><a href="#缩小指令辐射范围">缩小指令辐射范围</a></li>
+      </ol>
+    </li>
+    <li><a href="#使用cursor的具体开发流程">使用Cursor的具体开发流程</a></li>
+    <li><a href="#白嫖">白嫖</a></li>
+  </ol>
+</nav>
+        </div>
+    </section>
+
+            
+        
+    </aside>
+
+
+            <main class="main full-width">
+    <article class="main-article">
+    <header class="article-header">
+
+    <div class="article-details">
+    
+    <header class="article-category">
+        
+            <a href="/categories/nova/" >
+                Nova
+            </a>
+        
+    </header>
+    
+
+    <div class="article-title-wrapper">
+        <h2 class="article-title">
+            <a href="/p/cursor-nova%E5%88%86%E4%BA%AB/">Cursor-Nova分享</a>
+        </h2>
+    
+        
+        <h3 class="article-subtitle">
+            本文介绍了Cursor的相关使用
+        </h3>
+        
+    </div>
+
+    
+    
+    
+    
+    <footer class="article-time">
+        
+            <div>
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-calendar-time" width="56" height="56" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <path d="M11.795 21h-6.795a2 2 0 0 1 -2 -2v-12a2 2 0 0 1 2 -2h12a2 2 0 0 1 2 2v4" />
+  <circle cx="18" cy="18" r="4" />
+  <path d="M15 3v4" />
+  <path d="M7 3v4" />
+  <path d="M3 11h16" />
+  <path d="M18 16.496v1.504l1 1" />
+</svg>
+                <time class="article-time--published">Feb 23, 2025</time>
+            </div>
+        
+
+        
+            <div>
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-clock" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="12" cy="12" r="9" />
+  <polyline points="12 7 12 12 15 15" />
+</svg>
+
+
+
+                <time class="article-time--reading">
+                    阅读时长: 4 分钟
+                </time>
+            </div>
+        
+    </footer>
+    
+
+    
+</div>
+
+</header>
+
+    <section class="article-content">
+    
+    
+    <h1 id="当编程像对话一样简单一个改变我开发方式的神奇工具">当编程像对话一样简单：一个改变我开发方式的神奇工具
+</h1><h2 id="cursor是啥">Cursor是啥
+</h2><ul>
+<li>
+<p>其实就是一个集成到你IDE里面的AI工具</p>
+</li>
+<li>
+<p>可以让弱基础小白快速上手代码（据说有人已经实现通过Cursor编程 上线什么小猫补光灯等产品赚米了）</p>
+</li>
+</ul>
+<h2 id="讲点干货--为啥好用">讲点干货- 为啥好用
+</h2><ul>
+<li><del>因为要钱的肯定比不要钱的好用</del></li>
+</ul>
+<blockquote>
+<p>下面VSCode有的我就直接用Vscode演示了</p></blockquote>
+<h3 id="demo演示">Demo演示
+</h3><ul>
+<li>
+<p>比如这样一个Python的UI界面，还有相关的API调用，我全部都是拿Cursor实现的，我基本没有写代码<img src="/p/cursor-nova%E5%88%86%E4%BA%AB/attachments/index.zh-cn-5.png"
+	width="2560"
+	height="1528"
+	srcset="/p/cursor-nova%E5%88%86%E4%BA%AB/attachments/index.zh-cn-5_hu_48220e56f98c0b74.png 480w, /p/cursor-nova%E5%88%86%E4%BA%AB/attachments/index.zh-cn-5_hu_c2cb1c8aa892d7ab.png 1024w"
+	loading="lazy"
+	
+	
+		class="gallery-image" 
+		data-flex-grow="167"
+		data-flex-basis="402px"
+	
+></p>
+</li>
+<li>
+<p>甚至于说当时很复杂的需要参考的阿里云的代码，都是他帮我代劳的（甚至于我自己都没看到的文档，他帮我看到了并且想办法帮我用OSS存储来上传文件）<img src="/p/cursor-nova%E5%88%86%E4%BA%AB/attachments/index.zh-cn-6.png"
+	width="2560"
+	height="1528"
+	srcset="/p/cursor-nova%E5%88%86%E4%BA%AB/attachments/index.zh-cn-6_hu_7a7737a984625544.png 480w, /p/cursor-nova%E5%88%86%E4%BA%AB/attachments/index.zh-cn-6_hu_7b2ce322782a2a47.png 1024w"
+	loading="lazy"
+	
+	
+		class="gallery-image" 
+		data-flex-grow="167"
+		data-flex-basis="402px"
+	
+>
+<a class="link" href="https://nova.yuque.com/mnpcnp/svpsod/bg6nq5clisml947q#Hu1pa"  target="_blank" rel="noopener"
+    >一些尝试- 王浩宸</a></p>
+</li>
+</ul>
+<p><a class="link" href="https://help.aliyun.com/zh/document-mind/developer-reference/sdk-for-python-user-guide?spm=a2c4g.11186623.help-menu-445637.d_3_0_1_5.32b32384OTkq3p"  target="_blank" rel="noopener"
+    >https://help.aliyun.com/zh/document-mind/developer-reference/sdk-for-python-user-guide?spm=a2c4g.11186623.help-menu-445637.d_3_0_1_5.32b32384OTkq3p</a><br>
+<a class="link" href="https://help.aliyun.com/zh/document-mind/developer-reference/convertimagetoexcel?spm=a2c4g.11186623.help-menu-445637.d_3_0_0_2_3.39757051uwNEnn"  target="_blank" rel="noopener"
+    >https://help.aliyun.com/zh/document-mind/developer-reference/convertimagetoexcel?spm=a2c4g.11186623.help-menu-445637.d_3_0_0_2_3.39757051uwNEnn</a><br>
+<a class="link" href="https://help.aliyun.com/zh/document-mind/developer-reference/sdk-for-python-user-guide?spm=a2c4g.11186623.help-menu-445637.d_3_0_1_5.5e7a104e50dTrl&amp;scm=20140722.H_455184._.OR_help-T_cn~zh-V_1"  target="_blank" rel="noopener"
+    >https://help.aliyun.com/zh/document-mind/developer-reference/sdk-for-python-user-guide?spm=a2c4g.11186623.help-menu-445637.d_3_0_1_5.5e7a104e50dTrl&amp;scm=20140722.H_455184._.OR_help-T_cn~zh-V_1</a><br>
+<a class="link" href="https://help.aliyun.com/zh/oss/getting-started/get-started-with-oss?spm=a2c4g.11186623.help-menu-31815.d_1_0.3a8631c1gRr796"  target="_blank" rel="noopener"
+    >https://help.aliyun.com/zh/oss/getting-started/get-started-with-oss?spm=a2c4g.11186623.help-menu-31815.d_1_0.3a8631c1gRr796</a></p>
+<h3 id="模型选择">模型选择
+</h3><ul>
+<li>其实可以说很多了，这点应该是超过Trae和Coplit的<img src="/p/cursor-nova%E5%88%86%E4%BA%AB/attachments/index.zh-cn-11.png"
+	width="2560"
+	height="1530"
+	srcset="/p/cursor-nova%E5%88%86%E4%BA%AB/attachments/index.zh-cn-11_hu_cf94f13af6aa2bbf.png 480w, /p/cursor-nova%E5%88%86%E4%BA%AB/attachments/index.zh-cn-11_hu_1a28907e31a6fe22.png 1024w"
+	loading="lazy"
+	
+	
+		class="gallery-image" 
+		data-flex-grow="167"
+		data-flex-basis="401px"
+	
+></li>
+</ul>
+<h3 id="tab-补全">Tab 补全
+</h3><ul>
+<li>不过这个Coplit也有，就不多说了<img src="/p/cursor-nova%E5%88%86%E4%BA%AB/attachments/index.zh-cn-1.png"
+	width="2560"
+	height="1528"
+	srcset="/p/cursor-nova%E5%88%86%E4%BA%AB/attachments/index.zh-cn-1_hu_1db3bd66e6ffc62f.png 480w, /p/cursor-nova%E5%88%86%E4%BA%AB/attachments/index.zh-cn-1_hu_b35606c837bc46e0.png 1024w"
+	loading="lazy"
+	
+	
+		class="gallery-image" 
+		data-flex-grow="167"
+		data-flex-basis="402px"
+	
+></li>
+</ul>
+<h3 id="直接帮你改代码-compose功能">直接帮你改代码-Compose功能
+</h3><ul>
+<li>可以帮你 直接改代码（不过目前Coplit也有对应的功能，但是据说效果不好？）
+<ul>
+<li>可能一部分原因是他用的模型垃圾，在一部分可能确实做的不太好，毕竟只是插件</li>
+</ul>
+</li>
+<li>他甚至可以直接把你终端的报错给扔上去<img src="/p/cursor-nova%E5%88%86%E4%BA%AB/attachments/index.zh-cn-15.png"
+	width="2560"
+	height="1530"
+	srcset="/p/cursor-nova%E5%88%86%E4%BA%AB/attachments/index.zh-cn-15_hu_ee607411fab0566c.png 480w, /p/cursor-nova%E5%88%86%E4%BA%AB/attachments/index.zh-cn-15_hu_4d6e14578e9114ba.png 1024w"
+	loading="lazy"
+	
+	
+		class="gallery-image" 
+		data-flex-grow="167"
+		data-flex-basis="401px"
+	
+></li>
+</ul>
+<h3 id="bug-finder">Bug-Finder
+</h3><ul>
+<li>没试过，但是据说比较费次数<img src="/p/cursor-nova%E5%88%86%E4%BA%AB/attachments/index.zh-cn-16.png"
+	width="2560"
+	height="1530"
+	srcset="/p/cursor-nova%E5%88%86%E4%BA%AB/attachments/index.zh-cn-16_hu_77e135bc9319b44f.png 480w, /p/cursor-nova%E5%88%86%E4%BA%AB/attachments/index.zh-cn-16_hu_eea46b95037bf333.png 1024w"
+	loading="lazy"
+	
+	
+		class="gallery-image" 
+		data-flex-grow="167"
+		data-flex-basis="401px"
+	
+></li>
+</ul>
+<h3 id="codebase-自动识别所有的项目文件">CodeBase-自动识别所有的项目文件
+</h3><blockquote>
+<p>这个是视频里面最推崇的做法</p></blockquote>
+<p>他会这么做</p>
+<ol>
+<li>AI会根据我们的提示词，查找与指令相关的文件或者是代码块</li>
+<li>重新排序：然后对收集到的代码排序，越相关的越靠前</li>
+<li>推理</li>
+<li>然后最后生成回应</li>
+</ol>
+<ul>
+<li>所以要经常引用CodeBase<img src="/p/cursor-nova%E5%88%86%E4%BA%AB/attachments/index.zh-cn-3.png"
+	width="2560"
+	height="1530"
+	srcset="/p/cursor-nova%E5%88%86%E4%BA%AB/attachments/index.zh-cn-3_hu_b254a6f8d72505fd.png 480w, /p/cursor-nova%E5%88%86%E4%BA%AB/attachments/index.zh-cn-3_hu_4defcccf7489ce3c.png 1024w"
+	loading="lazy"
+	
+	
+		class="gallery-image" 
+		data-flex-grow="167"
+		data-flex-basis="401px"
+	
+></li>
+<li>理论他会把你的数据上传到OpenAI上（应该是这个意思）做一个远程数据库检测</li>
+<li>他会检查<code>gitignore</code>，这样就可以防止秘钥等问题上传泄漏的问题</li>
+<li>如果没有，你也可以新建<code>.cursorignore</code>来做忽略，这样就可以减少被索引的文件信息量，从而提高检索效率/避免数据泄露
+演示<img src="/p/cursor-nova%E5%88%86%E4%BA%AB/attachments/index.zh-cn-9.png"
+	width="896"
+	height="955"
+	srcset="/p/cursor-nova%E5%88%86%E4%BA%AB/attachments/index.zh-cn-9_hu_f9b0acb9d988052.png 480w, /p/cursor-nova%E5%88%86%E4%BA%AB/attachments/index.zh-cn-9_hu_7876ecab2ba22038.png 1024w"
+	loading="lazy"
+	
+	
+		class="gallery-image" 
+		data-flex-grow="93"
+		data-flex-basis="225px"
+	
+></li>
+</ul>
+<h3 id="doc-自动爬虫读参考文献">Doc-自动爬虫读参考文献
+</h3><p>使用<code>@doc</code>功能，自动帮你去读网页下的参考文献（参考上图）
+<img src="/p/cursor-nova%E5%88%86%E4%BA%AB/attachments/index.zh-cn-2.png"
+	width="1120"
+	height="986"
+	srcset="/p/cursor-nova%E5%88%86%E4%BA%AB/attachments/index.zh-cn-2_hu_52ba3813b9c3a678.png 480w, /p/cursor-nova%E5%88%86%E4%BA%AB/attachments/index.zh-cn-2_hu_cd1c4151603ae591.png 1024w"
+	loading="lazy"
+	
+	
+		class="gallery-image" 
+		data-flex-grow="113"
+		data-flex-basis="272px"
+	
+></p>
+<h3 id="web">web
+</h3><p><code>@web</code>可以联网搜索，这个也是Trae和Coplit没有的</p>
+<h3 id="自动git提交">自动git提交
+</h3><ul>
+<li>这个没用过，但是可以帮帮你自动生成git的提交信息<img src="/p/cursor-nova%E5%88%86%E4%BA%AB/attachments/index.zh-cn-4.png"
+	width="2560"
+	height="1530"
+	srcset="/p/cursor-nova%E5%88%86%E4%BA%AB/attachments/index.zh-cn-4_hu_34f201cfc4c1d959.png 480w, /p/cursor-nova%E5%88%86%E4%BA%AB/attachments/index.zh-cn-4_hu_f3566098078dffb7.png 1024w"
+	loading="lazy"
+	
+	
+		class="gallery-image" 
+		data-flex-grow="167"
+		data-flex-basis="401px"
+	
+></li>
+</ul>
+<h3 id="notepad">NotePad
+</h3><ul>
+<li>这个东西可以做一个临时的记事本</li>
+<li>注意<code>Chat</code>和<code>Composer</code>是不互通的，可以利用这个来做一个解决(存储对话记录)</li>
+<li>也可以用来记录一些待办事项<img src="/p/cursor-nova%E5%88%86%E4%BA%AB/attachments/index.zh-cn-7.png"
+	width="2560"
+	height="1530"
+	srcset="/p/cursor-nova%E5%88%86%E4%BA%AB/attachments/index.zh-cn-7_hu_546b40b560aa09a7.png 480w, /p/cursor-nova%E5%88%86%E4%BA%AB/attachments/index.zh-cn-7_hu_25b6b6a43823cfab.png 1024w"
+	loading="lazy"
+	
+	
+		class="gallery-image" 
+		data-flex-grow="167"
+		data-flex-basis="401px"
+	
+></li>
+</ul>
+<h3 id="cursorrule">CursorRule
+</h3><p><img src="/p/cursor-nova%E5%88%86%E4%BA%AB/attachments/index.zh-cn-10.png"
+	width="905"
+	height="941"
+	srcset="/p/cursor-nova%E5%88%86%E4%BA%AB/attachments/index.zh-cn-10_hu_8e729c8647c816a6.png 480w, /p/cursor-nova%E5%88%86%E4%BA%AB/attachments/index.zh-cn-10_hu_470f2fa70083f5fd.png 1024w"
+	loading="lazy"
+	
+	
+		class="gallery-image" 
+		data-flex-grow="96"
+		data-flex-basis="230px"
+	
+></p>
+<ul>
+<li>对于某一个项目文件，我们可以生成一个<code>cursorrules</code>的文件只针对这个项目的规则</li>
+</ul>
+<p>由于.cursorrules需要针对特定项目进行撰写（一般会涉及技术栈的选择），这就引发一个问题，大多cursor初学者，尤其是零编码基础的小伙伴根本就不知道怎么选择技术栈，所以入门阶段就很难写好一份.cursorrules。那怎么办？有两种方法：</p>
+<p>第一种是先不写.cursorrules，直接开干，这就是最开始提到的“先下场干，把手弄脏”的心态。因为对于一些相对简单的项目，有无cursorrules其实差别不会很大，顶多就是中间绕个弯路，最后还是能搞定项目的。</p>
+<p>第二种是把一些.cursorrules范例丢给ai，让ai让帮我们写一份合格的.cursorrules。</p>
+<ul>
+<li>cursor directory：<a class="link" href="https://cursor.directory/"  target="_blank" rel="noopener"
+    >https://cursor.directory/</a></li>
+<li>awesome cursorrules：<a class="link" href="https://github.com/PatrickJS/awesome-cursorrules?tab=readme-ov-file"  target="_blank" rel="noopener"
+    >https://github.com/PatrickJS/aw</a></li>
+</ul>
+<h2 id="一些技巧">一些技巧
+</h2><h3 id="先保存再accept">先保存再Accept
+</h3><ul>
+<li>先跑一下看看能不能work再说<img src="/p/cursor-nova%E5%88%86%E4%BA%AB/attachments/index.zh-cn-12.png"
+	width="952"
+	height="583"
+	srcset="/p/cursor-nova%E5%88%86%E4%BA%AB/attachments/index.zh-cn-12_hu_2fc8bc7ea06e704d.png 480w, /p/cursor-nova%E5%88%86%E4%BA%AB/attachments/index.zh-cn-12_hu_83425ea77a2a0360.png 1024w"
+	loading="lazy"
+	
+	
+		class="gallery-image" 
+		data-flex-grow="163"
+		data-flex-basis="391px"
+	
+></li>
+</ul>
+<h3 id="回滚">回滚
+</h3><ul>
+<li>Cursor会对每次回答做一个<code>Checkpoint</code>，我们可以做回滚、甚至重新编辑问题<img src="/p/cursor-nova%E5%88%86%E4%BA%AB/attachments/index.zh-cn-13.png"
+	width="933"
+	height="835"
+	srcset="/p/cursor-nova%E5%88%86%E4%BA%AB/attachments/index.zh-cn-13_hu_2cf89f3795b0c5bb.png 480w, /p/cursor-nova%E5%88%86%E4%BA%AB/attachments/index.zh-cn-13_hu_d1b2bbda8920f3c4.png 1024w"
+	loading="lazy"
+	
+	
+		class="gallery-image" 
+		data-flex-grow="111"
+		data-flex-basis="268px"
+	
+></li>
+</ul>
+<h3 id="提前判断">提前判断
+</h3><ul>
+<li>在给AI的需求的时候，我们要先让他复述一遍需求，然后再答复操作，这样可以做二次核对</li>
+</ul>
+<h3 id="缩小指令辐射范围">缩小指令辐射范围
+</h3><ul>
+<li>如图<img src="/p/cursor-nova%E5%88%86%E4%BA%AB/attachments/index.zh-cn-14.png"
+	width="868"
+	height="1015"
+	srcset="/p/cursor-nova%E5%88%86%E4%BA%AB/attachments/index.zh-cn-14_hu_fe53662664fe7380.png 480w, /p/cursor-nova%E5%88%86%E4%BA%AB/attachments/index.zh-cn-14_hu_33ab61a315db4e25.png 1024w"
+	loading="lazy"
+	
+	
+		class="gallery-image" 
+		data-flex-grow="85"
+		data-flex-basis="205px"
+	
+></li>
+</ul>
+<h2 id="使用cursor的具体开发流程">使用Cursor的具体开发流程
+</h2><p>如果你是程序员的话，希望Cursor帮你完成后续项目</p>
+<p>开启这个(indexing)功能，意味着你的文件是会被上传到cursor服务器进行分析的，如果你不想一些核心文件或无关文件被cursor索引，是可以将它们添加到这下面的“Ignore files”中的。</p>
+<ul>
+<li>
+<p>你应该先让Cursor检索的你的项目，去做一个<code>cursorignore</code>文件</p>
+</li>
+<li>
+<p>然后做<code>Codebase indexing</code>下的<code>Resvnc Index</code>重新索引</p>
+</li>
+<li>
+<p>然后把所有的技术文档都录入到doc中以作备用</p>
+</li>
+<li>
+<p>然后再设置一个<code>cursorrules</code>文件，如果你不知道怎么写，可以问ai（最好是一条条写）</p>
+</li>
+<li>
+<p>如果后面写的东西有bug了，可以使用<code>@git</code>来看之前没有bug的版本，或者对于比较简单直接让composer做修改即可</p>
+</li>
+<li>
+<p>如果比较复杂就创建一个notepad，让他基于这个notepad里面的内容来例假问题</p>
+</li>
+<li>
+<p>这样以后这些notepad可以导出之后生成一个类似的doc文档，如果有一天再打开文档的时候，可以让ai快速理解</p>
+</li>
+<li>
+<p>当然记得及时归档，因为notepad只是Cursor的缓存</p>
+</li>
+</ul>
+<h2 id="白嫖">白嫖
+</h2><p><a class="link" href="https://github.com/yeongpin/cursor-free-vip"  target="_blank" rel="noopener"
+    >https://github.com/yeongpin/cursor-free-vip</a></p>
+
+</section>
+
+
+    <footer class="article-footer">
+    
+
+    
+    <section class="article-copyright">
+        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-copyright" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="12" cy="12" r="9" />
+  <path d="M14.5 9a3.5 4 0 1 0 0 6" />
+</svg>
+
+
+
+        <span>Licensed under CC BY-NC-SA 4.0</span>
+    </section>
+    </footer>
+
+
+    
+        <link 
+                rel="stylesheet" 
+                href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI&#43;WdtXRGWt2kTvGFasHpSy3SV"crossorigin="anonymous"
+            ><script 
+                src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG&#43;vnGctmUb0ZY0l8"crossorigin="anonymous"
+                defer
+                >
+            </script><script 
+                src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"integrity="sha384-&#43;VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4&#43;/RRE05"crossorigin="anonymous"
+                defer
+                >
+            </script><script>
+    window.addEventListener("DOMContentLoaded", () => {
+        renderMathInElement(document.body, {
+            delimiters: [
+                { left: "$$", right: "$$", display: true },
+                { left: "$", right: "$", display: false },
+                { left: "\\(", right: "\\)", display: false },
+                { left: "\\[", right: "\\]", display: true }
+            ],
+            ignoredClasses: ["gist"]
+        });})
+</script>
+    
+</article>
+
+    
+
+    
+
+<aside class="related-content--wrapper">
+    <h2 class="section-title">相关文章</h2>
+    <div class="related-content">
+        <div class="flex article-list--tile">
+            
+                
+<article class="">
+    <a href="/p/2p2epdfpic-to-excel/">
+        
+        
+
+        <div class="article-details">
+            <h2 class="article-title">2P2E（PDF&amp;PIC to Excel）</h2>
+        </div>
+    </a>
+</article>
+
+            
+        </div>
+    </div>
+</aside>
+
+     
+    
+        
+    
+
+    <footer class="site-footer">
+    <section class="copyright">
+        &copy; 
+        
+        2025 SweetGargamel
+    </section>
+    
+    <section class="powerby">
+        
+            Recording Myself! <br/>
+        使用 <a href="https://gohugo.io/" target="_blank" rel="noopener">Hugo</a> 构建 <br />
+        主题 <b><a href="https://github.com/CaiJimmy/hugo-theme-stack" target="_blank" rel="noopener" data-version="3.28.0">Stack</a></b> 由 <a href="https://jimmycai.com" target="_blank" rel="noopener">Jimmy</a> 设计
+    </section>
+</footer>
+
+
+    
+<div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+
+    
+    <div class="pswp__bg"></div>
+
+    
+    <div class="pswp__scroll-wrap">
+
+        
+        <div class="pswp__container">
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+        </div>
+
+        
+        <div class="pswp__ui pswp__ui--hidden">
+
+            <div class="pswp__top-bar">
+
+                
+
+                <div class="pswp__counter"></div>
+
+                <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+
+                <button class="pswp__button pswp__button--share" title="Share"></button>
+
+                <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+
+                <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+
+                
+                
+                <div class="pswp__preloader">
+                    <div class="pswp__preloader__icn">
+                        <div class="pswp__preloader__cut">
+                            <div class="pswp__preloader__donut"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+                <div class="pswp__share-tooltip"></div>
+            </div>
+
+            <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
+            </button>
+
+            <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
+            </button>
+
+            <div class="pswp__caption">
+                <div class="pswp__caption__center"></div>
+            </div>
+
+        </div>
+
+    </div>
+
+</div><script 
+                src="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe.min.js"integrity="sha256-ePwmChbbvXbsO02lbM3HoHbSHTHFAeChekF1xKJdleo="crossorigin="anonymous"
+                defer
+                >
+            </script><script 
+                src="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe-ui-default.min.js"integrity="sha256-UKkzOn/w1mBxRmLLGrSeyB4e1xbrp4xylgAWb3M42pU="crossorigin="anonymous"
+                defer
+                >
+            </script><link 
+                rel="stylesheet" 
+                href="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/default-skin/default-skin.min.css"crossorigin="anonymous"
+            ><link 
+                rel="stylesheet" 
+                href="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe.min.css"crossorigin="anonymous"
+            >
+
+            </main>
+        </div>
+        <script 
+                src="https://cdn.jsdelivr.net/npm/node-vibrant@3.1.6/dist/vibrant.min.js"integrity="sha256-awcR2jno4kI5X0zL8ex0vi2z&#43;KMkF24hUW8WePSA9HM="crossorigin="anonymous"
+                
+                >
+            </script><script type="text/javascript" src="/ts/main.1e9a3bafd846ced4c345d084b355fb8c7bae75701c338f8a1f8a82c780137826.js" defer></script>
+<script>
+    (function () {
+        const customFont = document.createElement('link');
+        customFont.href = "https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap";
+
+        customFont.type = "text/css";
+        customFont.rel = "stylesheet";
+
+        document.head.appendChild(customFont);
+    }());
+</script>
+
+    </body>
+</html>
