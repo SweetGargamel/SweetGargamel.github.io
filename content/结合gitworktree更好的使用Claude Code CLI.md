@@ -2,7 +2,7 @@
 
 如果大家有用过Claude Code 或者 Codex 或者 Opencode之类的CLI的Coding工具的话，你会发现他不能像cursor那样选择性的apply或者reject代码，只能全盘接受他的所有修改（或者拒绝）
 
-同时也没有什么很好的可视化的方式来看他修改了哪些代码（部分vscode插件可以做到预览，但是预览的也比较麻烦，可能就是这样类似的效果）![](assets/file-20260327220735492.png)
+同时也没有什么很好的可视化的方式来看他修改了哪些代码（部分vscode插件可以做到预览，但是预览的也比较麻烦，可能就是这样类似的效果）![](AI工具使用技巧/assets/file-20260327220735492.png)
 
 
 所以我开始尝试用git管理ai修改的代码。我可以用Pycharm自带的diff工具来查看不同的区别，同时选择性的选择应用。
@@ -124,11 +124,11 @@ git merge --squash ai-fix
 
 接下来打开vscode的change面板会有两个change，左侧是`HEAD`提交（也就是我们在`git merge --no-commit --no-ff ai-fix`前的提交）
 
-这里会分`staged change`【在staged区】和普通`change`【在working区】，这里我点开的是普通的`change`。中间的按钮你可以revert或者把他staged了 ![](assets/file-20260211152757998.png)
+这里会分`staged change`【在staged区】和普通`change`【在working区】，这里我点开的是普通的`change`。中间的按钮你可以revert或者把他staged了 ![](AI工具使用技巧/assets/file-20260211152757998.png)
 
 
 【刚跑完上面的命令一般只会有`staged change`我们可以参考图二取消`staged】
-![](assets/file-20260211153006107.png)
+![](AI工具使用技巧/assets/file-20260211153006107.png)
 
 
 在`staged`里面，我们能做的比较少，一般只能取消`staged`，但是如果我们放到普通的`change`里面就可以直接对文件进行编辑。
