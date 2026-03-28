@@ -8,6 +8,7 @@ import {
   simplifySlug,
   splitAnchor,
   transformLink,
+  transformInternalLink,
 } from "../../util/path"
 import path from "path"
 import { visit } from "unist-util-visit"
@@ -149,11 +150,10 @@ export const CrawlLinks: QuartzTransformerPlugin<Partial<Options>> = (userOpts) 
 
                 if (!isAbsoluteUrl(node.properties.src, { httpOnly: false })) {
                   let dest = node.properties.src as RelativeURL
-                  dest = node.properties.src = transformLink(
-                    file.data.slug!,
-                    dest,
-                    transformOptions,
-                  )
+                  // Media assets should stay relative to the current page directory.
+                  // Reusing markdown link resolution here breaks extensionless routes
+                  // such as GitHub Pages URLs and causes image/audio/video 404s.
+                  dest = node.properties.src = transformInternalLink(dest)
                   node.properties.src = dest
                 }
               }
