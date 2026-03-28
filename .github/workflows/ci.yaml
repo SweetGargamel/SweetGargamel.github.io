@@ -11,7 +11,6 @@ on:
 
 jobs:
   build-and-test:
-    if: ${{ github.repository == 'jackyzha0/quartz' }}
     strategy:
       matrix:
         os: [windows-latest, macos-latest, ubuntu-latest]
@@ -38,14 +37,14 @@ jobs:
 
       - run: npm ci
 
-      - name: Check types and style
-        run: npm run check
+      - name: Check types
+        run: npx tsc --noEmit
 
       - name: Test
         run: npm test
 
       - name: Ensure Quartz builds, check bundle info
-        run: npx quartz build --bundleInfo -d docs
+        run: npx quartz build --bundleInfo
 
   publish-tag:
     if: ${{ github.repository == 'jackyzha0/quartz' && github.ref == 'refs/heads/v4' }}

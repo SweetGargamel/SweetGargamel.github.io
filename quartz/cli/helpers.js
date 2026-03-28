@@ -4,6 +4,15 @@ import { contentCacheFolder } from "./constants.js"
 import { spawnSync } from "child_process"
 import fs from "fs"
 
+async function rmWithRetry(target) {
+  await fs.promises.rm(target, {
+    force: true,
+    recursive: true,
+    maxRetries: process.platform === "win32" ? 10 : 3,
+    retryDelay: 200,
+  })
+}
+
 export function escapePath(fp) {
   return fp
     .replace(/\\ /g, " ") // unescape spaces
@@ -22,14 +31,14 @@ export function exitIfCancel(val) {
 }
 
 export async function stashContentFolder(contentFolder) {
-  await fs.promises.rm(contentCacheFolder, { force: true, recursive: true })
+  await rmWithRetry(contentCacheFolder)
   await fs.promises.cp(contentFolder, contentCacheFolder, {
     force: true,
     recursive: true,
     verbatimSymlinks: true,
     preserveTimestamps: true,
   })
-  await fs.promises.rm(contentFolder, { force: true, recursive: true })
+  await rmWithRetry(contentFolder)
 }
 
 export function gitPull(origin, branch) {
@@ -43,12 +52,12 @@ export function gitPull(origin, branch) {
 }
 
 export async function popContentFolder(contentFolder) {
-  await fs.promises.rm(contentFolder, { force: true, recursive: true })
+  await rmWithRetry(contentFolder)
   await fs.promises.cp(contentCacheFolder, contentFolder, {
     force: true,
     recursive: true,
     verbatimSymlinks: true,
     preserveTimestamps: true,
   })
-  await fs.promises.rm(contentCacheFolder, { force: true, recursive: true })
+  await rmWithRetry(contentCacheFolder)
 }
